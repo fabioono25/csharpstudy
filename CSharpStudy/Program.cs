@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using CSharpStudy.Math;
+using System.Linq;
+using System.Text;
 
 namespace CSharpStudy
 {
@@ -171,25 +174,99 @@ namespace CSharpStudy
 
             // var el = arr[0][2];
 
-            var numbers = new [] {3, 2, 4,5, 3, 5 , 12};
+            // var numbers = new [] {3, 2, 4,5, 3, 5 , 12};
 
-            System.Console.WriteLine(numbers.Length);
-            System.Console.WriteLine(Array.IndexOf(numbers, 4));
-            Array.Clear(numbers,0,2);
+            // System.Console.WriteLine(numbers.Length);
+            // System.Console.WriteLine(Array.IndexOf(numbers, 4));
+            // Array.Clear(numbers,0,2);
             
-            var anotherArray = new int[2];
-            Array.Copy(numbers, anotherArray, 2);
+            // var anotherArray = new int[2];
+            // Array.Copy(numbers, anotherArray, 2);
 
-            System.Console.WriteLine("numb");
+            // System.Console.WriteLine("numb");
 
-            Array.Sort(numbers);
-            Array.Reverse(numbers);
-            foreach (var item in numbers)
-            {   
-                System.Console.WriteLine(item);
-            }
+            // Array.Sort(numbers);
+            // Array.Reverse(numbers);
+            // foreach (var item in numbers)
+            // {   
+            //     System.Console.WriteLine(item);
+            // }
+
+            
+            //working with lists
+            // var numbers = new List<int>() {1, 2, 3};
+            // numbers.AddRange(new int[]{3, 4,5,6,1, 1,1});
+            
+            // foreach (var number in numbers)
+            // {
+            //     System.Console.WriteLine(number);
+            // }
+
+            // System.Console.WriteLine("Index of 3: " + numbers.IndexOf(3)); 
+            // System.Console.WriteLine("Index of 3: " + numbers.LastIndexOf(3));
+
+            // System.Console.WriteLine("Count: " + numbers.Count);
+            // //numbers.Remove(1);
+            // numbers.RemoveAll(_ => _.Equals(1));
+
+            // foreach (var number in numbers)
+            // {
+            //     System.Console.WriteLine(number);
+            // }
+            
 
             #endregion
+
+            #region Section 7 - Dates and Times
+
+            // System.Console.WriteLine(DateTime.Today);
+            // System.Console.WriteLine(DateTime.Now);
+            // System.Console.WriteLine(DateTime.Now.ToString("dd/MM/yyyy hh:mi:ss"));
+            // System.Console.WriteLine(DateTime.Now.ToLongDateString());
+            // System.Console.WriteLine(DateTime.Now.ToShortDateString());
+            // System.Console.WriteLine(DateTime.Now.ToLongTimeString());
+            // System.Console.WriteLine(DateTime.Now.ToShortTimeString());                                                
+
+            // var timeSpan = new TimeSpan(1,2,3);
+            // var timeSpan2 = new TimeSpan(1,0,0);
+            // var timeSpan3 = TimeSpan.FromHours(1);
+
+            // System.Console.WriteLine(timeSpan.Minutes);
+            // System.Console.WriteLine(timeSpan.TotalMinutes);
+
+            // System.Console.WriteLine(timeSpan);
+            // System.Console.WriteLine(timeSpan.Add(TimeSpan.FromMinutes(8)));
+
+            // System.Console.WriteLine(TimeSpan.Parse("01:12:23"));
+
+            #endregion
+
+            #region Section 8 - Text
+
+            // var fullName = " ";
+            // System.Console.WriteLine(String.IsNullOrWhiteSpace(fullName));
+
+            // var price = 12.12F;
+            // System.Console.WriteLine(price.ToString("C3"));
+
+            // var sb = new StringBuilder("tittle");
+            // sb.Append('-', 10)
+            //   .AppendLine()
+            //   .Append("asasdasd")
+            //   .Insert(0, new string('a', 20));
+            
+            //var x = sb.ToString().IndexOf('t');
+
+            //System.Console.WriteLine(sb);
+
+
+            #endregion
+        
+            #region Section 9 - Files and Directories
+            //File, FileInfo, Directory, DirectoryInfo, Path
+            #endregion        
+
+            
         }
     }
 }
