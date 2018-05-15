@@ -334,7 +334,7 @@ namespace CSharpStudy
 
 public class GoldCustomer : Customer{
     public void OfferVoucher(){
-        this.
+        //this.
     }
 }
 
