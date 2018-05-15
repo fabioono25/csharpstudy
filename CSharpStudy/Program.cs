@@ -10,6 +10,7 @@ namespace CSharpStudy
     {
         static void Main(string[] args)
         {
+            #region C# Basic
             //Console.WriteLine("Hello World!");
 
             #region Section 3 - Primitive Types and Extensions
@@ -266,7 +267,101 @@ namespace CSharpStudy
             //File, FileInfo, Directory, DirectoryInfo, Path
             #endregion        
 
+            #endregion
+        
+            #region C# Intermediate
+
+            #region Section 2 - Classes
+            //var p = Person2.Parse("john");
+
+            // var customer = new Customer(1);
+            // Console.WriteLine(customer.Id);
+            // Console.WriteLine(customer.Name);
+
+            // var order = new Order();
+            // customer.Orders.Add(order);
+            // var point = new Point(10, 20);
+            // point.Move(new Point(40,20));
+            // System.Console.WriteLine(point.X);
+
+            // var calculator = new Calculator();
+            // System.Console.WriteLine(calculator.Add(1,2,3));
+            // System.Console.WriteLine(calculator.Add(new int[]{1,23,4,5}));
+
+            // try
+            // {
+            //     var x = int.Parse("asbc");                
+            // }
+            // catch (System.Exception)
+            // {
+            //     System.Console.WriteLine("Conversion vailed");
+            // }
+
+            // int number;
+            // var result = int.TryParse("123", out number);
+
+            // var cookie = new HttpCookie();
+            // cookie["name"] = "mosh";
+            // System.Console.WriteLine(cookie["name"]);
+
+            #endregion
+
+            #region Section 3 - Association between classes
+            // var text = new Text();
+            // text.Width = 100;
+            // text.Copy();
+
+            // var dbMigrator = new DbMigrator(new Logger());
+
+            // var logger = new Logger();
+            // var installer = new Installer(logger);
+
+            // dbMigrator.Migrate();
+            // installer.Install();
+
+
+            #endregion
+
+            #region Section 4 - Inheritance
+            var customer = new Customer();
             
+            #endregion
+
+            #endregion
         }
     }
+
+
+public class GoldCustomer : Customer{
+    public void OfferVoucher(){
+        this.
+    }
+}
+
+#region C# Intermediate
+public class Calculator{
+    public int Add(params int[] numbers){
+
+        var sum = 0;
+
+        foreach (var number in numbers)
+        {
+            sum += number;
+        }
+
+        return sum;
+    }
+}
+
+public class Text: PresentationObject{
+    public int FontSize { get; set; }
+    public string FontName { get; set; }
+
+    public void AddHyperlink(string url){
+        System.Console.WriteLine("add link to {0}", url);
+    }
+}
+
+
+#endregion    
 }
