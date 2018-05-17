@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using CSharpStudy.Math;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.Collections;
 
 namespace CSharpStudy
 {
@@ -323,8 +325,56 @@ namespace CSharpStudy
             #endregion
 
             #region Section 4 - Inheritance
-            var customer = new Customer();
+            //var customer = new Customer();
+            //var car = new Car("123123123");  
+
+            //upcasting
+            // var text = new Text(10,"asd");
+            // Shape shape = text;
+
+            // text.Width = 200;
+            // shape.Width = 100;
+
+            // System.Console.WriteLine(text.Width);
+
+            // StreamReader reader = new StreamReader(new MemoryStream());
+            // StreamReader reader = new StreamReader(new FileStream());
+
+            //downcasting
+            // Shape shape = new Text(12, "adasd"); //shape has limited vision
+            // Text text = (Text) shape;
+
+            //boxing
+            // var list = new ArrayList();
+            // list.Add(1); //boxing will happen, get back unboxing
+            // list.Add("asdas"); //not boxing
+            // list.Add(DateTime.Today); //will boxing
+
+            // var number = (int)list[1]; //InvalidCastException
+
+            // var anotherList = new List<int>();
+            // anotherList.Add(1); //type safety with no boxing
+
+            // var names = new List<string>();
+            // names.Add("");//no boxing
+
+
+
+            #endregion
+
+            #region Section 5 - Polymorphism
+                // var x = new Circle();
+                // x.Draw();
+
+                // var shapes = new List<Shape>();
+                // shapes.Add(new Circle());
+                
+            #endregion
+
+            #region Section 6 - Interfaces
+
             
+
             #endregion
 
             #endregion
@@ -339,6 +389,7 @@ public class GoldCustomer : Customer{
 }
 
 #region C# Intermediate
+
 public class Calculator{
     public int Add(params int[] numbers){
 
@@ -353,15 +404,16 @@ public class Calculator{
     }
 }
 
-public class Text: PresentationObject{
-    public int FontSize { get; set; }
-    public string FontName { get; set; }
 
-    public void AddHyperlink(string url){
-        System.Console.WriteLine("add link to {0}", url);
-    }
-}
 
+// public class Text: PresentationObject{
+//     public int FontSize { get; set; }
+//     public string FontName { get; set; }
+
+//     public void AddHyperlink(string url){
+//         System.Console.WriteLine("add link to {0}", url);
+//     }
+// }
 
 #endregion    
 }
