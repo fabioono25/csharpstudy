@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using CSharpStudy.Math;
 using System.Linq;
 using System.Text;
 using System.IO;
 using System.Collections;
+using System.Net;
+using System.Threading.Tasks;
+//using CSharpStudy.Extensions;
 
 namespace CSharpStudy
 {
@@ -358,8 +360,6 @@ namespace CSharpStudy
             // var names = new List<string>();
             // names.Add("");//no boxing
 
-
-
             #endregion
 
             #region Section 5 - Polymorphism
@@ -373,47 +373,274 @@ namespace CSharpStudy
 
             #region Section 6 - Interfaces
 
-            
+            #endregion
 
             #endregion
+       
+            #region C# Advanced
+
+            //Generics:
+            // var numbers = new GenericList<int>();
+            // numbers.Add(10);
+
+            // var books = new GenericList<Book>();
+            // books.Add(new Book());
+
+            // var dictionary = new GenericDictionary<string, Book>();
+            // dictionary.Add("123", new Book());
+
+            // var number = new Nullable<int>();
+            // System.Console.WriteLine("HasValue? " + number.HasValue);
+            // System.Console.WriteLine("Actual value: " + number.GetValueOrDefault());
+
+            //Delegates:
+            // var processor = new PhotoProcessor();
+            // var filters = new PhotoFilters();
+            // //PhotoProcessor.PhotoFilterHandler filterHandler = filters.Resize;
+            // Action<Photo> filterHandler = filters.Resize;
+            // filterHandler += filters.ApplyContrast;
+            // filterHandler += RemoveRedEye;
+
+            // processor.Process("photo.jpg", filterHandler);
+
+            //Lambda Expressions:
+            // System.Console.WriteLine(Square(4));
+            // Func<int, int> square = number => number * number;
+            // System.Console.WriteLine(square(5));
+
+            // const int factor = 5;
+            // Func<int, int> multiplier = n => n * factor;
+            // System.Console.WriteLine(multiplier(3));
+
+            // var books = new BookRepository().GetBooks();
+            // var cheapBooks = books.FindAll(IsCheaperThan10Dollars);
+            // var cheapBooksLambda = books.FindAll(b => b.Price < 10);
+
+            // foreach (var book in cheapBooks)
+            // {
+            //     System.Console.WriteLine(book.Title);
+            // }
+
+            //Events and Delegates:
+            // var video = new Video() { Title = "Video 1"};
+            // var videoEncoder = new VideoEncoder(); //publisher
+            // var mailService = new MailService(); //subscriber
+            // var messageService = new MessageService(); //subscriber
+
+            // videoEncoder.VideoEncoded += mailService.OnVideoEncoded; //subscription   
+            // videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
+
+            // videoEncoder.Encode(video);
+
+            //Extension Methods:
+            // var post = "this is a big string, that it is very long and we need ssss";
+            // var shortenedPost = post.Shorten(5);
+            // System.Console.WriteLine(shortenedPost);
+
+            //LINQ:
+            //var books = new BookRepository().GetBooks();
+
+            //LINQ Query Operators:
+            // var cheapBooks1 = 
+            //     from b in books
+            //     where b.Price < 50
+            //     orderby b.Title descending
+            //     select b.Title;
+                    
+            //LINQ Extension Methods
+            // var cheapBooks = books.Where(b => b.Price < 50)
+            //         .OrderByDescending(b => b.Price)
+            //         .Select(b => b.Title);
+
+            // foreach (var book in cheapBooks)
+            // {
+            //     //System.Console.WriteLine(book.Title + " - " + book.Price);
+            //     System.Console.WriteLine(book);
+            // }
+
+            // var pagedBooks = books.Skip(2).Take(30);
+
+            // foreach (var book in pagedBooks)
+            // {
+            //     System.Console.WriteLine(book.Title);
+            // }
+
+            // System.Console.WriteLine(book);
+
+            //Nullable Types:
+
+            // Nullable<DateTime> date = null;
+            
+            //DateTime? date2 = null;
+            //DateTime dataX = date2;
+            // DateTime dataX = date2 ?? DateTime.Today;//date2.GetValueOrDefault();
+            // DateTime? date3 = date2;
+
+            //Dynamic:
+            //object obj = "mosh";
+            //obj.GetHashCode()
+
+            //reflexion
+            // var methodInfo = obj.GetType().GetMethod("GetHashCode");
+            // methodInfo.Invoke(null, null);
+            
+            //using dynamic
+            // dynamic obj2 = "mosh";
+            // obj2 = 1;
+            // System.Console.WriteLine(obj2);
+            //obj2.Optimize();
+
+            // int i = 5;
+            // dynamic d = i;
+            // long l = d;
+
+            //Exception Handling:
+            // try
+            // {
+            // using (StreamReader r = new StreamReader(@"asdasd"))
+            // {
+                
+            // }                
+            //     var calc = new Calculator();
+            //     calc.Divide(1, 0); 
+
+                   
+            // }
+            // catch (DivideByZeroException ex){
+
+            // }
+            // catch (ArithmeticException ex){
+
+            // }
+            // catch (Exception ex)
+            // {
+            //     System.Console.WriteLine("error");
+
+            //     throw new CustomizedException("Customized", ex);
+            // }
+            
+
+            //Asynchronous Programming with Async/Await
+            DownloadHtmlAsync("http://www.google.com");
+            //DownloadAsync("http://www.google.com");
+            var t = GetHtmlAsync("http://www.google.com");
 
             #endregion
         }
-    }
 
+        #region C# Advanced
+        
+        public static async Task<string> GetHtmlAsync(string url){
+            var webClient = new WebClient();
 
-public class GoldCustomer : Customer{
-    public void OfferVoucher(){
-        //this.
+            return await webClient.DownloadStringTaskAsync(url);
+        }
+        public static string GetHtml(string url){
+            var webClient = new WebClient();
+
+            return webClient.DownloadString(url);
+        }
+        
+        public static async Task DownloadHtmlAsync(string url){
+            var webClient = new WebClient();
+            var html = await webClient.DownloadStringTaskAsync(url);
+
+            using (var streamWriter = new StreamWriter(@"result.html"))
+            {
+                await streamWriter.WriteAsync(html);
+            }            
+        }
+
+        public static void DownloadHtml(string url){
+            var webClient = new WebClient();
+            var html = webClient.DownloadString(url);
+
+            using (var streamWriter = new StreamWriter(@"result.html"))
+            {
+                streamWriter.Write(html);
+            }
+        }
+
+        static bool IsCheaperThan10Dollars(Book book){
+            return book.Price < 10;
+        }
+
+        static int Square(int number) => number * number;
+
+        static void RemoveRedEye(Photo photo){
+            System.Console.WriteLine("remove red eye");
+        }
+
+        public void Add(Book book){
+
+        }
+
+        public Book this[int index]{
+            get { throw new NotImplementedException(); }
+        }
+
+        #endregion
     }
-}
 
 #region C# Intermediate
 
-public class Calculator{
-    public int Add(params int[] numbers){
-
-        var sum = 0;
-
-        foreach (var number in numbers)
+    public class GoldCustomer : Customer{
+        public void OfferVoucher(){
+            //this.
+        }
+    }
+    public class Calculator
+    {
+        public int Add(params int[] numbers)
         {
-            sum += number;
+
+            var sum = 0;
+
+            foreach (var number in numbers)
+            {
+                sum += number;
+            }
+
+            return sum;
         }
 
-        return sum;
+        public int Divide(int v1, int v2)
+        {
+            return v1 / v2;
+        }
     }
-}
 
+#endregion
+#region C# Advanced
 
+    
 
-// public class Text: PresentationObject{
-//     public int FontSize { get; set; }
-//     public string FontName { get; set; }
+    public class ObjectList{
+        public void Add(object value){}
 
-//     public void AddHyperlink(string url){
-//         System.Console.WriteLine("add link to {0}", url);
-//     }
-// }
+        public object this[int index]{
+            get { throw new NotImplementedException(); }
+        }
+    }
 
-#endregion    
+    public class GenericList<T>{
+
+        public void Add(T value){
+
+        }
+
+        public T this[int index]{
+
+            get {throw new NotImplementedException();}
+        }
+    }
+
+    public class GenericDictionary<TKey, TValue>
+    {
+        public void Add(TKey key, TValue value){
+
+        }
+    }
+
+    #endregion
 }
