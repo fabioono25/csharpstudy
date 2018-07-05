@@ -7,6 +7,7 @@ using System.Collections;
 using System.Net;
 using System.Threading.Tasks;
 using CSharpStudy.SearchingTechniques;
+using CSharpStudy.CSharp7;
 //using CSharpStudy.Extensions;
 
 namespace CSharpStudy
@@ -538,6 +539,13 @@ namespace CSharpStudy
 
                 //PATTERN MATCHING
                 //PatternMatching.ExecuteExample();
+
+                //LOCAL FUNCTIONS
+                //LocalFunctions.ExecuteExample();
+
+                //DIGIT SEPARATORS
+                DigitSeparator.ExecuteExample();
+
             #endregion
 
             #region Functional Programming
@@ -552,9 +560,11 @@ namespace CSharpStudy
             // Console.WriteLine($"Value search: 53. Index found is {index}, in array [{string.Join(",",numbers)}].");
 
             //binary search: the target value is compared with de middle element of a sorted array.            
-            int[] numbers = {1,20,25,32,45,50,70,80};
-            var index = BinarySearch.returnIndex(numbers, 0, numbers.Length, 50);
-            Console.WriteLine($"Value search: 50. Index found is {index}, in array [{string.Join(",",numbers)}].");            
+            // int[] numbers = {1,20,25,32,45,50,70,80};
+            // var index = BinarySearch.returnIndex(numbers, 0, numbers.Length, 50);
+            // Console.WriteLine($"Value search: 50. Index found is {index}, in array [{string.Join(",",numbers)}].");            
+
+            //
 
             #endregion
         }

@@ -1,6 +1,6 @@
 using System;
 
-namespace CSharpStudy
+namespace CSharpStudy.CSharp7
 {
     public class PatternMatching
     {
