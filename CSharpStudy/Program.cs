@@ -6,6 +6,7 @@ using System.IO;
 using System.Collections;
 using System.Net;
 using System.Threading.Tasks;
+using CSharpStudy.SearchingTechniques;
 //using CSharpStudy.Extensions;
 
 namespace CSharpStudy
@@ -536,11 +537,19 @@ namespace CSharpStudy
                 //RefReturns.ExecuteExample();
 
                 //PATTERN MATCHING
-                PatternMatching.ExecuteExample();
+                //PatternMatching.ExecuteExample();
             #endregion
 
             #region Functional Programming
 
+            #endregion
+
+            #region Searching Techniques
+
+            //linear search: consider every single item on a one by one basis
+            int[] numbers = {1,32,5,12,53,65,7,234};
+            var index = LinearSearch.returnIndex(numbers, 53);
+            Console.WriteLine($"Value search: 53. Index found is {index}, in array [{string.Join(",",numbers)}].");
             #endregion
         }
 
