@@ -547,9 +547,15 @@ namespace CSharpStudy
             #region Searching Techniques
 
             //linear search: consider every single item on a one by one basis
-            int[] numbers = {1,32,5,12,53,65,7,234};
-            var index = LinearSearch.returnIndex(numbers, 53);
-            Console.WriteLine($"Value search: 53. Index found is {index}, in array [{string.Join(",",numbers)}].");
+            // int[] numbers = {1,32,5,12,53,65,7,234};
+            // var index = LinearSearch.returnIndex(numbers, 53);
+            // Console.WriteLine($"Value search: 53. Index found is {index}, in array [{string.Join(",",numbers)}].");
+
+            //binary search: the target value is compared with de middle element of a sorted array.            
+            int[] numbers = {1,20,25,32,45,50,70,80};
+            var index = BinarySearch.returnIndex(numbers, 0, numbers.Length, 50);
+            Console.WriteLine($"Value search: 50. Index found is {index}, in array [{string.Join(",",numbers)}].");            
+
             #endregion
         }
 
