@@ -544,7 +544,10 @@ namespace CSharpStudy
                 //LocalFunctions.ExecuteExample();
 
                 //DIGIT SEPARATORS
-                DigitSeparator.ExecuteExample();
+                //DigitSeparator.ExecuteExample();
+
+                //OUT VARIABLES
+                OutVariables.ExecuteExample("12");
 
             #endregion
 
