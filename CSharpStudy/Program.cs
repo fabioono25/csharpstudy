@@ -540,6 +540,9 @@ namespace CSharpStudy
                 //PATTERN MATCHING
                 //PatternMatching.ExecuteExample();
 
+                //PATTERN MATCHING 2:
+                PatternMatching2.ExecuteExample();
+
                 //LOCAL FUNCTIONS
                 //LocalFunctions.ExecuteExample();
 
@@ -547,7 +550,7 @@ namespace CSharpStudy
                 //DigitSeparator.ExecuteExample();
 
                 //OUT VARIABLES
-                OutVariables.ExecuteExample("12");
+                //OutVariables.ExecuteExample("12");
 
             #endregion
 
