@@ -20,9 +20,9 @@ namespace CSharpStudy
             //Console.WriteLine("Hello World!");
 
             #region Section 3 - Primitive Types and Extensions
-            
+
             //const float Pi = 3.14F;
-            
+
             // Byte b = 1;
             // byte b = 2;
 
@@ -88,10 +88,10 @@ namespace CSharpStudy
 
             // Console.WriteLine((float) 10 / (float) 3);
 
-                // byte number = 255;
-                // number += 2;
-                // System.Console.WriteLine(byte.MaxValue);
-            
+            // byte number = 255;
+            // number += 2;
+            // System.Console.WriteLine(byte.MaxValue);
+
             #endregion
 
             #region Section 4 - Non-Primitive Types
@@ -103,14 +103,14 @@ namespace CSharpStudy
 
             // var calc = new Calculator();
             // System.Console.WriteLine(calc.Add(1,2));
-            
+
             //arrays
             // var numbers = new int[3] {1, 2, 3};
             // System.Console.WriteLine(string.Join(",", numbers));
 
             //var x = "asdasdasd";
             // System.Console.WriteLine((int)ShippingMethod.Express);
-            
+
             // var methodId = 3;
             // System.Console.WriteLine((ShippingMethod)methodId);
 
@@ -132,7 +132,7 @@ namespace CSharpStudy
             // System.Console.WriteLine(arr2[2]);
 
             #endregion
-        
+
             #region Section 5 - Control Flow
 
             // var role = "as";
@@ -157,10 +157,10 @@ namespace CSharpStudy
             // System.Console.WriteLine((char)100);
 
             #endregion
-        
+
             #region Secion 6 - Arrays
 
-//            var numbers = new int[4] {1, 2, 3, 3}; //single-dimensional
+            //            var numbers = new int[4] {1, 2, 3, 3}; //single-dimensional
 
             //multi dimension arrays:
 
@@ -186,7 +186,7 @@ namespace CSharpStudy
             // System.Console.WriteLine(numbers.Length);
             // System.Console.WriteLine(Array.IndexOf(numbers, 4));
             // Array.Clear(numbers,0,2);
-            
+
             // var anotherArray = new int[2];
             // Array.Copy(numbers, anotherArray, 2);
 
@@ -199,11 +199,11 @@ namespace CSharpStudy
             //     System.Console.WriteLine(item);
             // }
 
-            
+
             //working with lists
             // var numbers = new List<int>() {1, 2, 3};
             // numbers.AddRange(new int[]{3, 4,5,6,1, 1,1});
-            
+
             // foreach (var number in numbers)
             // {
             //     System.Console.WriteLine(number);
@@ -220,7 +220,7 @@ namespace CSharpStudy
             // {
             //     System.Console.WriteLine(number);
             // }
-            
+
 
             #endregion
 
@@ -261,20 +261,20 @@ namespace CSharpStudy
             //   .AppendLine()
             //   .Append("asasdasd")
             //   .Insert(0, new string('a', 20));
-            
+
             //var x = sb.ToString().IndexOf('t');
 
             //System.Console.WriteLine(sb);
 
 
             #endregion
-        
+
             #region Section 9 - Files and Directories
             //File, FileInfo, Directory, DirectoryInfo, Path
-            #endregion        
+            #endregion
 
             #endregion
-        
+
             #region C# Intermediate
 
             #region Section 2 - Classes
@@ -365,12 +365,12 @@ namespace CSharpStudy
             #endregion
 
             #region Section 5 - Polymorphism
-                // var x = new Circle();
-                // x.Draw();
+            // var x = new Circle();
+            // x.Draw();
 
-                // var shapes = new List<Shape>();
-                // shapes.Add(new Circle());
-                
+            // var shapes = new List<Shape>();
+            // shapes.Add(new Circle());
+
             #endregion
 
             #region Section 6 - Interfaces
@@ -378,7 +378,7 @@ namespace CSharpStudy
             #endregion
 
             #endregion
-       
+
             #region C# Advanced
 
             //Generics:
@@ -448,7 +448,7 @@ namespace CSharpStudy
             //     where b.Price < 50
             //     orderby b.Title descending
             //     select b.Title;
-                    
+
             //LINQ Extension Methods
             // var cheapBooks = books.Where(b => b.Price < 50)
             //         .OrderByDescending(b => b.Price)
@@ -472,7 +472,7 @@ namespace CSharpStudy
             //Nullable Types:
 
             // Nullable<DateTime> date = null;
-            
+
             //DateTime? date2 = null;
             //DateTime dataX = date2;
             // DateTime dataX = date2 ?? DateTime.Today;//date2.GetValueOrDefault();
@@ -485,7 +485,7 @@ namespace CSharpStudy
             //reflexion
             // var methodInfo = obj.GetType().GetMethod("GetHashCode");
             // methodInfo.Invoke(null, null);
-            
+
             //using dynamic
             // dynamic obj2 = "mosh";
             // obj2 = 1;
@@ -501,12 +501,12 @@ namespace CSharpStudy
             // {
             // using (StreamReader r = new StreamReader(@"asdasd"))
             // {
-                
+
             // }                
             //     var calc = new Calculator();
             //     calc.Divide(1, 0); 
 
-                   
+
             // }
             // catch (DivideByZeroException ex){
 
@@ -520,7 +520,7 @@ namespace CSharpStudy
 
             //     throw new CustomizedException("Customized", ex);
             // }
-            
+
 
             //Asynchronous Programming with Async/Await
             //DownloadHtmlAsync("http://www.google.com");
@@ -528,29 +528,37 @@ namespace CSharpStudy
             //var t = GetHtmlAsync("http://www.google.com");
 
             #endregion
-        
+
             #region C# 7
 
-                //TUPLAS
-                //Tuplas.ExecuteExample();
+            //TUPLAS
+            //Tuplas.ExecuteExample();
 
-                //REF RETURNS
-                //RefReturns.ExecuteExample();
+            //REF RETURNS
+            //RefReturns.ExecuteExample();
 
-                //PATTERN MATCHING
-                //PatternMatching.ExecuteExample();
+            //PATTERN MATCHING
+            //PatternMatching.ExecuteExample();
 
-                //PATTERN MATCHING 2:
-                PatternMatching2.ExecuteExample();
+            //PATTERN MATCHING 2:
+            //PatternMatching2.ExecuteExample();
 
-                //LOCAL FUNCTIONS
-                //LocalFunctions.ExecuteExample();
+            //LOCAL FUNCTIONS
+            //LocalFunctions.ExecuteExample();
 
-                //DIGIT SEPARATORS
-                //DigitSeparator.ExecuteExample();
+            //DIGIT SEPARATORS
+            //DigitSeparator.ExecuteExample();
 
-                //OUT VARIABLES
-                //OutVariables.ExecuteExample("12");
+            //OUT VARIABLES
+            //OutVariables.ExecuteExample("12");
+
+            //EXPRESSION BODIED
+            //var exp = new ExpressioBodied("descricao");
+            //exp.Label = "descricao modificada";
+            //Console.WriteLine(exp.Label);
+
+            //VALUE TASKS:
+            ValueTasks2.ExecuteExample();
 
             #endregion
 

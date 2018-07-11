@@ -44,6 +44,9 @@ namespace CSharpStudy.CSharp7
                     case int val:
                         sum += val;
                         break;
+                    case PercentileDice dice:
+                        sum += dice.TensDigit + dice.OnesDigit;
+                        break;
                     case IEnumerable<object> subList when subList.Any():
                         sum += DiceSumWithCase(subList);
                         break;
@@ -57,6 +60,19 @@ namespace CSharpStudy.CSharp7
             }
 
             return sum;
-        }        
+        }
     }
+
+    public struct PercentileDice
+    {
+        public int OnesDigit { get; }
+        public int TensDigit { get; }
+
+        public PercentileDice(int tensDigit, int onesDigit)
+        {
+            this.OnesDigit = onesDigit;
+            this.TensDigit = tensDigit;
+        }
+    }
+
 }
