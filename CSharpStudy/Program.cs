@@ -8,6 +8,7 @@ using System.Net;
 using System.Threading.Tasks;
 using CSharpStudy.SearchingTechniques;
 using CSharpStudy.CSharp7;
+using CSharpStudy.CSharp1;
 //using CSharpStudy.Extensions;
 
 namespace CSharpStudy
@@ -529,7 +530,12 @@ namespace CSharpStudy
 
             #endregion
 
-            #region C# 7
+            #region C# 1.0
+                //classes
+                TestPerson.ExecuteExample();
+            #endregion
+
+            #region C# 7.0
 
             //TUPLAS
             //Tuplas.ExecuteExample();
