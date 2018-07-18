@@ -532,7 +532,10 @@ namespace CSharpStudy
 
             #region C# 1.0
                 //classes
-                TestPerson.ExecuteExample();
+                //TestPerson.ExecuteExample();
+
+                //structs
+                StructSample.ExecuteExample();
             #endregion
 
             #region C# 7.0
@@ -564,7 +567,7 @@ namespace CSharpStudy
             //Console.WriteLine(exp.Label);
 
             //VALUE TASKS:
-            ValueTasks2.ExecuteExample();
+            //ValueTasks2.ExecuteExample();
 
             #endregion
 

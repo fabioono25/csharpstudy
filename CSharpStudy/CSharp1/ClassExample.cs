@@ -16,7 +16,7 @@ namespace CSharpStudy.CSharp1
             Name = name;
         }
 
-        //auto-implemented readonly property
+        //auto-implemented readonly property (C# 3.0)
         public string Name { get; }
 
         //method that overrides the base class (System.Object) implementation
