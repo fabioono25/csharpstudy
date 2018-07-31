@@ -535,7 +535,10 @@ namespace CSharpStudy
                 //TestPerson.ExecuteExample();
 
                 //structs
-                StructSample.ExecuteExample();
+                //StructSample.ExecuteExample();
+
+                //events
+                EventExample2.ExecuteExample();
             #endregion
 
             #region C# 7.0
