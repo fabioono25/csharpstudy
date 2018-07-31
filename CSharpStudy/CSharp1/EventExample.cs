@@ -15,7 +15,7 @@ namespace CSharpStudy.CSharp1
         private string WelcomeUser(string userName) => $"Welcome {userName}.";
 
         public static void ExecuteExample(){
-            var obj1 = new EventProgram();
+            var obj1 = new EventExample();
             var result = obj1.MyEvent("Tutorials Point");
             Console.WriteLine(result);
         }

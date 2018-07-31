@@ -538,7 +538,8 @@ namespace CSharpStudy
                 //StructSample.ExecuteExample();
 
                 //events
-                EventExample2.ExecuteExample();
+                EventExample.ExecuteExample();
+                //EventExample2.ExecuteExample();
             #endregion
 
             #region C# 7.0
