@@ -538,8 +538,19 @@ namespace CSharpStudy
                 //StructSample.ExecuteExample();
 
                 //events
-                EventExample.ExecuteExample();
+                //EventExample.ExecuteExample();
                 //EventExample2.ExecuteExample();
+
+                //Properties
+                var prop = new PropertiesExample();
+                Console.WriteLine(prop.FirstName);
+
+                var prop2 = new PropertiesExample("asdasdasd");
+                Console.WriteLine(prop2.FirstName);
+
+                prop2.ChangePropert = "ddddddddddddd";
+                Console.WriteLine(prop2.FirstName);
+
             #endregion
 
             #region C# 7.0
