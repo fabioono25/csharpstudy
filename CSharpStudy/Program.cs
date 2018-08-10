@@ -528,6 +528,9 @@ namespace CSharpStudy
             //DownloadAsync("http://www.google.com");
             //var t = GetHtmlAsync("http://www.google.com");
 
+            //Parallel
+            ParallelVsForEach.ExecuteExample();
+
             #endregion
 
             #region C# 1.0
@@ -542,14 +545,14 @@ namespace CSharpStudy
                 //EventExample2.ExecuteExample();
 
                 //Properties
-                var prop = new PropertiesExample();
-                Console.WriteLine(prop.FirstName);
+                // var prop = new PropertiesExample();
+                // Console.WriteLine(prop.FirstName);
 
-                var prop2 = new PropertiesExample("asdasdasd");
-                Console.WriteLine(prop2.FirstName);
+                // var prop2 = new PropertiesExample("asdasdasd");
+                // Console.WriteLine(prop2.FirstName);
 
-                prop2.ChangePropert = "ddddddddddddd";
-                Console.WriteLine(prop2.FirstName);
+                // prop2.ChangePropert = "ddddddddddddd";
+                // Console.WriteLine(prop2.FirstName);
 
             #endregion
 
