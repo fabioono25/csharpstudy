@@ -536,7 +536,8 @@ namespace CSharpStudy
                 //RefReturns.ExecuteExample();
 
                 //PATTERN MATCHING
-                PatternMatching.ExecuteExample();
+                //PatternMatching.ExecuteExample();
+                
             #endregion
 
             #region Functional Programming
