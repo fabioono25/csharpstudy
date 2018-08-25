@@ -529,7 +529,7 @@ namespace CSharpStudy
             //var t = GetHtmlAsync("http://www.google.com");
 
             //Parallel
-            ParallelVsForEach.ExecuteExample();
+            //ParallelVsForEach.ExecuteExample();
 
             #endregion
 
@@ -587,12 +587,9 @@ namespace CSharpStudy
             //VALUE TASKS:
             //ValueTasks2.ExecuteExample();
 
-<<<<<<< HEAD
-                //PATTERN MATCHING
-                //PatternMatching.ExecuteExample();
-                
-=======
->>>>>>> 976a6c89c322c05a9ef45c7b15828eacd6d675bc
+            //PATTERN MATCHING
+            //PatternMatching.ExecuteExample();
+               
             #endregion
 
             #region Functional Programming
