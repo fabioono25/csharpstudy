@@ -5,7 +5,14 @@ namespace CSharpStudy.CSharp1
     public class InterfaceExample
     {
         public static void ExecuteExample(){
+            var car1 = new CarExample();
+            car1.Make = "Ford";
 
+
+            var car2 = new CarExample();
+            car2.Make = "Mercedes";
+
+            Console.WriteLine("Car1 equals Car2: " + car1.Equals(car2));
         }
     }
 

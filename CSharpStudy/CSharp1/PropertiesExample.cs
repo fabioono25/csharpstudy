@@ -48,6 +48,8 @@ namespace CSharpStudy.CSharp1
                     throw new ArgumentException("value not found");
                 
                 if (value != lastName){
+                    //if there are no subscribers to the PropertyChanged event, the code to raise the event doesn't execute
+                    //i't woult throw a NullReferenceException
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ChangePropert)));
                 }
                 

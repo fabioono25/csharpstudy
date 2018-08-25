@@ -540,6 +540,9 @@ namespace CSharpStudy
                 //structs
                 //StructSample.ExecuteExample();
 
+                //interfaces
+                //InterfaceExample.ExecuteExample();
+
                 //events
                 //EventExample.ExecuteExample();
                 //EventExample2.ExecuteExample();
@@ -554,6 +557,26 @@ namespace CSharpStudy
                 // prop2.ChangePropert = "ddddddddddddd";
                 // Console.WriteLine(prop2.FirstName);
 
+                //delegates
+                //DelegateExample.ExecuteExample();
+
+                //expressions: is a sequence of one or more operands and zero or more operators that can be evaluated to a single value, object, method, or namespace
+                //((x < 10) && ( x > 5)) || ((x > 20) && (x < 25));
+                //System.Convert.ToInt32("35");  
+
+                //statements: the action that a program takes (assign, declaration)
+
+                //yield: A type of statement
+                //attributes: Attributes add metadata to your program
+                //YieldExample.ExecuteExample();
+
+                //literals: constants refer to fixed values that the program may not alter during its execution - fixed values
+                //ex: \n \t floating-point: 3.14159 string: @"asdasd" const
+
+            #endregion
+
+            #region C# 2.0
+                   
             #endregion
 
             #region C# 7.0
@@ -612,6 +635,18 @@ namespace CSharpStudy
 
             #endregion
         }
+
+
+    public static System.Collections.Generic.IEnumerable<int> Power(int number, int exponent)
+    {
+        int result = 1;
+
+        for (int i = 0; i < exponent; i++)
+        {
+            result = result * number;
+            yield return result;
+        }
+    }
 
         #region C# Advanced
         
