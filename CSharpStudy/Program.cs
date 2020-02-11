@@ -640,6 +640,10 @@ namespace CSharpStudy
             //
 
             #endregion
+
+            #region Best Practices for Developers
+
+            #endregion
         }
 
 
