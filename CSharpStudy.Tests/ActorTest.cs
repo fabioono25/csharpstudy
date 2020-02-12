@@ -33,5 +33,56 @@ namespace CSharpStudy.Tests
             //assert
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        public void TestBookActor()
+        {
+            //arrange
+            var details = "Booking can change";
+            
+            var currentActor = new Actor("John");
+
+            var expected = "Actor John is booked. Details: " + details;
+
+            //act
+            var result = currentActor.BookActor();
+
+            //assert
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestBookActorWithParameter()
+        {
+            //arrange
+            var details = "Booking can change";
+
+            var currentActor = new Actor("John");
+
+            var expected = "Actor John is booked on " + DateTime.Today.ToShortDateString() + ". Details: " + details;
+
+            //act
+            var result = currentActor.BookActor(DateTime.Today.ToShortDateString());
+
+            //assert
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestFormatingOnSetterForBookActor()
+        {
+            //arrange
+            var details = "Booking can change";
+
+            var currentActor = new Actor("John");
+
+            var expected = "Actor John is booked on " + DateTime.Today.ToShortDateString() + ". Details: " + details;
+
+            //act
+            var result = currentActor.BookActor(DateTime.Today.ToShortDateString());
+
+            //assert
+            Assert.Equal(expected, result);
+        }
     }
 }
