@@ -57,7 +57,7 @@ namespace CSharpStudy.Tests
             //arrange
             var details = "Booking can change";
 
-            var currentActor = new Actor("John");
+            var currentActor = new Actor("John") { ActorAge = 22 };
 
             var expected = "Actor John is booked on " + DateTime.Today.ToShortDateString() + ". Details: " + details;
 
@@ -83,6 +83,55 @@ namespace CSharpStudy.Tests
 
             //assert
             Assert.Equal(expected, result);
+        }
+
+
+        [Fact]
+        public void TestGetAgency() //object needed once
+        {
+            //arrange
+            var currentActor = new Actor();
+            var expected = "Prestige Talent";
+
+            //act
+            var result = currentActor.GetAgency();
+
+            //assert
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestGetAgencyByProp() //object needed always
+        {
+            //arrange
+            var currentActor = new Actor();
+            var expected = "Prestige Talent";
+
+            //act
+            var result = currentActor.GetAgencyByProp();
+
+            //assert
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestGetAgencySometimes() //object needed sometimes - lazy loading
+        {
+            //arrange
+            var currentActor = new Actor();
+            var expected = "Prestige Talent";
+
+            //act
+            var result = currentActor.GetAgencyByProp2();
+
+            //assert
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void TestOpenFile()
+        {
+
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace CSharpStudy.BestPractices
@@ -9,6 +10,7 @@ namespace CSharpStudy.BestPractices
         public Actor()
         {
             Console.WriteLine("An Actor is born!");
+            this.CurrentAgency = new Agency();
         }
 
         public Actor(string actorName): this() //force the execution of default constructor
@@ -23,13 +25,35 @@ namespace CSharpStudy.BestPractices
         {
             get { return actorName; }
             set {
-                var formattedName = value?.Trim();
+                var formattedName = value?.Trim(); //checking for null... if YES, it'll not call Trim() method (null conditional operator)
                 actorName = formattedName; 
             }
         }
 
         public int ActorAge { get; set; }
         public string ActorDescription { get; set; } = "Regular Actor";
+
+        private Agency currentAgency;
+
+        public Agency CurrentAgency
+        {
+            get { return currentAgency; }
+            set { currentAgency = value; }
+        }
+
+        public Agency CurrentAgency2
+        {
+            get { 
+
+                if (currentAgency == null)
+                {
+                    currentAgency = new Agency();
+                }
+
+                return currentAgency; 
+            }
+            set { currentAgency = value; }
+        }
 
         public string GetOccupation()
         {
@@ -65,6 +89,38 @@ namespace CSharpStudy.BestPractices
                 return theActor + " on " + theDate + ". Details: " + details;
 
             return  theActor + " on . Details: " + details;
+        }
+
+        public string GetAgency()
+        {
+            var currentAgency = new Agency();
+
+            return currentAgency.Name;
+        }
+
+        public string GetAgencyByProp()
+        {
+            return CurrentAgency.Name;
+        }
+
+        public string GetAgencyByProp2()
+        {
+            return CurrentAgency2.Name;
+        }
+
+        public static void OpenFile()
+        {
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "\\test.txt");
+
+            using (var fs1 = new FileStream(path, FileMode.Open))
+            {
+                //do something
+            }
+            
+            using (var fs2 = new FileStream(path, FileMode.Open))
+            {
+                //do something
+            }
         }
     }
 }
