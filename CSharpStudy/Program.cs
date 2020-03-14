@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpStudy.Polymorphism.Runtime;
+using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
@@ -699,6 +700,10 @@ namespace CSharpStudy
 
             #region Best Practices for Developers
 
+            #endregion
+
+            #region Others
+            RuntimePolymorphismExample.Execute();
             #endregion
         }
 
