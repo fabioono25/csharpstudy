@@ -20,6 +20,25 @@ namespace CSharpStudy
             // byte b = 2;
 
             //overflowing
+            //byte number = byte.MaxValue;
+            ////number = number++;
+            //number = ++number; //0
+            //number = ++number; //1
+            //Console.WriteLine(number); //1
+
+            //byte number = 255;
+
+            //number += 2;
+
+            //Console.WriteLine(number);
+
+            //checked
+            //{
+            //    //number = number + 1; //exception
+            //}
+
+
+            //overflowing
             // try
             // {
             //     unchecked {
@@ -38,6 +57,15 @@ namespace CSharpStudy
 
             //Console.WriteLine()            
 
+            //scope:
+            //{
+            //    byte a = 1;
+            //    {
+            //        byte b = 2;
+            //    }
+            //}
+            //Console.WriteLine(a); //not accessible in tis context
+
             // var number = 2;
             // var letterA = 'A';
             // var totalPrice = 12.02;
@@ -54,9 +82,22 @@ namespace CSharpStudy
             // int i = 1;
             // byte b = (byte) i;
 
+            //short s = short.MaxValue;
+            //byte b = (byte)s; //255
+
+            //float f = 1.0f;
+            //int i = (int)f; //1
+
             // string x = "1";
             // int i = Convert.ToInt32(x);
             // int j = int.Parse(x);
+
+            //non-compatible types
+            //string x = "1";
+            //int i = Convert.ToInt32(x);
+            //int z = int.Parse(x);
+
+
 
             // string str1="9009";
             // string str2=null;
@@ -89,6 +130,13 @@ namespace CSharpStudy
 
             #region Section 4 - Non-Primitive Types
 
+            //var x = new int[3] { 1, 2, 3 };
+
+            //string x = "abc";
+            //string z = x;
+            //z = "cde";
+            //Console.WriteLine($"x: {x} - z: {z}");
+
             // var john = new Person();
             // john.FirstName = "John";
             // john.LastName = "Smith";
@@ -102,15 +150,19 @@ namespace CSharpStudy
             // System.Console.WriteLine(string.Join(",", numbers));
 
             //var x = "asdasdasd";
-            // System.Console.WriteLine((int)ShippingMethod.Express);
+            //Console.WriteLine(ShippingMethod.Express); //Express
 
-            // var methodId = 3;
-            // System.Console.WriteLine((ShippingMethod)methodId);
+            //System.Console.WriteLine((int)ShippingMethod.Express); //3
 
-            // System.Console.WriteLine(ShippingMethod.Express.ToString());
+            //var methodId = 3;
+            //System.Console.WriteLine((ShippingMethod)methodId); //Express
 
-            // var methodName = "Express";
-            // var shipping = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+            //System.Console.WriteLine(ShippingMethod.Express.ToString()); //Express
+
+            //var methodName = "Express";
+            //var shipping = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName); 
+
+            //Console.WriteLine(shipping); //Express
 
             //Reference Types and Value Types
             // var a = 10;
@@ -124,27 +176,39 @@ namespace CSharpStudy
             // System.Console.WriteLine(arr[2]);
             // System.Console.WriteLine(arr2[2]);
 
+            // byte number = byte.MaxValue;
+
+            // number = number++;
+            // number = number++;
+            // number = ++number;
+            // number = ++number;
+
+            // Console.WriteLine(number);
+
+            //Console.WriteLine(TaxCalculator.Calculate());
+
             #endregion
 
             #region Section 5 - Control Flow
 
-            // var role = "as";
-            // switch (role){
-            //     case "a":
-            //     case "b":
-            //         System.Console.WriteLine("as");
-            //         break;
-            //     default:
-            //         System.Console.WriteLine("Default");
-            //         break;
-            // }
+            //var role = "as";
+            //switch (role)
+            //{
+            //    case "a":
+            //    case "b":
+            //        System.Console.WriteLine("as");
+            //        break;
+            //    default:
+            //        System.Console.WriteLine("Default");
+            //        break;
+            //}
 
             // System.Console.WriteLine("type your name: ");
             // var input = Console.ReadLine();
             // System.Console.WriteLine(input);
 
-            // var random = new Random();
-            // random.Next(-1,2);
+            //var random = new Random();
+            //random.Next(-1,2);
 
             // System.Console.WriteLine((int)'a');
             // System.Console.WriteLine((char)100);
@@ -780,5 +844,12 @@ namespace CSharpStudy
         }
     }
 
+    public class TaxCalculator
+    {
+        public static float Calculate()
+        {
+            return 1f;
+        }
+    }
     #endregion
 }
