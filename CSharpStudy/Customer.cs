@@ -32,13 +32,14 @@ namespace CSharpStudy
             // Orders = new List<Order>();
         }
 
+        //calling the previous constructor
         public Customer(int id)
             : this()
         {
             this.Id = id;
         }
 
-        public Customer(int id, string name)
+        public Customer(int id, string name) //redundant
             : this(id)
         {
             this.Name = name;
@@ -57,6 +58,17 @@ namespace CSharpStudy
         protected int CalculateRating(bool CalculateRating)
         {
             return 0;
+        }
+
+    }
+
+    public class CustomizedCustom: Customer
+    {
+        //calling the base constructor
+        public CustomizedCustom()
+            :base()
+        {
+
         }
     }
     #endregion

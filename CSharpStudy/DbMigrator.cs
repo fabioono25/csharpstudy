@@ -1,8 +1,8 @@
 namespace CSharpStudy
 {
+    //working with composition
     public class DbMigrator
     {
-
         private readonly Logger _logger;
         public DbMigrator(Logger logger)
         {

@@ -12,6 +12,7 @@ namespace CSharpStudy
             _dictionary = new Dictionary<string, string>();
         }
 
+        //working with indexers
         public string this[string key]
         {
             get

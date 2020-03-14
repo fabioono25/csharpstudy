@@ -338,9 +338,9 @@ namespace CSharpStudy
             #region Section 2 - Classes
             //var p = Person2.Parse("john");
 
-            // var customer = new Customer(1);
-            // Console.WriteLine(customer.Id);
-            // Console.WriteLine(customer.Name);
+            var customer = new Customer(1);
+            //Console.WriteLine(customer.Id);
+            //Console.WriteLine(customer.Name);
 
             // var order = new Order();
             // customer.Orders.Add(order);
@@ -348,7 +348,7 @@ namespace CSharpStudy
             // point.Move(new Point(40,20));
             // System.Console.WriteLine(point.X);
 
-            // var calculator = new Calculator();
+            //var calculator = new Calculator();
             // System.Console.WriteLine(calculator.Add(1,2,3));
             // System.Console.WriteLine(calculator.Add(new int[]{1,23,4,5}));
 
@@ -792,6 +792,7 @@ namespace CSharpStudy
     }
     public class Calculator
     {
+        //adding more than one parameter
         public int Add(params int[] numbers)
         {
 
