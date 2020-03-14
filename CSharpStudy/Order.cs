@@ -1,8 +1,9 @@
 namespace CSharpStudy
 {
     #region C# Intermediate
-    public class Order {
-    
-}
-#endregion    
+    public class Order
+    {
+
+    }
+    #endregion
 }

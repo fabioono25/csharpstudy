@@ -13,8 +13,10 @@ namespace CSharpStudy.CSharp1
         }
     }
 
-    public class StructSample{
-        public static void ExecuteExample(){
+    public class StructSample
+    {
+        public static void ExecuteExample()
+        {
 
             //initialize
             CoOrds coords1 = new CoOrds();
@@ -29,7 +31,7 @@ namespace CSharpStudy.CSharp1
 
             Console.WriteLine($"Coords1 -> X: {coords1.x} - Y: {coords1.y}");
             Console.WriteLine($"Coords2 -> X: {coords2.x} - Y: {coords2.y}");
-                        
+
             // Coords1 -> X: 0 - Y: 0
             // Coords2 -> X: 10 - Y: 5
             // Coords1 -> X: 10 - Y: 5

@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 
 namespace CSharpStudy.CSharp1
 {
@@ -8,13 +7,15 @@ namespace CSharpStudy.CSharp1
     {
         event MyDel MyEvent;
 
-        public EventExample(){
+        public EventExample()
+        {
             this.MyEvent += new MyDel(this.WelcomeUser);
         }
 
         private string WelcomeUser(string userName) => $"Welcome {userName}.";
 
-        public static void ExecuteExample(){
+        public static void ExecuteExample()
+        {
             var obj1 = new EventExample();
             var result = obj1.MyEvent("Tutorials Point");
             Console.WriteLine(result);

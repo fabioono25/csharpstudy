@@ -1,14 +1,15 @@
 namespace CSharpStudy
 {
     //composition
-    public class Logger{
-
-    public void Log(string message)
+    public class Logger
     {
-        System.Console.WriteLine(message);
-    }
 
-}
+        public void Log(string message)
+        {
+            System.Console.WriteLine(message);
+        }
+
+    }
 
 
 }

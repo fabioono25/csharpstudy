@@ -9,7 +9,8 @@ namespace CSharpStudy.CSharp7
         private const int POLULACAO_ESTIMADA_BRASIL = 204_500_500;
         private const double RENDA_PER_CAPITA_BRASIL_USD = 11_208.08;
 
-        public static void ExecuteExample(){
+        public static void ExecuteExample()
+        {
 
             Console.WriteLine($"Y Bin = {LETRA_Y_BIN}");
             Console.WriteLine($"Z Hex = {LETRA_Z_HEX}");

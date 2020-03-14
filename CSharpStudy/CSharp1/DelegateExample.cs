@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace CSharpStudy.CSharp1
 {
@@ -11,7 +10,8 @@ namespace CSharpStudy.CSharp1
         //creating a method for a delegate
         public static void DelegateMethod(string message) => Console.WriteLine(message);
 
-        public static void ExecuteExample(){
+        public static void ExecuteExample()
+        {
 
             //instantiate the delegate
             Del handler = DelegateMethod;

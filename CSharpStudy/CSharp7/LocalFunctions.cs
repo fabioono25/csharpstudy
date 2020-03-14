@@ -5,10 +5,12 @@ namespace CSharpStudy.CSharp7
 {
     public class LocalFunctions
     {
-        public static void ExecuteExample(){
-            
+        public static void ExecuteExample()
+        {
+
             //cannot use access modifiers in local functions
-            void ExibirHorarioAtual() {
+            void ExibirHorarioAtual()
+            {
                 Console.WriteLine($"Horário atual: {DateTime.Now.ToString("HH:mm:ss")}");
             }
 

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CSharpStudy.CSharp1
 {
@@ -44,7 +42,7 @@ namespace CSharpStudy.CSharp1
 
             Console.ReadKey();
         }
-        
+
         public struct Book
         {
             public decimal price;

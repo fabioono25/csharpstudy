@@ -4,8 +4,9 @@ namespace CSharpStudy.CSharp7
 {
     public class PatternMatching
     {
-        public static void ExecuteExample(){
-            
+        public static void ExecuteExample()
+        {
+
             var dolar = new CotacaoDolar();
             dolar.DataCotacao = new DateTime(2018, 4, 29);
             dolar.ValorComercial = 3.444;
@@ -18,7 +19,8 @@ namespace CSharpStudy.CSharp7
             ExibirInformacoesCotacao(euro);
         }
 
-        public static void ExibirInformacoesCotacao(Cotacao cotacao){
+        public static void ExibirInformacoesCotacao(Cotacao cotacao)
+        {
             double valorCotacao = 0;
 
             if (cotacao is CotacaoDolar dolar)
@@ -34,7 +36,8 @@ namespace CSharpStudy.CSharp7
         }
     }
 
-    public abstract class Cotacao{
+    public abstract class Cotacao
+    {
         public DateTime DataCotacao { get; set; }
         public virtual string SiglaMoeda { get; set; }
         public virtual string NomeMoeda { get; set; }
@@ -44,8 +47,8 @@ namespace CSharpStudy.CSharp7
     {
         public override string SiglaMoeda { get => "USD"; }
         public override string NomeMoeda { get => "Dólar Americano"; }
-        public double ValorComercial {get; set;}
-        public double ValorTurismo {get; set;}
+        public double ValorComercial { get; set; }
+        public double ValorTurismo { get; set; }
     }
 
     public class CotacaoEuro : Cotacao
@@ -53,7 +56,7 @@ namespace CSharpStudy.CSharp7
         public override string SiglaMoeda { get => "EUR"; }
         public override string NomeMoeda { get => "Euro"; }
 
-        public double ValorCotacao {get; set;}
+        public double ValorCotacao { get; set; }
     }
 
 }

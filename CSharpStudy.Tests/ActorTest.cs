@@ -39,7 +39,7 @@ namespace CSharpStudy.Tests
         {
             //arrange
             var details = "Booking can change";
-            
+
             var currentActor = new Actor("John");
 
             var expected = "Actor John is booked. Details: " + details;

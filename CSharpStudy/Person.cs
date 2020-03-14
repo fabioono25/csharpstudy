@@ -2,7 +2,8 @@ using System;
 
 namespace CSharpStudy
 {
-    public class Person{
+    public class Person
+    {
 
         private DateTime _birthdate;
 
@@ -10,7 +11,8 @@ namespace CSharpStudy
         {
         }
 
-        public void SetBirthDate(DateTime birthdate){
+        public void SetBirthDate(DateTime birthdate)
+        {
             _birthdate = birthdate;
         }
 
@@ -22,7 +24,8 @@ namespace CSharpStudy
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public void Introduce(){
+        public void Introduce()
+        {
             System.Console.WriteLine("my name is: " + FirstName + " " + LastName);
         }
     }

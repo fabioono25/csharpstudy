@@ -2,21 +2,26 @@ using System.Collections.Generic;
 
 namespace CSharpStudy
 {
-    public class HttpCookie{
-    
+    public class HttpCookie
+    {
+
         private readonly Dictionary<string, string> _dictionary;
 
-        public HttpCookie(){
+        public HttpCookie()
+        {
             _dictionary = new Dictionary<string, string>();
         }
 
-        public string this[string key]{
-            get{ 
+        public string this[string key]
+        {
+            get
+            {
                 return _dictionary[key];
             }
-            set{
+            set
+            {
                 _dictionary[key] = value;
-             }
+            }
         }
 
     }

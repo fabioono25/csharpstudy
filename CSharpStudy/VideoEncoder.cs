@@ -12,11 +12,13 @@ namespace CSharpStudy
     //     }
     // }
 
-    public class VideoEventArgs : EventArgs{
+    public class VideoEventArgs : EventArgs
+    {
         public Video Video { get; set; }
     }
 
-    public class VideoEncoder {
+    public class VideoEncoder
+    {
 
         //1 - define a delegate (signature of the method in the subscriber)
         //2 - define an event based on that delegate
@@ -29,7 +31,8 @@ namespace CSharpStudy
         //public event VideoEncondedEventHandler VideoEncoded;
         public event EventHandler<VideoEventArgs> VideoEncoded;
 
-        public void Encode(Video video){
+        public void Encode(Video video)
+        {
             System.Console.WriteLine("encoding video...");
             Thread.Sleep(3000);
 
@@ -37,11 +40,12 @@ namespace CSharpStudy
         }
 
         //to raise an event, we need a method protected, void, virtual, and with On - good practice
-        protected virtual void OnVideoEncoded(Video video){
+        protected virtual void OnVideoEncoded(Video video)
+        {
 
             if (VideoEncoded != null)
-                VideoEncoded(this, new VideoEventArgs() { Video = video});
-                //VideoEnconded(this, EventArgs.Empty);
+                VideoEncoded(this, new VideoEventArgs() { Video = video });
+            //VideoEnconded(this, EventArgs.Empty);
         }
     }
 

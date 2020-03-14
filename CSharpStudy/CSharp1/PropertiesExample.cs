@@ -9,15 +9,17 @@ namespace CSharpStudy.CSharp1
         public ICollection<string> points { get; } = new List<string>();
 
         //C# 7.3: fields are not persisted
-        [field:NonSerialized]
+        [field: NonSerialized]
         public int Id { get; set; }
 
         //
 
-        public string FullName { 
-            get {
+        public string FullName
+        {
+            get
+            {
                 return $"{FirstName} {LastName}";
-            } 
+            }
         }
 
         //specify with a storage
@@ -28,31 +30,35 @@ namespace CSharpStudy.CSharp1
 
         public string LastName
         {
-            get { return lastName;}
-            set { lastName = value;}
+            get { return lastName; }
+            set { lastName = value; }
         }
-        
+
         //basic implementation
         public string FirstName { get; } = "default"; //initial value empty string than null
 
         //expression-bodie members
-        public string LastName2{
+        public string LastName2
+        {
             get => lastName;
             set => lastName = (!string.IsNullOrEmpty(value)) ? value : throw new ArgumentException("last name must not be blank");
         }
 
-        public string ChangePropert { 
+        public string ChangePropert
+        {
             get => lastName;
-            set {
+            set
+            {
                 if (string.IsNullOrEmpty(value))
                     throw new ArgumentException("value not found");
-                
-                if (value != lastName){
+
+                if (value != lastName)
+                {
                     //if there are no subscribers to the PropertyChanged event, the code to raise the event doesn't execute
                     //i't woult throw a NullReferenceException
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ChangePropert)));
                 }
-                
+
                 lastName = value;
             }
         }

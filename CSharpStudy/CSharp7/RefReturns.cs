@@ -6,13 +6,14 @@ namespace CSharpStudy.CSharp7
     {
         private int _contador = 0;
 
-        public void Incrementar() => _contador++;        
+        public void Incrementar() => _contador++;
 
         public int ObterValorContador() => _contador;
 
         public ref int ObterContador() => ref _contador;
 
-        public static void ExecuteExample() {
+        public static void ExecuteExample()
+        {
             var refRet = new RefReturns();
             refRet.Incrementar();
             refRet.Incrementar();

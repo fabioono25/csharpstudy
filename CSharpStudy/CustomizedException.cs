@@ -3,10 +3,11 @@ using System;
 
 namespace CSharpStudy
 {
-    public class CustomizedException : Exception{
+    public class CustomizedException : Exception
+    {
 
         public CustomizedException(string message, Exception innerException)
-            :base(message, innerException)
+            : base(message, innerException)
         {
         }
 

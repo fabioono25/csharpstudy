@@ -2,17 +2,20 @@ namespace CSharpStudy.Null
 {
     public class DbContext
     {
-        public Employee Find(int id){
+        public Employee Find(int id)
+        {
             return null;
         }
     }
 
-    public class Employee{
+    public class Employee
+    {
         public int Id { get; set; }
         public string Name { get; set; }
     }
 
-    public interface IEmployeeRepository{
+    public interface IEmployeeRepository
+    {
         //Employee GetById(int id);
         Option<Employee> GetById(int id);
     }
@@ -30,7 +33,8 @@ namespace CSharpStudy.Null
         }
     }
 
-    public struct Option<T>{
-        
+    public struct Option<T>
+    {
+
     }
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 /// <summary>
 /// Methods may return an instance of this value type when it's likely that the result of their operations will be available 
 /// synchronously and when the method is 
@@ -41,7 +38,7 @@ namespace CSharpStudy.CSharp7
 
         private bool cache = false;
         private int cacheResult;
-        
+
         public ValueTask<int> CachedFunc()
         {
             return (cache) ? new ValueTask<int>(cacheResult) : new ValueTask<int>(LoadCacheAsync());

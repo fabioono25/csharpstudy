@@ -19,10 +19,10 @@ namespace CSharpStudy.DefensiveCoding.Methods
         private InventoryRepository inventoryRepository { get; set; }
         private EmailLibrary emailLibrary { get; set; }
 
-        public void PlaceOrder(Customer customer, 
+        public void PlaceOrder(Customer customer,
                                 Order order,
                                 Payment payment,
-                                bool emailReceipt, 
+                                bool emailReceipt,
                                 bool allowSplitOrders)
         {
             var customerRepository = new CustomerRepository();

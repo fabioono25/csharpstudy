@@ -4,7 +4,8 @@ namespace CSharpStudy.CSharp1
 {
     public class InterfaceExample
     {
-        public static void ExecuteExample(){
+        public static void ExecuteExample()
+        {
             var car1 = new CarExample();
             car1.Make = "Ford";
 
@@ -21,7 +22,8 @@ namespace CSharpStudy.CSharp1
     //can't contain constants, fields, operators, instance constructors, finalizers, types
     //no access modifiers
     //to implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.
-    interface IEquatable<T>{
+    interface IEquatable<T>
+    {
         bool Equals(T obj);
     }
 
@@ -31,9 +33,9 @@ namespace CSharpStudy.CSharp1
         public string Model { get; set; }
         public string Year { get; set; }
 
-        public bool Equals(CarExample car) => 
+        public bool Equals(CarExample car) =>
                     this.Make == car.Make &&
                     this.Model == car.Model &&
                     this.Year == car.Year;
     }
-}    
+}

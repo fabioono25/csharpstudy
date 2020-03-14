@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Mosh_Udemy\3-Advanced\" />
+    <Folder Include="Mosh_Udemy\2-Intermediate\" />
+    <Folder Include="Mosh_Udemy\1-Basics\" />
+  </ItemGroup>
+
 </Project>

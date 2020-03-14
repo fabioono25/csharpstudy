@@ -4,8 +4,9 @@ namespace CSharpStudy.CSharp7
 {
     public class Tuplas
     {
-        public static void ExecuteExample(){
-            (int, int, int, string) parvalores = (1,2,3,"item 1");
+        public static void ExecuteExample()
+        {
+            (int, int, int, string) parvalores = (1, 2, 3, "item 1");
             Console.WriteLine(parvalores.Item1);
             Console.WriteLine(parvalores.Item4);
 
@@ -22,10 +23,11 @@ namespace CSharpStudy.CSharp7
             (double multiplicado, double elevado, double vinte) = CalcularValores(10);
             Console.WriteLine($"Valor 2 x 2 = {multiplicado}");
             Console.WriteLine($"Valor 2 elevado a 2 = {elevado}");
-            Console.WriteLine($"Valor 2 mais 20 = {vinte}");                
+            Console.WriteLine($"Valor 2 mais 20 = {vinte}");
         }
 
-        public static (double vezesDois, double elevadoDois, double maisVinte) CalcularValores(int valor){
+        public static (double vezesDois, double elevadoDois, double maisVinte) CalcularValores(int valor)
+        {
             return (valor * 2, System.Math.Pow(valor, 2), valor + 20);
         }
     }

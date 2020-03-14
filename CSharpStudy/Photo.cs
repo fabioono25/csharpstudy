@@ -2,21 +2,26 @@ using System;
 
 namespace CSharpStudy
 {
-    public class Photo{
-        public static Photo Load(string path){
+    public class Photo
+    {
+        public static Photo Load(string path)
+        {
             return new Photo();
         }
 
-        public void Save(){
+        public void Save()
+        {
 
         }
     }
 
-    public class PhotoProcessor{
+    public class PhotoProcessor
+    {
 
         public delegate void PhotoFilterHandler(Photo photo);
         //public void Process(string path, PhotoFilterHandler filterHandler){
-        public void Process(string path, Action<Photo> filterHandler){            
+        public void Process(string path, Action<Photo> filterHandler)
+        {
             //System.Action<>
             var photo = Photo.Load(path);
 
@@ -35,11 +40,13 @@ namespace CSharpStudy
         {
         }
 
-        public void Resize(Photo photo){
+        public void Resize(Photo photo)
+        {
             System.Console.WriteLine("resize");
         }
 
-        public void ApplyContrast(Photo photo){
+        public void ApplyContrast(Photo photo)
+        {
             System.Console.WriteLine("contrast");
         }
     }

@@ -33,18 +33,19 @@ namespace CSharpStudy
         }
 
         public Customer(int id)
-            :this()
+            : this()
         {
             this.Id = id;
         }
 
         public Customer(int id, string name)
-            :this(id)
+            : this(id)
         {
             this.Name = name;
         }
 
-        public void Promote(){
+        public void Promote()
+        {
             var rating = CalculateRating(CalculateRating: true);
 
             if (rating == 0)
@@ -53,9 +54,10 @@ namespace CSharpStudy
                 System.Console.WriteLine("promoted to level 2");
         }
 
-        protected int CalculateRating(bool CalculateRating){
+        protected int CalculateRating(bool CalculateRating)
+        {
             return 0;
         }
-    }  
-    #endregion    
+    }
+    #endregion
 }

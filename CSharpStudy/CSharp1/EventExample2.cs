@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 
 namespace CSharpStudy.CSharp1
 {
@@ -9,7 +8,8 @@ namespace CSharpStudy.CSharp1
         public delegate void EventHandler();
         //cria uma instancia de um evento que pode armazenar metodos na sua lista de invocacao
         public static event EventHandler OnCalcular;
-        public static void ExecuteExample(){
+        public static void ExecuteExample()
+        {
 
             //manipuladores de eventos
             OnCalcular += new EventHandler(Somar);

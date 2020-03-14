@@ -1,15 +1,7 @@
 ﻿using System;
-using CSharpStudy.Math;
-using System.Linq;
-using System.Text;
 using System.IO;
-using System.Collections;
 using System.Net;
 using System.Threading.Tasks;
-using CSharpStudy.SearchingTechniques;
-using CSharpStudy.CSharp7;
-using CSharpStudy.CSharp1;
-//using CSharpStudy.Extensions;
 
 namespace CSharpStudy
 {
@@ -648,40 +640,44 @@ namespace CSharpStudy
 
 
         public static System.Collections.Generic.IEnumerable<int> Power(int number, int exponent)
-    {
-        int result = 1;
-
-        for (int i = 0; i < exponent; i++)
         {
-            result = result * number;
-            yield return result;
+            int result = 1;
+
+            for (int i = 0; i < exponent; i++)
+            {
+                result = result * number;
+                yield return result;
+            }
         }
-    }
 
         #region C# Advanced
-        
-        public static async Task<string> GetHtmlAsync(string url){
+
+        public static async Task<string> GetHtmlAsync(string url)
+        {
             var webClient = new WebClient();
 
             return await webClient.DownloadStringTaskAsync(url);
         }
-        public static string GetHtml(string url){
+        public static string GetHtml(string url)
+        {
             var webClient = new WebClient();
 
             return webClient.DownloadString(url);
         }
-        
-        public static async Task DownloadHtmlAsync(string url){
+
+        public static async Task DownloadHtmlAsync(string url)
+        {
             var webClient = new WebClient();
             var html = await webClient.DownloadStringTaskAsync(url);
 
             using (var streamWriter = new StreamWriter(@"result.html"))
             {
                 await streamWriter.WriteAsync(html);
-            }            
+            }
         }
 
-        public static void DownloadHtml(string url){
+        public static void DownloadHtml(string url)
+        {
             var webClient = new WebClient();
             var html = webClient.DownloadString(url);
 
@@ -691,31 +687,37 @@ namespace CSharpStudy
             }
         }
 
-        static bool IsCheaperThan10Dollars(Book book){
+        static bool IsCheaperThan10Dollars(Book book)
+        {
             return book.Price < 10;
         }
 
         static int Square(int number) => number * number;
 
-        static void RemoveRedEye(Photo photo){
+        static void RemoveRedEye(Photo photo)
+        {
             System.Console.WriteLine("remove red eye");
         }
 
-        public void Add(Book book){
+        public void Add(Book book)
+        {
 
         }
 
-        public Book this[int index]{
+        public Book this[int index]
+        {
             get { throw new NotImplementedException(); }
         }
 
         #endregion
     }
 
-#region C# Intermediate
+    #region C# Intermediate
 
-    public class GoldCustomer : Customer{
-        public void OfferVoucher(){
+    public class GoldCustomer : Customer
+    {
+        public void OfferVoucher()
+        {
             //this.
         }
     }
@@ -740,34 +742,40 @@ namespace CSharpStudy
         }
     }
 
-#endregion
-#region C# Advanced
+    #endregion
+    #region C# Advanced
 
-    
 
-    public class ObjectList{
-        public void Add(object value){}
 
-        public object this[int index]{
+    public class ObjectList
+    {
+        public void Add(object value) { }
+
+        public object this[int index]
+        {
             get { throw new NotImplementedException(); }
         }
     }
 
-    public class GenericList<T>{
+    public class GenericList<T>
+    {
 
-        public void Add(T value){
+        public void Add(T value)
+        {
 
         }
 
-        public T this[int index]{
+        public T this[int index]
+        {
 
-            get {throw new NotImplementedException();}
+            get { throw new NotImplementedException(); }
         }
     }
 
     public class GenericDictionary<TKey, TValue>
     {
-        public void Add(TKey key, TValue value){
+        public void Add(TKey key, TValue value)
+        {
 
         }
     }

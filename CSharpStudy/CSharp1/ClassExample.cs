@@ -24,9 +24,11 @@ namespace CSharpStudy.CSharp1
         public override string ToString() => Name;
     }
 
-    public class TestPerson{
-        
-        public static void ExecuteExample(){
+    public class TestPerson
+    {
+
+        public static void ExecuteExample()
+        {
             //call the constructor that has no parameters
             var person1 = new ClassExamplePerson();
             Console.WriteLine(person1.Name);

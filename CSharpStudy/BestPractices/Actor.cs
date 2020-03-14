@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace CSharpStudy.BestPractices
 {
@@ -13,7 +11,7 @@ namespace CSharpStudy.BestPractices
             this.CurrentAgency = new Agency();
         }
 
-        public Actor(string actorName): this() //force the execution of default constructor
+        public Actor(string actorName) : this() //force the execution of default constructor
         {
             ActorName = actorName;
         }
@@ -24,9 +22,10 @@ namespace CSharpStudy.BestPractices
         public string ActorName
         {
             get { return actorName; }
-            set {
+            set
+            {
                 var formattedName = value?.Trim(); //checking for null... if YES, it'll not call Trim() method (null conditional operator)
-                actorName = formattedName; 
+                actorName = formattedName;
             }
         }
 
@@ -43,14 +42,15 @@ namespace CSharpStudy.BestPractices
 
         public Agency CurrentAgency2
         {
-            get { 
+            get
+            {
 
                 if (currentAgency == null)
                 {
                     currentAgency = new Agency();
                 }
 
-                return currentAgency; 
+                return currentAgency;
             }
             set { currentAgency = value; }
         }
@@ -88,7 +88,7 @@ namespace CSharpStudy.BestPractices
             if (!string.IsNullOrEmpty(theDate))
                 return theActor + " on " + theDate + ". Details: " + details;
 
-            return  theActor + " on . Details: " + details;
+            return theActor + " on . Details: " + details;
         }
 
         public string GetAgency()
@@ -116,7 +116,7 @@ namespace CSharpStudy.BestPractices
             {
                 //do something
             }
-            
+
             using (var fs2 = new FileStream(path, FileMode.Open))
             {
                 //do something
