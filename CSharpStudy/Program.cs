@@ -490,13 +490,13 @@ namespace CSharpStudy
 
             //videoEncoder.VideoEncoded += mailService.OnVideoEncoded; //subscription   
             //videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
-
+            
             //videoEncoder.Encode(video);
 
             //Extension Methods:
-            // var post = "this is a big string, that it is very long and we need ssss";
-            // var shortenedPost = post.Shorten(5);
-            // System.Console.WriteLine(shortenedPost);
+            //var post = "this is a big string, that it is very long and we need ssss";
+            //var shortenedPost = post.Shorten(5);
+            //System.Console.WriteLine(shortenedPost);
 
             //LINQ:
             //var books = new BookRepository().GetBooks();
