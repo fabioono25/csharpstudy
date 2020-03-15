@@ -454,15 +454,15 @@ namespace CSharpStudy
             // System.Console.WriteLine("HasValue? " + number.HasValue);
             // System.Console.WriteLine("Actual value: " + number.GetValueOrDefault());
 
-            //Delegates:
-            // var processor = new PhotoProcessor();
-            // var filters = new PhotoFilters();
-            // //PhotoProcessor.PhotoFilterHandler filterHandler = filters.Resize;
-            // Action<Photo> filterHandler = filters.Resize;
-            // filterHandler += filters.ApplyContrast;
-            // filterHandler += RemoveRedEye;
+            ////Delegates:
+            //var processor = new PhotoProcessor();
+            //var filters = new PhotoFilters();
+            ////PhotoProcessor.PhotoFilterHandler filterHandler = filters.Resize;
+            //Action<Photo> filterHandler = filters.Resize;
+            //filterHandler += filters.ApplyContrast;
+            //filterHandler += RemoveRedEye;
 
-            // processor.Process("photo.jpg", filterHandler);
+            //processor.Process("photo.jpg", filterHandler);
 
             //Lambda Expressions:
             // System.Console.WriteLine(Square(4));
