@@ -9,7 +9,6 @@ namespace CSharpStudy
     //where T : new()
     public class Utilities<T> where T : IComparable, new()
     {
-
         public int Max(int a, int b)
         {
             return a > b ? a : b;
@@ -27,14 +26,13 @@ namespace CSharpStudy
         }
     }
 
+    //class constraint
     public class DiscountCalculator<TProduct> where TProduct : Product
     {
-
         public decimal CalculateDiscount(TProduct product)
         {
             return product.Price;
         }
-
     }
 
     public class Product
@@ -43,9 +41,9 @@ namespace CSharpStudy
         public decimal Price { get; set; }
     }
 
+    //value type constraint
     public class Nullable<T> where T : struct
     {
-
         private object _value;
 
         public Nullable()
@@ -65,10 +63,9 @@ namespace CSharpStudy
         public T GetValueOrDefault()
         {
             if (HasValue)
-                return (T)_value; //boxing
+                return (T)_value; //unboxing
 
-            return default(T);
+            return default(T); //provides a default value for a type
         }
-
     }
 }

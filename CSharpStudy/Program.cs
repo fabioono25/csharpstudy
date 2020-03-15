@@ -1,4 +1,5 @@
-﻿using CSharpStudy.Polymorphism.Runtime;
+﻿using CSharpStudy.Generics;
+using CSharpStudy.Polymorphism.Runtime;
 using System;
 using System.IO;
 using System.Net;
@@ -440,8 +441,8 @@ namespace CSharpStudy
             #region C# Advanced
 
             //Generics:
-            // var numbers = new GenericList<int>();
-            // numbers.Add(10);
+            //var numbers = new GenericList<int>();
+            //numbers.Add(10);
 
             // var books = new GenericList<Book>();
             // books.Add(new Book());
@@ -815,41 +816,7 @@ namespace CSharpStudy
     #endregion
     #region C# Advanced
 
-
-
-    public class ObjectList
-    {
-        public void Add(object value) { }
-
-        public object this[int index]
-        {
-            get { throw new NotImplementedException(); }
-        }
-    }
-
-    public class GenericList<T>
-    {
-
-        public void Add(T value)
-        {
-
-        }
-
-        public T this[int index]
-        {
-
-            get { throw new NotImplementedException(); }
-        }
-    }
-
-    public class GenericDictionary<TKey, TValue>
-    {
-        public void Add(TKey key, TValue value)
-        {
-
-        }
-    }
-
+    
     public class TaxCalculator
     {
         public static float Calculate()
