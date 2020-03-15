@@ -19,14 +19,12 @@ namespace CSharpStudy
 
     public class VideoEncoder
     {
-
         //1 - define a delegate (signature of the method in the subscriber)
         //2 - define an event based on that delegate
         //3 - raise the event
 
         //public delegate void VideoEncondedEventHandler(object source, EventArgs e);
         //public delegate void VideoEncondedEventHandler(object source, VideoEventArgs e);
-
         //EventHandler or EventHandler<TEventArgs>
         //public event VideoEncondedEventHandler VideoEncoded;
         public event EventHandler<VideoEventArgs> VideoEncoded;

@@ -483,15 +483,15 @@ namespace CSharpStudy
             // }
 
             //Events and Delegates:
-            // var video = new Video() { Title = "Video 1"};
-            // var videoEncoder = new VideoEncoder(); //publisher
-            // var mailService = new MailService(); //subscriber
-            // var messageService = new MessageService(); //subscriber
+            //var video = new Video() { Title = "Video 1" };
+            //var videoEncoder = new VideoEncoder(); //publisher
+            //var mailService = new MailService(); //subscriber
+            //var messageService = new MessageService(); //subscriber
 
-            // videoEncoder.VideoEncoded += mailService.OnVideoEncoded; //subscription   
-            // videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
+            //videoEncoder.VideoEncoded += mailService.OnVideoEncoded; //subscription   
+            //videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
 
-            // videoEncoder.Encode(video);
+            //videoEncoder.Encode(video);
 
             //Extension Methods:
             // var post = "this is a big string, that it is very long and we need ssss";
