@@ -10,7 +10,6 @@ namespace CSharpStudy.CSharp1
         public static event EventHandler OnCalcular;
         public static void ExecuteExample()
         {
-
             //manipuladores de eventos
             OnCalcular += new EventHandler(Somar);
             OnCalcular += new EventHandler(Subtrair);

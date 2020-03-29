@@ -2,8 +2,28 @@ using System;
 
 namespace CSharpStudy.CSharp1
 {
+    /// <summary>
+    /// Classes are the blueprint for the creation and use of objects
+    /// https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes
+    /// </summary>
     public class ClassExamplePerson
     {
+        //definition of a private fields
+        private string name;
+
+        //definition of property to expose the field
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+        
         //constructor that takes no arguments
         public ClassExamplePerson()
         {
@@ -16,12 +36,11 @@ namespace CSharpStudy.CSharp1
             Name = name;
         }
 
-        //auto-implemented readonly property (C# 3.0)
-        public string Name { get; }
-        public string SurName { get; set; }
-
-        //method that overrides the base class (System.Object) implementation
-        public override string ToString() => Name;
+        //method that returns a boolean value
+        public bool HasName()
+        {
+            return !String.IsNullOrEmpty(this.Name);
+        }
     }
 
     public class TestPerson
@@ -38,14 +57,6 @@ namespace CSharpStudy.CSharp1
             Console.WriteLine(person2.Name);
             //string representation of the person2 instance
             Console.WriteLine(person2);
-
-            //declaring a new object, using the same address inserted before on the heap 
-            var person3 = person2;
-            person3.SurName = "person 3 modified name";
-
-            Console.WriteLine($"Surname of person 2:{person2.SurName}");
-
         }
-
     }
 }

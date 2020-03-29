@@ -1,4 +1,5 @@
-﻿using CSharpStudy.Generics;
+﻿using CSharpStudy.CSharp1;
+using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
 using System.IO;
@@ -11,6 +12,63 @@ namespace CSharpStudy
     {
         static void Main(string[] args)
         {
+            #region C# 1.0
+
+            //value types, reference types, boxing vs unboxing
+            //ValueTypesExample.ExecuteExample();
+            //ReferenceTypesExample.ExecuteExample();
+            //BoxingUnboxing.ExecuteExample();
+
+            //classes
+            //TestPerson.ExecuteExample();
+
+            //interfaces
+            //InterfaceExample.ExecuteExample();
+
+            //events
+            //EventExample.ExecuteExample();
+            //EventExample2.ExecuteExample();
+
+            //delegates
+            //DelegateExample.ExecuteExample();
+
+            //atributes
+
+
+            //structs
+            //StructSample.ExecuteExample();
+
+            //Properties
+            // var prop = new PropertiesExample();
+            // Console.WriteLine(prop.FirstName);
+
+            // var prop2 = new PropertiesExample("asdasdasd");
+            // Console.WriteLine(prop2.FirstName);
+
+            // prop2.ChangePropert = "ddddddddddddd";
+            // Console.WriteLine(prop2.FirstName);
+
+            //expressions: is a sequence of one or more operands and zero or more operators that can be evaluated to a single value, object, method, or namespace
+            //((x < 10) && ( x > 5)) || ((x > 20) && (x < 25));
+            //System.Convert.ToInt32("35");  
+
+            //statements: the action that a program takes (assign, declaration)
+
+            //yield: A type of statement
+            //attributes: Attributes add metadata to your program
+            //YieldExample.ExecuteExample();
+
+            //literals: constants refer to fixed values that the program may not alter during its execution - fixed values
+            //ex: \n \t floating-point: 3.14159 string: @"asdasd" const
+
+            //value types:
+            //ValueTypesExample.ExecuteExample();
+
+            //reference types:
+            //ReferenceTypesExample.ExecuteExample();
+
+            #endregion
+
             #region C# Basic
             //Console.WriteLine("Hello World!");
 
@@ -490,7 +548,7 @@ namespace CSharpStudy
 
             //videoEncoder.VideoEncoded += mailService.OnVideoEncoded; //subscription   
             //videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
-            
+
             //videoEncoder.Encode(video);
 
             //Extension Methods:
@@ -546,10 +604,10 @@ namespace CSharpStudy
             // methodInfo.Invoke(null, null);
 
             //using dynamic
-            // dynamic obj2 = "mosh";
-            // obj2 = 1;
-            // System.Console.WriteLine(obj2);
-            //obj2.Optimize();
+            dynamic obj2 = "mosh";
+            obj2 = 1;
+            System.Console.WriteLine(obj2);
+            obj2.Optimize();
 
             // int i = 5;
             // dynamic d = i;
@@ -588,54 +646,6 @@ namespace CSharpStudy
 
             //Parallel
             //ParallelVsForEach.ExecuteExample();
-
-            #endregion
-
-            #region C# 1.0
-            //classes
-            //TestPerson.ExecuteExample();
-
-            //structs
-            //StructSample.ExecuteExample();
-
-            //interfaces
-            //InterfaceExample.ExecuteExample();
-
-            //events
-            //EventExample.ExecuteExample();
-            //EventExample2.ExecuteExample();
-
-            //Properties
-            // var prop = new PropertiesExample();
-            // Console.WriteLine(prop.FirstName);
-
-            // var prop2 = new PropertiesExample("asdasdasd");
-            // Console.WriteLine(prop2.FirstName);
-
-            // prop2.ChangePropert = "ddddddddddddd";
-            // Console.WriteLine(prop2.FirstName);
-
-            //delegates
-            //DelegateExample.ExecuteExample();
-
-            //expressions: is a sequence of one or more operands and zero or more operators that can be evaluated to a single value, object, method, or namespace
-            //((x < 10) && ( x > 5)) || ((x > 20) && (x < 25));
-            //System.Convert.ToInt32("35");  
-
-            //statements: the action that a program takes (assign, declaration)
-
-            //yield: A type of statement
-            //attributes: Attributes add metadata to your program
-            //YieldExample.ExecuteExample();
-
-            //literals: constants refer to fixed values that the program may not alter during its execution - fixed values
-            //ex: \n \t floating-point: 3.14159 string: @"asdasd" const
-
-            //value types:
-            //ValueTypesExample.ExecuteExample();
-
-            //reference types:
-            //ReferenceTypesExample.ExecuteExample();
 
             #endregion
 
