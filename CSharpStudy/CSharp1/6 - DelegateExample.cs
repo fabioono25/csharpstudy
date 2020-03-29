@@ -21,6 +21,8 @@ namespace CSharpStudy.CSharp1
 
         public static void ExecuteExample()
         {
+            Console.WriteLine("C# 1.0 - Delegate Example");
+
             //instantiate the delegate
             Del handler = DelegateMethod;
 

@@ -48,6 +48,8 @@ namespace CSharpStudy.CSharp1
 
         public static void ExecuteExample()
         {
+            Console.WriteLine("C# 1.0 - Class Examples");
+
             //call the constructor that has no parameters
             var person1 = new ClassExamplePerson();
             Console.WriteLine(person1.Name);

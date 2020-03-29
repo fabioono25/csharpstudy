@@ -17,6 +17,8 @@ namespace CSharpStudy.CSharp1
 
         public static void ExecuteExample()
         {
+            Console.WriteLine("C# 1.0 - Reference Types Examples");
+
             Person person1 = new Person() { Name = "John" };
             Person person2 = person1;
             person2.Name = "Joaquim";

@@ -17,6 +17,8 @@ namespace CSharpStudy.CSharp1
 
         public static void ExecuteExample()
         {
+            Console.WriteLine("C# 1.0 - Value Types Examples");
+
             //you cannot use it before initilize it
             //int myInt;
             //Console.WriteLine(myInt);

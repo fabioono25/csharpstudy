@@ -25,6 +25,8 @@ namespace CSharpStudy.CSharp1
         }
         public static void ExecuteExample()
         {
+            Console.WriteLine("C# 1.0 - Event Handler Example");
+
             var obj1 = new EventExample();
             var result = obj1.MyEvent("Tutorials Point");
             Console.WriteLine(result);

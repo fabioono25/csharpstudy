@@ -15,12 +15,12 @@ namespace CSharpStudy
             #region C# 1.0
 
             //value types, reference types, boxing vs unboxing
-            //ValueTypesExample.ExecuteExample();
-            //ReferenceTypesExample.ExecuteExample();
-            //BoxingUnboxing.ExecuteExample();
+            ValueTypesExample.ExecuteExample();
+            ReferenceTypesExample.ExecuteExample();
+            BoxingUnboxing.ExecuteExample();
 
             //classes
-            //TestPerson.ExecuteExample();
+            TestPerson.ExecuteExample();
 
             //interfaces
             //InterfaceExample.ExecuteExample();
@@ -716,7 +716,7 @@ namespace CSharpStudy
             #endregion
         }
 
-
+        #region Other Tests
         public static System.Collections.Generic.IEnumerable<int> Power(int number, int exponent)
         {
             int result = 1;
@@ -727,6 +727,7 @@ namespace CSharpStudy
                 yield return result;
             }
         }
+        #endregion
 
         #region C# Advanced
 

@@ -15,6 +15,8 @@ namespace CSharpStudy.CSharp1
     {
         public static void ExecuteExample()
         {
+            Console.WriteLine("C# 1.0 - Atribute Example");
+            CustomAttribute attrib = new CustomAttribute("name");
         }
     }
 

@@ -1,8 +1,8 @@
 C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\bin\Debug\netstandard2.0\CSharpStudy.Common.deps.json
 C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\bin\Debug\netstandard2.0\CSharpStudy.Common.dll
 C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\bin\Debug\netstandard2.0\CSharpStudy.Common.pdb
-C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\obj\Debug\netstandard2.0\CSharpStudy.Common.csprojAssemblyReference.cache
 C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\obj\Debug\netstandard2.0\CSharpStudy.Common.AssemblyInfoInputs.cache
 C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\obj\Debug\netstandard2.0\CSharpStudy.Common.AssemblyInfo.cs
 C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\obj\Debug\netstandard2.0\CSharpStudy.Common.dll
 C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\obj\Debug\netstandard2.0\CSharpStudy.Common.pdb
+C:\Users\tavolfa\Documents\Study\Projects\csharpstudy\CSharpStudy.Common\obj\Debug\netstandard2.0\CSharpStudy.Common.csprojAssemblyReference.cache

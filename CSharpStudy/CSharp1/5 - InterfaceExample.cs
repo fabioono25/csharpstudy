@@ -14,6 +14,8 @@ namespace CSharpStudy.CSharp1
         /// </summary>
         public static void ExecuteExample()
         {
+            Console.WriteLine("C# 1.0 - Interface Examples");
+
             Animal animal1 = new Animal();
             animal1.Name = "Dog1";
             animal1.IsHuman = false;
