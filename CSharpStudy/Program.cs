@@ -33,40 +33,7 @@ namespace CSharpStudy
             //DelegateExample.ExecuteExample();
 
             //atributes
-
-
-            //structs
-            //StructSample.ExecuteExample();
-
-            //Properties
-            // var prop = new PropertiesExample();
-            // Console.WriteLine(prop.FirstName);
-
-            // var prop2 = new PropertiesExample("asdasdasd");
-            // Console.WriteLine(prop2.FirstName);
-
-            // prop2.ChangePropert = "ddddddddddddd";
-            // Console.WriteLine(prop2.FirstName);
-
-            //expressions: is a sequence of one or more operands and zero or more operators that can be evaluated to a single value, object, method, or namespace
-            //((x < 10) && ( x > 5)) || ((x > 20) && (x < 25));
-            //System.Convert.ToInt32("35");  
-
-            //statements: the action that a program takes (assign, declaration)
-
-            //yield: A type of statement
-            //attributes: Attributes add metadata to your program
-            //YieldExample.ExecuteExample();
-
-            //literals: constants refer to fixed values that the program may not alter during its execution - fixed values
-            //ex: \n \t floating-point: 3.14159 string: @"asdasd" const
-
-            //value types:
-            //ValueTypesExample.ExecuteExample();
-
-            //reference types:
-            //ReferenceTypesExample.ExecuteExample();
-
+            //AttributeExample.ExecuteExample();
             #endregion
 
             #region C# Basic
@@ -713,8 +680,39 @@ namespace CSharpStudy
 
             #endregion
 
-            #region Others
+            #region Other
             RuntimePolymorphismExample.Execute();
+            //structs
+            //StructSample.ExecuteExample();
+
+            //Properties
+            // var prop = new PropertiesExample();
+            // Console.WriteLine(prop.FirstName);
+
+            // var prop2 = new PropertiesExample("asdasdasd");
+            // Console.WriteLine(prop2.FirstName);
+
+            // prop2.ChangePropert = "ddddddddddddd";
+            // Console.WriteLine(prop2.FirstName);
+
+            //expressions: is a sequence of one or more operands and zero or more operators that can be evaluated to a single value, object, method, or namespace
+            //((x < 10) && ( x > 5)) || ((x > 20) && (x < 25));
+            //System.Convert.ToInt32("35");  
+
+            //statements: the action that a program takes (assign, declaration)
+
+            //yield: A type of statement
+            //attributes: Attributes add metadata to your program
+            //YieldExample.ExecuteExample();
+
+            //literals: constants refer to fixed values that the program may not alter during its execution - fixed values
+            //ex: \n \t floating-point: 3.14159 string: @"asdasd" const
+
+            //value types:
+            //ValueTypesExample.ExecuteExample();
+
+            //reference types:
+            //ReferenceTypesExample.ExecuteExample();
             #endregion
         }
 
