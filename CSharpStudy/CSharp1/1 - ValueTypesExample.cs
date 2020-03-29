@@ -24,18 +24,18 @@ namespace CSharpStudy.CSharp1
             //Console.WriteLine(myInt);
 
             //attribution doesn't change the value
-            //int? x = 1;
-            //int? y = x;
-            //y += 10;
-            //Console.WriteLine(x);
-            //Console.WriteLine(y);
+            int? x = 1;
+            int? y = x;
+            y += 10;
+            Console.WriteLine(x);
+            Console.WriteLine(y);
 
             //struct
-            //Book book1 = new Book { name = "book 1", price = 9.99M };
-            //Book book2 = book1;
-            //book2.name = "book 2";
-            //Console.WriteLine(book1.name); //book1
-            //Console.WriteLine(book2.name); //book2
+            Book book1 = new Book { name = "book 1", price = 9.99M };
+            Book book2 = book1;
+            book2.name = "book 2";
+            Console.WriteLine(book1.name); //book1
+            Console.WriteLine(book2.name); //book2
 
             Console.WriteLine(WeekDay.Saturday);
             Console.WriteLine((int)WeekDay.Saturday);
