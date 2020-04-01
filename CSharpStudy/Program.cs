@@ -1,4 +1,5 @@
 ﻿using CSharpStudy.CSharp1;
+using CSharpStudy.CSharp1_2;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -15,12 +16,12 @@ namespace CSharpStudy
             #region C# 1.0
 
             //value types, reference types, boxing vs unboxing
-            ValueTypesExample.ExecuteExample();
-            ReferenceTypesExample.ExecuteExample();
-            BoxingUnboxing.ExecuteExample();
+            // ValueTypesExample.ExecuteExample();
+            // ReferenceTypesExample.ExecuteExample();
+            // BoxingUnboxing.ExecuteExample();
 
             //classes
-            TestPerson.ExecuteExample();
+            //TestPerson.ExecuteExample();
 
             //interfaces
             //InterfaceExample.ExecuteExample();
@@ -34,6 +35,11 @@ namespace CSharpStudy
 
             //atributes
             //AttributeExample.ExecuteExample();
+            #endregion
+
+            #region C# 1.0
+            ForEachIDisposable.ExecuteExample();
+            
             #endregion
 
             #region C# Basic
