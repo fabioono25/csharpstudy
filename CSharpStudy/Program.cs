@@ -37,8 +37,13 @@ namespace CSharpStudy
             //AttributeExample.ExecuteExample();
             #endregion
 
-            #region C# 1.0
-            ForEachIDisposable.ExecuteExample();
+            #region C# 1.2
+            //ForEachIDisposable.ExecuteExample();
+            //ReflectionTest.ExecuteExample();
+            //UnsafeTest.ExecuteExample();
+            //CheckUncheck.ExecuteExample();
+            //ConstructorsDestructors.ExecuteExample();
+            UsingTest.ExecuteExample();
             
             #endregion
 
@@ -370,7 +375,7 @@ namespace CSharpStudy
             #region Section 2 - Classes
             //var p = Person2.Parse("john");
 
-            var customer = new Customer(1);
+            //var customer = new Customer(1);
             //Console.WriteLine(customer.Id);
             //Console.WriteLine(customer.Name);
 
@@ -577,10 +582,10 @@ namespace CSharpStudy
             // methodInfo.Invoke(null, null);
 
             //using dynamic
-            dynamic obj2 = "mosh";
-            obj2 = 1;
-            System.Console.WriteLine(obj2);
-            obj2.Optimize();
+            // dynamic obj2 = "mosh";
+            // obj2 = 1;
+            // System.Console.WriteLine(obj2);
+            // obj2.Optimize();
 
             // int i = 5;
             // dynamic d = i;
@@ -687,7 +692,7 @@ namespace CSharpStudy
             #endregion
 
             #region Other
-            RuntimePolymorphismExample.Execute();
+            //RuntimePolymorphismExample.Execute();
             //structs
             //StructSample.ExecuteExample();
 

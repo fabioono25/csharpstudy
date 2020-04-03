@@ -6,14 +6,14 @@ namespace CSharpStudy.CSharp1_2
     
     public class ForEachIDisposable
     {
-        //http://zuga.net/articles/cs-whats-new-in-csharp-12/#foreach-support-for-idisposable
+
         public static void ExecuteExample()
         {
             var customizedCollection = new MyCustomizedCollection();
 
             foreach (var item in customizedCollection)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item.ToString());
             }
         }
     }
@@ -45,7 +45,7 @@ namespace CSharpStudy.CSharp1_2
     class CustomizedEnumerator : IEnumerator, IDisposable
     {
         private MyCustomizedCollection _collection;
-        private int _index;
+        private int _index = -1;
 
         public CustomizedEnumerator(MyCustomizedCollection collection) {
             _collection = collection;
@@ -65,12 +65,12 @@ namespace CSharpStudy.CSharp1_2
 
         public bool MoveNext()
         {
-            throw new NotImplementedException();
+            return ++_index < _collection.GetCount();
         }
 
         public void Reset()
         {
-            throw new NotImplementedException();
+             _index = -1;
         }
     }
 }
