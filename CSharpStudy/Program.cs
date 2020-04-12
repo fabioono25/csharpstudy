@@ -54,7 +54,7 @@ namespace CSharpStudy
             //AnonymousMethods.ExecuteExample();
             //NullableValueTypes.ExecuteExample();
             //Iterators.ExecuteExample();
-            CovarianceContravariance.ExecuteExample();
+            //CovarianceContravariance.ExecuteExample();
             #endregion
 
 
