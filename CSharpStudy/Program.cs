@@ -1,5 +1,6 @@
 ﻿using CSharpStudy.CSharp1;
 using CSharpStudy.CSharp1_2;
+using CSharpStudy.CSharp2_0;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -43,9 +44,15 @@ namespace CSharpStudy
             //UnsafeTest.ExecuteExample();
             //CheckUncheck.ExecuteExample();
             //ConstructorsDestructors.ExecuteExample();
-            UsingTest.ExecuteExample();
+            //UsingTest.ExecuteExample();
             
             #endregion
+
+            #region C# 2.0
+            //GenericsTest.ExecuteExample();
+            
+            #endregion
+
 
             #region C# Basic
             //Console.WriteLine("Hello World!");
