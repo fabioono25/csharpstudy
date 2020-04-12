@@ -34,7 +34,7 @@ namespace CSharpStudy.CSharp2_0
                     yield break;
                 }
             }
-            yield return 10; // This will never get executed
+            //yield return 10; // This will never get executed
         }
         
         public static IEnumerable<int> WithoutUsingBreak()
