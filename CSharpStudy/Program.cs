@@ -50,7 +50,8 @@ namespace CSharpStudy
 
             #region C# 2.0
             //GenericsTest.ExecuteExample();
-            
+            //PartialTypes.ExecuteExample();
+            AnonymousMethods.ExecuteExample();
             #endregion
 
 

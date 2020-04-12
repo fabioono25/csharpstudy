@@ -25,7 +25,7 @@ namespace CSharpStudy.CSharp2_0
             ClassTest c3 = s2.Pop(); //no cast
 
             //Now, if your stack is of type ClassTest, you will have a type error at compile time
-            AnotherClassTest c4 = (AnotherClassTest)s2.Pop(); //Design type error
+            //AnotherClassTest c4 = (AnotherClassTest)s2.Pop(); //Design type error
 
             //Creating a Stack of type int, it'll not incur in boxing/unboxing. 
             //Now, the value type is saved directly in the array, not the pointer to a reference type (object)
