@@ -61,7 +61,8 @@ namespace CSharpStudy
             #region C# 3.0
             // AutoImplementedPropertiesTest.ExecuteExample();
             // AnonymousTypesTests.ExecuteExample();
-            QueryExpressionsTests.ExecuteExample();
+            // QueryExpressionsTests.ExecuteExample();
+            // LambdaExpressionsTest.ExecuteExample();
             #endregion
 
 
