@@ -1,6 +1,7 @@
 ﻿using CSharpStudy.CSharp1;
 using CSharpStudy.CSharp1_2;
 using CSharpStudy.CSharp2_0;
+using CSharpStudy.CSharp3_0;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -55,6 +56,12 @@ namespace CSharpStudy
             //NullableValueTypes.ExecuteExample();
             //Iterators.ExecuteExample();
             //CovarianceContravariance.ExecuteExample();
+            #endregion
+
+            #region C# 3.0
+            // AutoImplementedPropertiesTest.ExecuteExample();
+            // AnonymousTypesTests.ExecuteExample();
+            QueryExpressionsTests.ExecuteExample();
             #endregion
 
 
