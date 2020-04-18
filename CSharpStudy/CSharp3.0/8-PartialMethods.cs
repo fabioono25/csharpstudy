@@ -29,7 +29,7 @@ namespace CSharpStudy.CSharp3_0
             Console.WriteLine("Calculate credit called!");
         }
 
-        //partial void CalculateCredit(int id);
+        partial void CalculateCredit(int id);
     }
 
     internal partial class Client {
