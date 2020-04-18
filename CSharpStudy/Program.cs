@@ -63,6 +63,8 @@ namespace CSharpStudy
             // AnonymousTypesTests.ExecuteExample();
             // QueryExpressionsTests.ExecuteExample();
             // LambdaExpressionsTest.ExecuteExample();
+            // ExpressionTreesTest.ExecuteExample();
+            ExtensionMethodsTest.ExecuteExample();
             #endregion
 
 
