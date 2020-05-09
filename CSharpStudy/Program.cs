@@ -2,6 +2,7 @@
 using CSharpStudy.CSharp1_2;
 using CSharpStudy.CSharp2_0;
 using CSharpStudy.CSharp3_0;
+using CSharpStudy.CSharp4_0;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -69,7 +70,8 @@ namespace CSharpStudy
             #endregion
 
             #region C# 4.0
-
+            //DynamicTest.ExecuteExample();
+            CovariantContravariantGenericTypesTest.ExecuteExample();
             #endregion
 
 
