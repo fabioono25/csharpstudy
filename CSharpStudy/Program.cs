@@ -64,7 +64,12 @@ namespace CSharpStudy
             // QueryExpressionsTests.ExecuteExample();
             // LambdaExpressionsTest.ExecuteExample();
             // ExpressionTreesTest.ExecuteExample();
-            ExtensionMethodsTest.ExecuteExample();
+            //ExtensionMethodsTest.ExecuteExample();
+            //CSharpStudy.Test.Test.Execute();
+            #endregion
+
+            #region C# 4.0
+
             #endregion
 
 
