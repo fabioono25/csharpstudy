@@ -24,7 +24,7 @@ Design goals from ECMA for C#:
 During these more than 15 years, the language is gaining new improvements. Here are the versions:
 
 
-**Version 1.0:
+Version 1.0:
 - Value Types
 - Reference Types
 - Boxing and Unboxing
@@ -34,20 +34,43 @@ During these more than 15 years, the language is gaining new improvements. Here 
 - Events
 - Attributes
 
-**Version 1.2
+Version 1.2
 - ForEach Support for IDisposable
 - Property Declarations
-- Attributes
-- String Iteration
+- Changing Attributes
+- Reflection
+- Unsafe
+- Check and Uncheck
+- Constructors and Destructors
+- Using keyword
 
-**Version 2.0
-- Introduction
+Version 2.0
+- Generics
+- Partial Types
+- Anonymous Methods
+- Nullable Value Types
+- Iterators
+- Covariance and Contravariance
+- Getters and Setters Accessibility
+- Delegate Inference
+- Static Classes
 
-**Version 3.0
-- Introduction
+Version 3.0
+- Auto-Implemented Properties
+- Anonymous Types
+- Query Expressions
+- Lambda Expressions
+- Expression Trees
+- Extension Methods
+- Implicit Typed Local Variables
+- Partial Methods
+- Objects Colections Initializers
 
-**Version 4.0
-- Introduction
+Version 4.0
+- Named Arguments
+- Optional Parameters
+- Dynamics
+- Covariance and Contravariance for Generic Types
 
 **Version 5.0
 - Introduction
