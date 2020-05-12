@@ -24,19 +24,17 @@ Design goals from ECMA for C#:
 During these more than 15 years, the language is gaining new improvements. Here are the versions:
 
 
-**v1.0:
-- Value Types vs Reference Types
-- Conversions
-- Variables
-- Operators
-- Statements
+**Version 1.0:
+- Value Types
+- Reference Types
+- Boxing and Unboxing
 - Classes
-- Structs
-- Arrays
 - Interfaces
+- Delegates
+- Events
+- Attributes
 
 **Version 1.2
-- Introduction
 - ForEach Support for IDisposable
 - Property Declarations
 - Attributes
