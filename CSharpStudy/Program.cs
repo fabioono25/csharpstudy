@@ -3,6 +3,7 @@ using CSharpStudy.CSharp1_2;
 using CSharpStudy.CSharp2_0;
 using CSharpStudy.CSharp3_0;
 using CSharpStudy.CSharp4_0;
+using CSharpStudy.CSharp5_0;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -74,6 +75,9 @@ namespace CSharpStudy
             CovariantContravariantGenericTypesTest.ExecuteExample();
             #endregion
 
+            #region C# 5.0
+            //CallerInfoAttributesTest.ExecuteExample();
+            #endregion
 
             #region C# Basic
             //Console.WriteLine("Hello World!");
