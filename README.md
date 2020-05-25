@@ -5,7 +5,7 @@ The C# History is a compound of examples that can show how the language was grow
 ## How to use the material
 For each version of the language we have a folder containing the examples. It'll have examples and comments so be free to copy and use as reference.
 
-You can see the series containing articles about the main features throught the history of this language in the blog [My Life in Dev].(https://www.mylifeindev.com/){:target="_blank"}
+You can see the series containing articles about the main features throught the history of this language in the blog [My Life in Dev].(https://www.mylifeindev.com/)
 
 ## If you like it! :star:
 If you liked the examples, give a star!
