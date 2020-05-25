@@ -74,8 +74,18 @@ Version 4.0
 - Dynamics
 - Covariance and Contravariance for Generic Types
 
-**Version 5.0
-- Introduction
+Version 5.0
+- CallerInfoAttributes
+- Asynchronous Methods
 
-**Version 6.0
-- Introduction
+Version 6.0
+- 
+
+Version 7.0
+- 
+
+Version 8.0
+- 
+
+Version 9.0
+- 
