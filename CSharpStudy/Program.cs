@@ -81,7 +81,8 @@ namespace CSharpStudy
             #endregion
 
             #region C# 6.0
-            AutoPropertyInitializer.ExecuteExample();
+            //AutoPropertyInitializer.ExecuteExample();
+            NullConditionalOperator.ExecuteExample();
             #endregion
 
             #region C# Basic
