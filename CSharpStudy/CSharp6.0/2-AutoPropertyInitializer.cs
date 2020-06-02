@@ -11,8 +11,8 @@ namespace CSharpStudy.CSharp6
             Console.WriteLine($"{customer.Name} {customer.LastName} - {customer.Age}.");
 
             customer.Name = "David";
-            customer.LastName = "Beckham"; //error: readonly property
-            customer.Age = 48;             //error: readonly property 
+            // customer.LastName = "Beckham"; //error: readonly property
+            // customer.Age = 48;             //error: readonly property 
         }
     }
 
