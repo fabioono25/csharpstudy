@@ -4,6 +4,7 @@ using CSharpStudy.CSharp2_0;
 using CSharpStudy.CSharp3_0;
 using CSharpStudy.CSharp4_0;
 using CSharpStudy.CSharp5_0;
+using CSharpStudy.CSharp6;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -72,11 +73,15 @@ namespace CSharpStudy
 
             #region C# 4.0
             //DynamicTest.ExecuteExample();
-            CovariantContravariantGenericTypesTest.ExecuteExample();
+            //CovariantContravariantGenericTypesTest.ExecuteExample();
             #endregion
 
             #region C# 5.0
             //CallerInfoAttributesTest.ExecuteExample();
+            #endregion
+
+            #region C# 6.0
+            AutoPropertyInitializer.ExecuteExample();
             #endregion
 
             #region C# Basic
