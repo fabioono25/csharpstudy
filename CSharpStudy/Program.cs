@@ -85,7 +85,8 @@ namespace CSharpStudy
             //NullConditionalOperator.ExecuteExample();
             // StringInterpolation.ExecuteExample();
             //ExceptionFilters.ExecuteExample();
-            NameOfExpression.ExecuteExample();
+            //NameOfExpression.ExecuteExample();
+            AwaitCatchFinally.ExecuteExample();
             #endregion
 
             #region C# Basic
