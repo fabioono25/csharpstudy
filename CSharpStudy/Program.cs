@@ -83,7 +83,8 @@ namespace CSharpStudy
             #region C# 6.0
             //AutoPropertyInitializer.ExecuteExample();
             //NullConditionalOperator.ExecuteExample();
-            StringInterpolation.ExecuteExample();
+            // StringInterpolation.ExecuteExample();
+            ExceptionFilters.ExecuteExample();
             #endregion
 
             #region C# Basic
