@@ -17,11 +17,16 @@ namespace CSharpStudy.CSharp6
             {
                 await Logger.Error("exception logging");
             }
+            finally
+            {
+                await Logger.Info("finish execution");
+            }
         }
     }
 
     public static class Logger {
         public static async Task Error(string message){}
+        public static async Task Info(string message){}
     }
 
     internal class Test2{
