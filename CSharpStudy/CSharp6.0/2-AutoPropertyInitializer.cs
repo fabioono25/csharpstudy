@@ -12,8 +12,8 @@ namespace CSharpStudy.CSharp6
 
             customer.Name = "David";
             
-            customer.LastName = "Beckham"; //error: readonly property
-            customer.Age = 48;             //error: readonly property 
+            // customer.LastName = "Beckham"; //error: readonly property
+            // customer.Age = 48;             //error: readonly property 
         }
     }
 

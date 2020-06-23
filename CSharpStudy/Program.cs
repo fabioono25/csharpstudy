@@ -5,6 +5,7 @@ using CSharpStudy.CSharp3_0;
 using CSharpStudy.CSharp4_0;
 using CSharpStudy.CSharp5_0;
 using CSharpStudy.CSharp6;
+using CSharpStudy.CSharp7;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -86,7 +87,11 @@ namespace CSharpStudy
             // StringInterpolation.ExecuteExample();
             //ExceptionFilters.ExecuteExample();
             //NameOfExpression.ExecuteExample();
-            AwaitCatchFinally.ExecuteExample();
+            // AwaitCatchFinally.ExecuteExample();
+            #endregion
+
+            #region C# 7.0
+            DigitBinarySeparator.ExecuteExample();
             #endregion
 
             #region C# Basic
