@@ -50,7 +50,7 @@ namespace CSharpStudy
             //CheckUncheck.ExecuteExample();
             //ConstructorsDestructors.ExecuteExample();
             //UsingTest.ExecuteExample();
-            
+
             #endregion
 
             #region C# 2.0
@@ -91,7 +91,8 @@ namespace CSharpStudy
             #endregion
 
             #region C# 7.0
-            DigitBinarySeparator.ExecuteExample();
+            //DigitBinarySeparator.ExecuteExample();
+            PatternMatching.ExecuteExample();
             #endregion
 
             #region C# Basic
