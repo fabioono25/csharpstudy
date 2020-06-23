@@ -10,11 +10,12 @@ namespace CSharpStudy.CSharp6
 
             Console.WriteLine($"{product.Name} {product.InStock}");
 
-            //product.InStock = true; //error
+            //product.InStock = true; //error - readonly property
         }
     }
 
     internal class Product {
+        //readonly properties 
         public string Name { get; }
         public bool InStock { get; }
 

@@ -16,7 +16,6 @@ namespace CSharpStudy.CSharp6
             catch (Exception e) when (e.Message.Contains("Object reference")) {
                 Console.WriteLine("You can use NullReferenceException, but it's just an example");
             }
-
         }
     }
 
