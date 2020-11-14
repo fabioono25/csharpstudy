@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace CSharpStudy.CSharp71
+namespace CSharpStudy.CSharp7123
 {
     public static class DefaultLiteralExpressions
     {
