@@ -6,6 +6,7 @@ using CSharpStudy.CSharp4_0;
 using CSharpStudy.CSharp5_0;
 using CSharpStudy.CSharp6;
 using CSharpStudy.CSharp7;
+using CSharpStudy.CSharp71;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -17,7 +18,8 @@ namespace CSharpStudy
 {
     class Program
     {
-        static void Main(string[] args)
+        //static async Task Main() - C# 7.1
+        static void Main()
         {
             #region C# 1.0
 
@@ -94,7 +96,22 @@ namespace CSharpStudy
             //DigitBinarySeparator.ExecuteExample();
             //PatternMatching.ExecuteExample();
             //RefReturns.ExecuteExample();
-            Tuples.ExecuteExample();
+            //Tuples.ExecuteExample();
+            #endregion
+
+            #region C# 7.1
+            //await new AsyncMain().ExecuteExample();
+            //DefaultLiteralExpressions.ExecuteExample();
+            //InferredTupleNames.ExecuteExample();
+            //GenericPatternMatching.ExecuteExample();
+            #endregion
+
+            #region C# 7.2
+
+            #endregion
+
+            #region C# 7.3
+
             #endregion
 
             #region C# Basic
