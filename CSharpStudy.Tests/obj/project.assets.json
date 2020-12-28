@@ -6389,41 +6389,44 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tavolfa\\.nuget\\packages\\": {},
+    "C:\\Users\\10314615\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tavolfa\\Documents\\Study\\Projects\\csharpstudy\\CSharpStudy.Tests\\CSharpStudy.Tests.csproj",
+      "projectUniqueName": "C:\\Study\\Code\\csharpstudy\\CSharpStudy.Tests\\CSharpStudy.Tests.csproj",
       "projectName": "CSharpStudy.Tests",
-      "projectPath": "C:\\Users\\tavolfa\\Documents\\Study\\Projects\\csharpstudy\\CSharpStudy.Tests\\CSharpStudy.Tests.csproj",
-      "packagesPath": "C:\\Users\\tavolfa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tavolfa\\Documents\\Study\\Projects\\csharpstudy\\CSharpStudy.Tests\\obj\\",
+      "projectPath": "C:\\Study\\Code\\csharpstudy\\CSharpStudy.Tests\\CSharpStudy.Tests.csproj",
+      "packagesPath": "C:\\Users\\10314615\\.nuget\\packages\\",
+      "outputPath": "C:\\Study\\Code\\csharpstudy\\CSharpStudy.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\tavolfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\10314615\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://dub-eu-p-nug01:8080/nuget/Fleetmatics-Trunk": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\tavolfa\\Documents\\Study\\Projects\\csharpstudy\\CSharpStudy.Common\\CSharpStudy.Common.csproj": {
-              "projectPath": "C:\\Users\\tavolfa\\Documents\\Study\\Projects\\csharpstudy\\CSharpStudy.Common\\CSharpStudy.Common.csproj"
+            "C:\\Study\\Code\\csharpstudy\\CSharpStudy.Common\\CSharpStudy.Common.csproj": {
+              "projectPath": "C:\\Study\\Code\\csharpstudy\\CSharpStudy.Common\\CSharpStudy.Common.csproj"
             },
-            "C:\\Users\\tavolfa\\Documents\\Study\\Projects\\csharpstudy\\CSharpStudy\\CSharpStudy.csproj": {
-              "projectPath": "C:\\Users\\tavolfa\\Documents\\Study\\Projects\\csharpstudy\\CSharpStudy\\CSharpStudy.csproj"
+            "C:\\Study\\Code\\csharpstudy\\CSharpStudy\\CSharpStudy.csproj": {
+              "projectPath": "C:\\Study\\Code\\csharpstudy\\CSharpStudy\\CSharpStudy.csproj"
             }
           }
         }
@@ -6436,6 +6439,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -6464,18 +6468,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

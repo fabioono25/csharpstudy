@@ -19,7 +19,7 @@ namespace CSharpStudy
     class Program
     {
         //static async Task Main() - C# 7.1
-        static void Main()
+        static async Task Main()
         {
             #region C# 1.0
 
@@ -114,6 +114,13 @@ namespace CSharpStudy
 
             #region C# 7.3
 
+            #endregion
+
+            #region C# 8.0
+            //PatternMatchingNew.ExecuteExample();
+            //UsingDeclarations.ExecuteExample();
+            //await AsyncStreams.ExecuteExample();
+            IndicesRanges.ExecuteExample();
             #endregion
 
             #region C# Basic
