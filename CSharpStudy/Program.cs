@@ -120,7 +120,7 @@ namespace CSharpStudy
             //PatternMatchingNew.ExecuteExample();
             //UsingDeclarations.ExecuteExample();
             //await AsyncStreams.ExecuteExample();
-            IndicesRanges.ExecuteExample();
+            //ndicesRanges.ExecuteExample();
             #endregion
 
             #region C# Basic

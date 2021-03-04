@@ -30,8 +30,5 @@ msbuild.log
 msbuild.err
 msbuild.wrn
 
-**/bin/Debug/
-**/bin/Release/
-
 # Visual Studio 2015
 .vs/
