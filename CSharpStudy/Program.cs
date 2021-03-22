@@ -7,6 +7,7 @@ using CSharpStudy.CSharp5_0;
 using CSharpStudy.CSharp6;
 using CSharpStudy.CSharp7;
 using CSharpStudy.CSharp7123;
+using CSharpStudy.CSharp9;
 using CSharpStudy.Generics;
 using CSharpStudy.Polymorphism.Runtime;
 using System;
@@ -121,6 +122,10 @@ namespace CSharpStudy
             //UsingDeclarations.ExecuteExample();
             //await AsyncStreams.ExecuteExample();
             //ndicesRanges.ExecuteExample();
+            #endregion
+
+            #region C# 9.0
+            HalfClass.ExecuteExample();
             #endregion
 
             #region C# Basic
