@@ -7,7 +7,6 @@ namespace CSharpStudy.CSharp9
         public static void ExecuteExample()
         {
             Half half = Half.MaxValue; // 65500
-            
             var max = nint.MaxValue; // 0x7fffffffffffffff
 
             nint x = 123;

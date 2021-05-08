@@ -125,7 +125,9 @@ namespace CSharpStudy
             #endregion
 
             #region C# 9.0
-            HalfClass.ExecuteExample();
+            // RecordType.ExecuteExample();
+            // HalfClass.ExecuteExample();
+            PatternMatchingImprovements.ExecuteExample();
             #endregion
 
             #region C# Basic
