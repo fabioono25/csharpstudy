@@ -14,6 +14,7 @@ using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+using CSharpStudy.CSharp9.Features;
 
 namespace CSharpStudy
 {
@@ -128,6 +129,10 @@ namespace CSharpStudy
             // RecordType.ExecuteExample();
             // HalfClass.ExecuteExample();
             PatternMatchingImprovements.ExecuteExample();
+            #endregion
+
+            #region Features
+            IndexesRanges.ExecuteExample();
             #endregion
 
             #region C# Basic
