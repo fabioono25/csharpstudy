@@ -132,10 +132,14 @@ namespace CSharpStudy
             #endregion
 
             #region Features
-            IndexesRanges.ExecuteExample();
+            //IndexesRanges.ExecuteExample();
+            var x = new DirectoryInfo(@"C:\temp\directory");
+
+
             #endregion
 
             #region C# Basic
+
             //Console.WriteLine("Hello World!");
 
             #region Section 3 - Primitive Types and Extensions
@@ -453,7 +457,9 @@ namespace CSharpStudy
             #endregion
 
             #region Section 9 - Files and Directories
+
             //File, FileInfo, Directory, DirectoryInfo, Path
+
             #endregion
 
             #endregion
@@ -461,6 +467,7 @@ namespace CSharpStudy
             #region C# Intermediate
 
             #region Section 2 - Classes
+
             //var p = Person2.Parse("john");
 
             //var customer = new Customer(1);
@@ -496,6 +503,7 @@ namespace CSharpStudy
             #endregion
 
             #region Section 3 - Association between classes
+
             // var text = new Text();
             // text.Width = 100;
             // text.Copy();
@@ -512,6 +520,7 @@ namespace CSharpStudy
             #endregion
 
             #region Section 4 - Inheritance
+
             //var customer = new Customer();
             //var car = new Car("123123123");  
 
@@ -548,6 +557,7 @@ namespace CSharpStudy
             #endregion
 
             #region Section 5 - Polymorphism
+
             // var x = new Circle();
             // x.Draw();
 
@@ -780,6 +790,7 @@ namespace CSharpStudy
             #endregion
 
             #region Other
+
             //RuntimePolymorphismExample.Execute();
             //structs
             //StructSample.ExecuteExample();
@@ -812,6 +823,7 @@ namespace CSharpStudy
 
             //reference types:
             //ReferenceTypesExample.ExecuteExample();
+
             #endregion
         }
 
