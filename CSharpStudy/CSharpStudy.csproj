@@ -11,7 +11,7 @@
     <Folder Include="Mosh_Udemy\2-Intermediate\" />
     <Folder Include="Mosh_Udemy\1-Basics\" />
   </ItemGroup>
-
+	
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>

@@ -15,6 +15,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using CSharpStudy.CSharp9.Features;
+using CSharpStudy.CSharp10;
 
 namespace CSharpStudy
 {
@@ -128,7 +129,11 @@ namespace CSharpStudy
             #region C# 9.0
             // RecordType.ExecuteExample();
             // HalfClass.ExecuteExample();
-            PatternMatchingImprovements.ExecuteExample();
+            // PatternMatchingImprovements.ExecuteExample();
+            #endregion
+
+            #region C# 10
+            GlobalUsings.ExecuteExample();
             #endregion
 
             #region Features
