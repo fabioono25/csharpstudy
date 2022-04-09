@@ -6,6 +6,8 @@ namespace CSharpStudy.CSharp10
         {
             WriteLine("Hi");
             SYS.Console.WriteLine("Hi");
+
+            var x = TextReader.Null;
         }
     }
 }

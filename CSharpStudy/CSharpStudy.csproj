@@ -6,6 +6,10 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
+	<ItemGroup>
+		<Using Include="System.IO"/>
+	</ItemGroup>  	
+	
   <ItemGroup>
     <Folder Include="Mosh_Udemy\3-Advanced\" />
     <Folder Include="Mosh_Udemy\2-Intermediate\" />
