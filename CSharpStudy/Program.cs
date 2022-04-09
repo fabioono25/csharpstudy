@@ -133,7 +133,9 @@ namespace CSharpStudy
             #endregion
 
             #region C# 10
-            GlobalUsings.ExecuteExample();
+            // GlobalUsings.ExecuteExample();
+            // FileScopedNamespace.ExecuteExample();
+            ExtendedPropertyPatterns.ExecuteExample();
             #endregion
 
             #region Features
