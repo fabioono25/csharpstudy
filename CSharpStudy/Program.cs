@@ -135,7 +135,11 @@ namespace CSharpStudy
             #region C# 10
             // GlobalUsings.ExecuteExample();
             // FileScopedNamespace.ExecuteExample();
-            ExtendedPropertyPatterns.ExecuteExample();
+            // ExtendedPropertyPatterns.ExecuteExample();
+            // ConstantInterpolationString.ExecuteExample();
+            // RecordStruct.ExecuteExample();
+            // LambdaImprovements.ExecuteExample();
+            NullCheck.ExecuteExample();
             #endregion
 
             #region Features
