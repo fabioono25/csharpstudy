@@ -2,7 +2,7 @@ namespace CSharpStudy.CSharp10;
 
 public class RecordStruct
 {
-    public static void ExecuteExample() {   }
+    public static void ExecuteExample() { }
 
     internal record struct Message
     {

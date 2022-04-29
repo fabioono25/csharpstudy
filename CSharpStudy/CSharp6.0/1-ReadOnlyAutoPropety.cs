@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp6
 {
     public class ReadOnlyAutoPropety
@@ -14,7 +12,8 @@ namespace CSharpStudy.CSharp6
         }
     }
 
-    internal class Product {
+    internal class Product
+    {
         //readonly properties 
         public string Name { get; }
         public bool InStock { get; }

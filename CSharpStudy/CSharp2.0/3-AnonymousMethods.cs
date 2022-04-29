@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp2_0
 {
     public class AnonymousMethods
@@ -9,7 +7,8 @@ namespace CSharpStudy.CSharp2_0
         public static void ExecuteExample()
         {
             //Using anonymous method to acces variables
-            PrintHelloMessage print = delegate(string name) {
+            PrintHelloMessage print = delegate (string name)
+            {
                 Console.WriteLine("Hello {0}", name);
             };
 
@@ -20,14 +19,16 @@ namespace CSharpStudy.CSharp2_0
             introduce(12, 12.32);
 
             new TestEvent().ImplementBehavior();
-        }  
+        }
     }
 
-    public class TestEvent {
+    public class TestEvent
+    {
 
         public event EventHandler PrintMessageEvent;
-        public void ImplementBehavior(){
-            PrintMessageEvent += delegate(object sender, EventArgs e) { Console.Write("Hi"); };
-        }    
+        public void ImplementBehavior()
+        {
+            PrintMessageEvent += delegate (object sender, EventArgs e) { Console.Write("Hi"); };
+        }
     }
 }

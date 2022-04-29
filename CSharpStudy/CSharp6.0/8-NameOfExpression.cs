@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp6
 {
     public class NameOfExpression
@@ -10,7 +8,8 @@ namespace CSharpStudy.CSharp6
         }
     }
 
-    internal class Category {
+    internal class Category
+    {
         private string Name { get; set; }
 
         public Category(string name)

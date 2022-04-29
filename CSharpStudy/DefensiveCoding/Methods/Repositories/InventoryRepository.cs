@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.DefensiveCoding.Methods
+﻿namespace CSharpStudy.DefensiveCoding.Methods
 {
     public class InventoryRepository
     {

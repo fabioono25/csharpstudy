@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace CSharpStudy.BestPractices
+﻿namespace CSharpStudy.BestPractices
 {
     public class Actor
     {

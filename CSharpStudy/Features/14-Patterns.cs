@@ -1,11 +1,9 @@
-using System;
-
 namespace CSharpStudy.CSharp9.Features
 {
     public class Patterns
     {
         public static void ExecuteExample()
-        {   
+        {
             /*
              * var
              * constant

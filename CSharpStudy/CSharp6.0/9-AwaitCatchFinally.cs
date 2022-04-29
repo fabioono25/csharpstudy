@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 
 namespace CSharpStudy.CSharp6
@@ -9,8 +8,8 @@ namespace CSharpStudy.CSharp6
         {
             Test2 test = null;
 
-            try 
-            {	        
+            try
+            {
                 var x = test.Property;
             }
             catch (Exception)
@@ -24,12 +23,14 @@ namespace CSharpStudy.CSharp6
         }
     }
 
-    public static class Logger {
-        public static async Task Error(string message){}
-        public static async Task Info(string message){}
+    public static class Logger
+    {
+        public static async Task Error(string message) { }
+        public static async Task Info(string message) { }
     }
 
-    internal class Test2{
+    internal class Test2
+    {
         public int Property { get; set; }
-    }    
+    }
 }

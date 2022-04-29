@@ -1,6 +1,3 @@
-using System;
-using System.Threading.Tasks;
-
 namespace CSharpStudy.CSharp7123
 {
     public static class DefaultLiteralExpressions
@@ -10,7 +7,7 @@ namespace CSharpStudy.CSharp7123
             var value1 = default(int); // old implementation for default value expressions
             int value2 = default;      // new implementation for default value expressions
             Console.WriteLine(SumValues(value1, value2));
-            
+
             Console.WriteLine(SumValues());
         }
 

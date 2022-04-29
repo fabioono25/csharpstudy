@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.Generics
+﻿namespace CSharpStudy.Generics
 {
     public class ObjectList
     {

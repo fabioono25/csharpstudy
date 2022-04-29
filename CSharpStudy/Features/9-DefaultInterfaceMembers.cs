@@ -1,8 +1,6 @@
-using System;
-
 namespace CSharpStudy.CSharp9.Features
 {
-    public class DefaultInterfaceMembers: ITest
+    public class DefaultInterfaceMembers : ITest
     {
         public static void ExecuteExample()
         {

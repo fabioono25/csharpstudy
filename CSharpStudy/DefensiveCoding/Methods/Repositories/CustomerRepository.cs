@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.DefensiveCoding.Methods
+﻿namespace CSharpStudy.DefensiveCoding.Methods
 {
     //the code that retrieves and save customer
     public class CustomerRepository

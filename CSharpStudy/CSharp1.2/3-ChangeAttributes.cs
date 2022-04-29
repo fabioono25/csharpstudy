@@ -1,28 +1,32 @@
-using System;
-
 namespace CSharpStudy.CSharp1_2
 {
     [AttributeUsage(AttributeTargets.All)]
-    public class ClassWithCustomAttribute: Attribute {
+    public class ClassWithCustomAttribute : Attribute
+    {
 
         private string message;
 
-        public string Message {
-            get {
+        public string Message
+        {
+            get
+            {
                 return message;
             }
-            set {
+            set
+            {
                 message = value;
             }
         }
 
-        public ClassWithCustomAttribute() {
+        public ClassWithCustomAttribute()
+        {
         }
     }
 
     //'ClassWithCustomAttribute.message' is inaccessible due to its protection level [CSharpStudy]csharp(CS0122)
     //[ClassWithCustomAttribute(message = "Changing the message")]
-    public class TestClass {
+    public class TestClass
+    {
 
     }
 }

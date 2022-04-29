@@ -1,5 +1,3 @@
-using static System.Console;
-
 namespace CSharpStudy.CSharp6
 {
     public class StringInterpolation

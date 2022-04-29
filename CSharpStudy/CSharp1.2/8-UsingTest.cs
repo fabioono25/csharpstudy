@@ -1,15 +1,13 @@
-using System;
-using System.IO;
-
 namespace CSharpStudy.CSharp1_2
 {
-    public class UsingTest {
+    public class UsingTest
+    {
         public static void ExecuteExample()
         {
             //without using
             {
                 StreamReader testReader = new StreamReader(@"/home/ono/Documents/study/csharpstudy/CSharpStudy/CSharp1.2/test.txt");
-                
+
                 try
                 {
                     Console.Write(testReader.ReadToEnd());

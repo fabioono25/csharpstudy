@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp2_0
 {
     public class NullableValueTypes
@@ -28,6 +26,6 @@ namespace CSharpStudy.CSharp2_0
             // int? g;
             // int h = g ?? -1; //Use of unassigned local variable 'g' - compile-time error
             // Console.WriteLine($"h is {h}");  // output: f is -1            
-        }        
+        }
     }
 }

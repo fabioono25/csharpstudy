@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.CSharp1
+﻿namespace CSharpStudy.CSharp1
 {
     public class ReferenceTypesExample
     {

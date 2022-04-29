@@ -1,8 +1,7 @@
-using System;
-
 namespace CSharpStudy.CSharp1_2
 {
-    public class ConstructorsDestructors {
+    public class ConstructorsDestructors
+    {
         public static void ExecuteExample()
         {
             ClassExample ex = new ClassExample(); //using the default cosntructor
@@ -12,7 +11,7 @@ namespace CSharpStudy.CSharp1_2
         }
     }
 
-    class ClassExample: IDisposable
+    class ClassExample : IDisposable
     {
         // Default constructor
         public ClassExample()
@@ -28,7 +27,7 @@ namespace CSharpStudy.CSharp1_2
         // Destructor
         ~ClassExample()
         {
-            Console.WriteLine("Destructor called");       
+            Console.WriteLine("Destructor called");
         }
 
         public void Dispose()
@@ -37,7 +36,7 @@ namespace CSharpStudy.CSharp1_2
             GC.WaitForPendingFinalizers();
             GC.Collect();
 
-            Console.WriteLine("Disposed called");       
+            Console.WriteLine("Disposed called");
         }
     }
 }

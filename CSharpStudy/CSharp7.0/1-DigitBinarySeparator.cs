@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp7
 {
     public class DigitBinarySeparator

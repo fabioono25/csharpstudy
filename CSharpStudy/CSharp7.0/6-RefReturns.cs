@@ -1,12 +1,10 @@
-using System;
-
 namespace CSharpStudy.CSharp7
 {
     public class RefReturns
     {
         public static void ExecuteExample()
         {
-            var items = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+            var items = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 
             var itemInLocation = FindItemInArray(3, items);
             itemInLocation = 18;
@@ -25,7 +23,7 @@ namespace CSharpStudy.CSharp7
         {
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[i] == number) 
+                if (numbers[i] == number)
                 {
                     //storage location
                     return ref numbers[i];
@@ -33,6 +31,6 @@ namespace CSharpStudy.CSharp7
             }
 
             throw new IndexOutOfRangeException($"{nameof(number)} not found");
-        }        
+        }
     }
 }

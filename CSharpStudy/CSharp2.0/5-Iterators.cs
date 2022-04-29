@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -36,7 +35,7 @@ namespace CSharpStudy.CSharp2_0
             }
             //yield return 10; // This will never get executed
         }
-        
+
         public static IEnumerable<int> WithoutUsingBreak()
         {
             for (int i = 0; ; i++)
@@ -53,7 +52,7 @@ namespace CSharpStudy.CSharp2_0
                 }
             }
             yield return 10; //this code will be executed
-        }                
+        }
     }
 
     internal class DaysOfTheWeek : IEnumerable
@@ -68,5 +67,5 @@ namespace CSharpStudy.CSharp2_0
                 yield return days[index];
             }
         }
-    }      
+    }
 }

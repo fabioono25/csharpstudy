@@ -16,7 +16,7 @@ namespace CSharpStudy.CSharp1_2
 
         // public void set_Age(int age) {
         // }                  
-        
+
         // public int getAge() {
         //     return 1;
         // }

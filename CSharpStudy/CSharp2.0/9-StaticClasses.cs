@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp2_0
 {
     public class StaticClasses
@@ -8,7 +6,7 @@ namespace CSharpStudy.CSharp2_0
         {
             double resultF = TemperatureConverter.CelsiusToFahrenheit("123.12");
 
-        }        
+        }
     }
 
     public static class TemperatureConverter

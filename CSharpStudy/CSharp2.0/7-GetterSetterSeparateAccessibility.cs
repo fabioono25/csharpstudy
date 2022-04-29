@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp2_0
 {
     public class GetterSetterSeparateAccessibility
@@ -11,10 +9,11 @@ namespace CSharpStudy.CSharp2_0
             //The property or indexer 'AccessibilityTest.Name' cannot be used in this context 
             // because the set accessor is inaccessible
             //test.Name = "asdasd"; 
-        }        
+        }
     }
 
-    public class AccessibilityTest{
+    public class AccessibilityTest
+    {
         private string _name = "Hello";
 
         public string Name

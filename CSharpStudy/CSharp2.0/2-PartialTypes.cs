@@ -10,12 +10,12 @@ namespace CSharpStudy.CSharp2_0
             testPartial.Method3();
             testPartial.MethodPartialTest1();
             testPartial.MethodPartialTest2();
-        }        
+        }
     }
 
     internal partial class PartialTest : ITest
     {
-        public void MethodPartialTest1(){}
+        public void MethodPartialTest1() { }
 
         public void Method1()
         {
@@ -33,21 +33,25 @@ namespace CSharpStudy.CSharp2_0
         }
     }
 
-    internal partial class PartialTest {
-        public void MethodPartialTest2(){}
+    internal partial class PartialTest
+    {
+        public void MethodPartialTest2() { }
     }
 
-    internal partial interface ITest {
+    internal partial interface ITest
+    {
         void Method1();
     }
 
 
-    internal partial interface ITest {
+    internal partial interface ITest
+    {
         void Method2();
     }
 
 
-    internal partial interface ITest {
+    internal partial interface ITest
+    {
         void Method3();
     }
 }

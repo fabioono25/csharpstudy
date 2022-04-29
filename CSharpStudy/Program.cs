@@ -1,21 +1,6 @@
-﻿using CSharpStudy.CSharp1;
-using CSharpStudy.CSharp1_2;
-using CSharpStudy.CSharp2_0;
-using CSharpStudy.CSharp3_0;
-using CSharpStudy.CSharp4_0;
-using CSharpStudy.CSharp5_0;
-using CSharpStudy.CSharp6;
-using CSharpStudy.CSharp7;
-using CSharpStudy.CSharp7123;
-using CSharpStudy.CSharp9;
-using CSharpStudy.Generics;
-using CSharpStudy.Polymorphism.Runtime;
-using System;
-using System.IO;
+﻿using CSharpStudy.CSharp10;
 using System.Net;
 using System.Threading.Tasks;
-using CSharpStudy.CSharp9.Features;
-using CSharpStudy.CSharp10;
 
 namespace CSharpStudy
 {
@@ -947,7 +932,7 @@ namespace CSharpStudy
     #endregion
     #region C# Advanced
 
-    
+
     public class TaxCalculator
     {
         public static float Calculate()

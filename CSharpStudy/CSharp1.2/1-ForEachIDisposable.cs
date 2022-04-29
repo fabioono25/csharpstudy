@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 
 namespace CSharpStudy.CSharp1_2
 {
-    
+
     public class ForEachIDisposable
     {
 
@@ -18,7 +17,8 @@ namespace CSharpStudy.CSharp1_2
         }
     }
 
-    class MyCustomizedCollection {
+    class MyCustomizedCollection
+    {
         ArrayList items = new ArrayList();
 
         public MyCustomizedCollection()
@@ -29,15 +29,18 @@ namespace CSharpStudy.CSharp1_2
             items.Add("Fourth item");
         }
 
-        public int GetCount() {
+        public int GetCount()
+        {
             return items.Count;
         }
 
-        public string GetItem(int index) {
+        public string GetItem(int index)
+        {
             return items[index].ToString();
         }
 
-        public IEnumerator GetEnumerator() {
+        public IEnumerator GetEnumerator()
+        {
             return new CustomizedEnumerator(this);
         }
     }
@@ -47,7 +50,8 @@ namespace CSharpStudy.CSharp1_2
         private MyCustomizedCollection _collection;
         private int _index = -1;
 
-        public CustomizedEnumerator(MyCustomizedCollection collection) {
+        public CustomizedEnumerator(MyCustomizedCollection collection)
+        {
             _collection = collection;
         }
 
@@ -58,8 +62,9 @@ namespace CSharpStudy.CSharp1_2
 
         public object Current
         {
-          get { 
-              return _collection.GetItem(_index); 
+            get
+            {
+                return _collection.GetItem(_index);
             }
         }
 
@@ -70,7 +75,7 @@ namespace CSharpStudy.CSharp1_2
 
         public void Reset()
         {
-             _index = -1;
+            _index = -1;
         }
     }
 }

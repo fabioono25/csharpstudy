@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CSharpStudy.Polymorphism.Runtime
+﻿namespace CSharpStudy.Polymorphism.Runtime
 {
     // Base Class
     public class Users

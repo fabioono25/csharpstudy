@@ -11,7 +11,7 @@ namespace CSharpStudy.CSharp2_0
 
             //new using the inference
             strOp = removeNewLines;
-        }       
+        }
 
         private static string removeSpaces(string name) { return string.Empty; }
 

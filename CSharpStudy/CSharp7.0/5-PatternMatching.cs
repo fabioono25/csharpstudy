@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp7
 {
     public class PatternMatching
@@ -8,13 +6,14 @@ namespace CSharpStudy.CSharp7
         {
             //is pattern
             var input = 12;
-            
+
             if (input is int count)
                 Console.WriteLine(count);
-            
+
             ClassTest classTest = null;
 
-            if (classTest is null){
+            if (classTest is null)
+            {
                 classTest = new ClassTest();
                 Console.WriteLine("ClassTest is not null anymore");
             }
@@ -33,12 +32,12 @@ namespace CSharpStudy.CSharp7
                 default:
                     Console.WriteLine("value not found");
                     break;
-            }  
+            }
         }
     }
 
     public class ClassTest
     {
-        
+
     }
 }

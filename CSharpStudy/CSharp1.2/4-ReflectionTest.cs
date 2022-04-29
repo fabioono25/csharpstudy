@@ -1,9 +1,9 @@
-using System;
 using System.Reflection;
 
 namespace CSharpStudy.CSharp1_2
 {
-    public class ReflectionTest {
+    public class ReflectionTest
+    {
         public static void ExecuteExample()
         {
             int age = 29;
@@ -11,8 +11,8 @@ namespace CSharpStudy.CSharp1_2
             Console.WriteLine(ageType); //System.Int32
 
             //Gets the location regarding the process executable in the default application domain
-            string path = Assembly.GetEntryAssembly().Location; 
-                       
+            string path = Assembly.GetEntryAssembly().Location;
+
             //Gets the assembly that contains the code that is currently executing.
             foreach (Type type in Assembly.GetExecutingAssembly().GetTypes())
             {

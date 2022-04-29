@@ -1,14 +1,12 @@
-using System;
-using System.Threading.Tasks;
-
 namespace CSharpStudy.CSharp7123
 {
     public static class PrivateProtected
     {
         public static void ExecuteExample()
         {
-            var person = new Person { 
-                Name = "James", 
+            var person = new Person
+            {
+                Name = "James",
                 //Age = 20 //'PrivateProtected.Person.Age' is inaccessible due to its protection level
             };
 

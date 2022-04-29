@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 
 namespace CSharpStudy.CSharp1
 {
@@ -16,7 +15,7 @@ namespace CSharpStudy.CSharp1
 
             int i = 123;
             object o = i; //boxing
-            int x = (int) o; //unboxing
+            int x = (int)o; //unboxing
 
             int valueTest = 10;
             ArrayList arrayTest = new ArrayList();

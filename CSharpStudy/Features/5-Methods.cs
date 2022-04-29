@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp9.Features
 {
     public class Methods

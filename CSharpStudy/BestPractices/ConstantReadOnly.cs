@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.BestPractices
+﻿namespace CSharpStudy.BestPractices
 {
     public class ConstantReadOnly
     {

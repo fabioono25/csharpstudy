@@ -1,5 +1,3 @@
-using static System.Console;
-
 namespace CSharpStudy.CSharp6
 {
     public class ExpressionBodied
@@ -13,7 +11,8 @@ namespace CSharpStudy.CSharp6
         }
     }
 
-    internal class Car {
+    internal class Car
+    {
         public string Brand { get; set; }
         public int Year { get; set; }
         private string DescriptionComplete => $"{Brand} {Year}";

@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp9
 {
     public class HalfClass
@@ -12,7 +10,7 @@ namespace CSharpStudy.CSharp9
             nint x = 123;
             nint y = 234;
             nint product = x * y;
-            
+
             IntPtr pt = x;
             pt += 1;
             Console.WriteLine($"x: {x} - pt: {pt}."); // x: 123 - pt: 124.

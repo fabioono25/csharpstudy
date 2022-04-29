@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.DefensiveCoding.Methods.Core.Common
+﻿namespace CSharpStudy.DefensiveCoding.Methods.Core.Common
 {
     public class EmailLibrary
     {

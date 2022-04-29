@@ -1,6 +1,3 @@
-using System;
-using System.Threading.Tasks;
-
 namespace CSharpStudy.CSharp7123
 {
     public static class NullableRefType
@@ -16,7 +13,7 @@ namespace CSharpStudy.CSharp7123
             string? nickName = null; // warning again
             Console.WriteLine(nickName);
 
-            #nullable enable    
+#nullable enable
             string? address = null; // no warning
             Console.Write(address);
         }

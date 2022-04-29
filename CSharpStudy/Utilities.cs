@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy
 {
     //where T : IComparable

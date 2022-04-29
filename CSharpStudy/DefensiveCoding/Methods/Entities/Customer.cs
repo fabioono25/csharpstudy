@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.DefensiveCoding.Methods
+﻿namespace CSharpStudy.DefensiveCoding.Methods
 {
     //represent entity - information
     public class Customer

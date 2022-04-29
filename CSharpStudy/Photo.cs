@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy
 {
     public class Photo

@@ -1,6 +1,5 @@
 //adding static
 using static System.Math;
-using static System.Console;
 
 namespace CSharpStudy.CSharp6
 {

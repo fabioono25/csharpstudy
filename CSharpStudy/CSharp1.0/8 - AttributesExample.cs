@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp1
 {
     /// <summary>
@@ -8,7 +6,7 @@ namespace CSharpStudy.CSharp1
     /// </summary>
     /// <param name="str"></param>
     /// <returns></returns>
-    
+
     [Serializable]                  //attribute that indicates that the class can be serialized
     [Custom("Just a test name")]    //using a custom attribute    
     public class AttributeExample

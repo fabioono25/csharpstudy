@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp6
 {
     public class ExceptionFilters
@@ -8,18 +6,21 @@ namespace CSharpStudy.CSharp6
         {
             Test test = null;
 
-            try {
+            try
+            {
 
                 var x = test.Property;
 
             }
-            catch (Exception e) when (e.Message.Contains("Object reference")) {
+            catch (Exception e) when (e.Message.Contains("Object reference"))
+            {
                 Console.WriteLine("You can use NullReferenceException, but it's just an example");
             }
         }
     }
 
-    internal class Test{
+    internal class Test
+    {
         public int Property { get; set; }
     }
 }

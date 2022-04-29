@@ -31,39 +31,47 @@ namespace CSharpStudy.CSharp2_0
             //Now, the value type is saved directly in the array, not the pointer to a reference type (object)
             Stack<int> s3 = new Stack<int>();
             s3.Push(3);
-            int x = s3.Pop(); 
-        }        
+            int x = s3.Pop();
+        }
     }
 
-    internal class Stack {
+    internal class Stack
+    {
         private object[] items = new object[100];
         private int index;
 
-        public void Push(object data){
+        public void Push(object data)
+        {
             items[index++] = data;
         }
-        public object Pop(){
+        public object Pop()
+        {
             return items[--index];
         }
     }
 
-     internal class Stack<T> {
+    internal class Stack<T>
+    {
         private T[] items = new T[100];
         private int index;
 
-        public void Push(T data){
+        public void Push(T data)
+        {
             items[index++] = data;
         }
-        public T Pop(){
+        public T Pop()
+        {
             return items[--index];
         }
     }
 
-    internal class ClassTest{
+    internal class ClassTest
+    {
 
     }
 
-    internal class AnotherClassTest{
+    internal class AnotherClassTest
+    {
 
     }
 }

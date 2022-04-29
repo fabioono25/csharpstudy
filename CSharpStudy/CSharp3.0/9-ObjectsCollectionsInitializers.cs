@@ -5,21 +5,24 @@ namespace CSharpStudy.CSharp3_0
         public static void ExecuteExample()
         {
             var book1 = new Book();
-            
-            var book2 = new Book("George Orwel"){
+
+            var book2 = new Book("George Orwel")
+            {
                 Title = "1984"
             };
 
-            var book3 = new Book {
+            var book3 = new Book
+            {
                 Title = "1984",
                 Year = 1949
             };
 
             book3.Author = "George Orwel";
-        }        
+        }
     }
 
-    internal class Book {
+    internal class Book
+    {
 
         public Book()
         {

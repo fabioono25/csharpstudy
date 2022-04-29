@@ -12,9 +12,10 @@ namespace CSharpStudy.CSharp4_0
 
             // In this case we used named arguments. parameter2 is still fullfiled with the default value
             Method1("parameter1", parameter3: 1);
-        }        
+        }
 
-        public static void Method1(string parameter1, string parameter2 = "abc", int parameter3 = 3) {
+        public static void Method1(string parameter1, string parameter2 = "abc", int parameter3 = 3)
+        {
         }
     }
 }

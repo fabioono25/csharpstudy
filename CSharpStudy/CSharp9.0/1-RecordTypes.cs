@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp9
 {
     public class RecordType
@@ -7,14 +5,14 @@ namespace CSharpStudy.CSharp9
         public record Person(string name, int age);
 
         // inheritance between records
-        public record Employee(string register, string name, int age): 
+        public record Employee(string register, string name, int age) :
             Person(name, age);
 
         public static void ExecuteExample()
         {
             var employee = new Employee("ABC", "John", 19);
             var employee2 = new Employee("ABC", "John", 19);
-            
+
             var manager = employee with { age = 65 }; // nondestructive mutation
             // manager.name = "William"; // Error, readonly properties by default
 

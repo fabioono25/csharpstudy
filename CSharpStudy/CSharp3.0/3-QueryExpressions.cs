@@ -8,39 +8,39 @@ namespace CSharpStudy.CSharp3_0
         public static void ExecuteExample()
         {
             //basic example
-            var numbers = new List<int> { 1, 2, 3, 4, 5, 6};
+            var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
 
             //IEnumerable<int>
-            var numbersBellowFour = 
+            var numbersBellowFour =
                 from number in numbers
                 where number < 4
                 select number;
 
             //IOrderedEnumerable<int>
-            var numbersBellowFour2 = 
+            var numbersBellowFour2 =
                 from number in numbers
                 where number < 4
                 orderby number descending
-                select number;                
+                select number;
 
             //IEnumerable<string>
-            var numbersBellowFour3 = 
+            var numbersBellowFour3 =
                 from number in numbers
                 where number < 4
-                select "The number bellow is " + number;            
+                select "The number bellow is " + number;
 
             //int
-            var numbersBellowFour4 = 
+            var numbersBellowFour4 =
                 (from number in numbers
                  where number < 4
                  select number)
-                 .Count();                            
+                 .Count();
 
             //IEnumerable<<anonymous type: string Type, int Value>>
-            var numbersBellowFour5 = 
+            var numbersBellowFour5 =
                 from number in numbers
                 where number < 4
-                select new { Type="Number", Value = number };            
-        }        
+                select new { Type = "Number", Value = number };
+        }
     }
 }

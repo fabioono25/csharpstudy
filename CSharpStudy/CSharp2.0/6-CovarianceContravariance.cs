@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace CSharpStudy.CSharp2_0
@@ -20,8 +19,8 @@ namespace CSharpStudy.CSharp2_0
             // Assignment compatibility is reversed
             Action<object> actObject = SetObject;
             Action<string> actString = actObject;
-        }        
+        }
 
-        static void SetObject(object o) { }        
+        static void SetObject(object o) { }
     }
 }

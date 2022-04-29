@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpStudy.CSharp7
+﻿namespace CSharpStudy.CSharp7
 {
     public class ExpressionBodied
     {

@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp4_0
 {
     public class DynamicTest
@@ -23,22 +21,27 @@ namespace CSharpStudy.CSharp4_0
             MakeItTalk(amoeba); // Return a RuntimeBinderException, when calling Talk() method
         }
 
-        public static void MakeItTalk(dynamic animal) {
+        public static void MakeItTalk(dynamic animal)
+        {
             animal.Talk();
-        }       
+        }
     }
 
-    public class Dog {
-        public void Talk() {
+    public class Dog
+    {
+        public void Talk()
+        {
             Console.WriteLine("Wolf, wolf!");
         }
     }
 
-    public class Person {
-        public void Talk() {
+    public class Person
+    {
+        public void Talk()
+        {
             Console.WriteLine("Hey you!");
         }
-    }    
+    }
 
-    public class Amoeba {}
+    public class Amoeba { }
 }

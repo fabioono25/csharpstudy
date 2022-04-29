@@ -62,11 +62,11 @@ namespace CSharpStudy
 
     }
 
-    public class CustomizedCustom: Customer
+    public class CustomizedCustom : Customer
     {
         //calling the base constructor
         public CustomizedCustom()
-            :base()
+            : base()
         {
 
         }

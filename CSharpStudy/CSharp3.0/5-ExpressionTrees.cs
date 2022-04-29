@@ -1,4 +1,3 @@
-using System;
 using System.Linq.Expressions;
 
 namespace CSharpStudy.CSharp3_0
@@ -14,6 +13,6 @@ namespace CSharpStudy.CSharp3_0
             Expression<Func<int, int>> square2 = x => x * x;
             var compiledExpression = square2.Compile(); //create a delegate
             var z = compiledExpression(2);              //invoke a delegate
-        }        
+        }
     }
 }

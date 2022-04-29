@@ -2,7 +2,8 @@ namespace CSharpStudy.CSharp10;
 
 public class NullCheck
 {
-    public static void ExecuteExample() {
+    public static void ExecuteExample()
+    {
 
         object message = null;
 
@@ -16,7 +17,7 @@ public class NullCheck
         // C# 9.0 way:
         if (message is null)
             throw new ArgumentNullException(nameof(message));
-        
+
         // C# 10 way:
         ArgumentNullException.ThrowIfNull(nameof(message));
     }

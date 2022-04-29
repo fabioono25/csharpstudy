@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CSharpStudy.Polymorphism.CompileTime
+﻿namespace CSharpStudy.Polymorphism.CompileTime
 {
     //compile time polymorphism, using method overloading (ealy binding/static binding)
     public class Calculate

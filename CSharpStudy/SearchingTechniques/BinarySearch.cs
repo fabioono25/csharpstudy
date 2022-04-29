@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.SearchingTechniques
 {
     public class BinarySearch

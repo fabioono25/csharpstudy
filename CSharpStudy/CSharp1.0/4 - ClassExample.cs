@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp1
 {
     /// <summary>
@@ -23,7 +21,7 @@ namespace CSharpStudy.CSharp1
                 name = value;
             }
         }
-        
+
         //constructor that takes no arguments
         public ClassExamplePerson()
         {

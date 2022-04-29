@@ -1,5 +1,3 @@
-using System;
-
 namespace CSharpStudy.CSharp1
 {
     /// <summary>

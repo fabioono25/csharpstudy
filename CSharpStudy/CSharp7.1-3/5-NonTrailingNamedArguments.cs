@@ -1,6 +1,3 @@
-using System;
-using System.Threading.Tasks;
-
 namespace CSharpStudy.CSharp7123
 {
     public static class NonTrailingNamedArguments

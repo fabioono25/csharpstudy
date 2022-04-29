@@ -18,9 +18,10 @@ namespace CSharpStudy.CSharp4_0
 
             // Even in different order, you should provide all parameters
             //Method1(parameter3: 3, parameter2: "param2");
-        }        
+        }
 
-        public static void Method1(string parameter1, string parameter2, int parameter3) {
+        public static void Method1(string parameter1, string parameter2, int parameter3)
+        {
         }
     }
 }
