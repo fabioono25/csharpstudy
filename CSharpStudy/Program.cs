@@ -807,7 +807,7 @@ namespace CSharpStudy
 
             //statements: the action that a program takes (assign, declaration)
 
-            //yield: A type of statement
+            //yield: A type of statement - asdasdasdasd
             //attributes: Attributes add metadata to your program
             //YieldExample.ExecuteExample();
 
