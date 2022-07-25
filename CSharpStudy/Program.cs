@@ -828,7 +828,7 @@ namespace CSharpStudy
             var a1 = new { A = 1, B = 2 };
             var a2 = a1 with { B = 122 };
             Console.WriteLine(a2);
-
+ 
             string z = null, zz = null;
             string x = z ??= "Hi, I am null";
             WriteLine(x);
