@@ -124,12 +124,12 @@ namespace CSharpStudy
             // ConstantInterpolationString.ExecuteExample();
             // RecordStruct.ExecuteExample();
             // LambdaImprovements.ExecuteExample();
-            NullCheck.ExecuteExample();
+            // NullCheck.ExecuteExample();
             #endregion
 
             #region Features
             //IndexesRanges.ExecuteExample();
-            var x = new DirectoryInfo(@"C:\temp\directory");
+            //var x = new DirectoryInfo(@"C:\temp\directory");
 
 
             #endregion
@@ -820,6 +820,21 @@ namespace CSharpStudy
             //reference types:
             //ReferenceTypesExample.ExecuteExample();
 
+            #endregion
+
+            #region C# in a Nutshell
+
+            // nondestructive mutation for anonymous types
+            var a1 = new { A = 1, B = 2 };
+            var a2 = a1 with { B = 122 };
+            Console.WriteLine(a2);
+
+            string z = null, zz = null;
+            string x = z ??= "Hi, I am null";
+            WriteLine(x);
+
+            WriteLine(zz ?? "asdasd");
+  
             #endregion
         }
 
