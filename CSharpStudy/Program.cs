@@ -1,4 +1,5 @@
 ﻿using CSharpStudy.CSharp10;
+using CSharpStudy.CSharpNutshell;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -834,7 +835,48 @@ namespace CSharpStudy
             WriteLine(x);
 
             WriteLine(zz ?? "asdasd");
-  
+
+            // using a reserved word as an identifier
+            int @int = 123;
+            WriteLine(@int);
+
+            var p1 = new Panda("Pan 1");
+            var p2 = new Panda("Pan 2");
+
+            Console.WriteLine(Panda.Population);
+
+            int xx = 3;
+            LocalMethod();
+
+            void LocalMethod() { Console.WriteLine(xx); }   // We can access x
+
+            Half h = (Half) 10;
+            WriteLine(h);
+
+            // assign expressions
+            int i;
+            var k = 5 * (i = 2);
+            WriteLine(k);
+            WriteLine(i);
+
+            switch (k)
+            {
+                //case int zzz when k > 8:
+                case int _ when k > 8:
+                    WriteLine("k is higher than 8");
+                    break;
+                default:
+                    break;
+            }
+
+            var ret = k switch
+            {
+                10 => "ten",
+                _ => throw new NotImplementedException()
+            };
+
+            WriteLine(ret);
+
             #endregion
         }
 
