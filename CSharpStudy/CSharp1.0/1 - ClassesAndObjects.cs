@@ -3,6 +3,8 @@ namespace CSharpStudy.CSharp1
 
   /**
   * a class works as a blueprint for creating objects
+  * and object is the instance of a class
+  * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes
   **/
   class Person {
     public string Name { get; set; } // property

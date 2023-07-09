@@ -2,7 +2,9 @@ namespace CSharpStudy.CSharp1
 {
 
   /**
-  * Encapsulation is the process of hiding the internal implementation details and showing only the necessary
+  * Encapsulation is the process of hiding the internal implementation details and showing only the necessary.
+  * It helps to achieve data hiding in a class and prevents other classes from accessing the private members of the class.
+  * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
   **/
   class BankAccount {
     private decimal balance; // private field (controled access)

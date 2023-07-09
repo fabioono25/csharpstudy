@@ -39,6 +39,12 @@ Version 1.0:
 - Delegates
 - Events
 - Attributes
+- Other characteristics of this version: 
+  - Manage execution: automatic memory management and the concept of garbage collection. Value objects are allocated on the stack, while reference ones are part of the heap. GC traverses the object graph (Marking Phase) and then scans the entire heap for unmarked objects (Sweeping Phase). The objects are divided in different generations, based on their lifetime: 
+    - Generation 0: Contains short-lived objects that are typically created and collected quickly.
+    - Generation 1: Contains objects that have survived one garbage collection cycle.
+    - Generation 2: Contains long-lived objects that have survived multiple garbage collection cycles.
+  - It is important to stress that GC doesn't handled the cleanup of some resources, like DB connections or network sockes. This is why we have IDisposable interface and using statements.
 
 Version 1.2
 - ForEach Support for IDisposable
