@@ -1,4 +1,4 @@
-﻿namespace CSharpStudy.CSharp1
+﻿namespace CSharpStudy.CSharp1_0
 {
     public class ReferenceTypesExample
     {

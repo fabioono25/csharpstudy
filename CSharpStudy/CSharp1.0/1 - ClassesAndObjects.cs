@@ -1,4 +1,4 @@
-namespace CSharpStudy.CSharp_1
+namespace CSharpStudy.CSharp1
 {
 
   /**
@@ -7,6 +7,18 @@ namespace CSharpStudy.CSharp_1
   class Person {
     public string Name { get; set; } // property
     public int Age { get; set; }
+
+    //constructor that takes no arguments
+    public Person()
+    {
+        Name = "Unknown";
+    }
+
+    //constructor that takes one argument
+    public Person(string name)
+    {
+        Name = name;
+    }
 
     public void SayHello() { // method
       Console.WriteLine("Hello, my name is " + Name + " and I'm " + Age + " years old.");
