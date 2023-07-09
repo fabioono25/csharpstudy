@@ -5,8 +5,8 @@ namespace CSharpStudy.CSharp1
     public class BoxingUnboxing
     {
         /// <summary>
-        /// Boxing: convert a value type into a type object (reference type).
-        /// Unboxing: conversion from the type object (reference type) to a value type.
+        /// Boxing: convert a value type into a reference type.
+        /// Unboxing: conversion from the reference type to a value type.
         /// https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing
         /// </summary>
         public static void ExecuteExample()
