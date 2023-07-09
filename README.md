@@ -45,6 +45,7 @@ Version 1.0:
   - async programming
   - customizations
 - Events: build upon delegates and are used to provide a standardized way of implementing the publisher-subscriber pattern. They allow objects to notify other objects when certain actions or states occur, facilitating event-driven programming.
+- Arrays
 - Value Types
 - Reference Types
 - Boxing and Unboxing
