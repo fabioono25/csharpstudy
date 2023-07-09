@@ -1,19 +1,22 @@
 namespace CSharpStudy.CSharp1
 {
-
   /**
-  * inheritance allows you to create a new class (derived class) from an existing class (base class)
+  * Inheritance allows you to create a new class (derived class) from an existing class (base class)
   * adding new members to derived class or modifying existing members from the base one
   **/
-  class AnimalTest {
+  class Animal
+  {
     public string Name { get; set; }
-    public void Eat() {
+    public void Eat()
+    {
       Console.WriteLine("Eating...");
     }
   }
 
-  class Dog: AnimalTest {
-    public void Bark() {
+  class Dog : Animal
+  {
+    public void Bark()
+    {
       Console.WriteLine("Barking...");
     }
   }
