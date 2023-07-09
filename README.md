@@ -27,6 +27,8 @@ During these more than 15 years, the language is gaining new improvements. Here 
 
 
 Version 1.0:
+- Classes and Objects
+- Inheritance
 - Value Types
 - Reference Types
 - Boxing and Unboxing
