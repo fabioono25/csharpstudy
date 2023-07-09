@@ -53,11 +53,8 @@ Version 1.0:
 - Value Types
 - Reference Types
 - Boxing and Unboxing
-- Classes
-- Interfaces
-- Delegates
-- Events
 - Attributes
+- Interfaces
 
 Version 1.2
 - ForEach Support for IDisposable
