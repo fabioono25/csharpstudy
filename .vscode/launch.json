@@ -9,7 +9,7 @@
            "type": "coreclr",
            "request": "launch",
            "preLaunchTask": "build",
-           "program": "${workspaceFolder}/CSharpStudy/bin/Debug/net5.0/CSharpStudy.dll",
+           "program": "${workspaceFolder}/CSharpStudy/bin/Debug/net6.0/CSharpStudy.dll",
            "args": [],
            "cwd": "${workspaceFolder}",
            "stopAtEntry": false,

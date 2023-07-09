@@ -1,5 +1,5 @@
 ﻿using CSharpStudy.CSharp10;
-using CSharpStudy.CSharpNutshell;
+// using CSharpStudy.CSharpNutshell;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -759,7 +759,6 @@ namespace CSharpStudy
 
             //PATTERN MATCHING
             //PatternMatching.ExecuteExample();
-
             #endregion
 
             #region Functional Programming
@@ -826,56 +825,56 @@ namespace CSharpStudy
             #region C# in a Nutshell
 
             // nondestructive mutation for anonymous types
-            var a1 = new { A = 1, B = 2 };
-            var a2 = a1 with { B = 122 };
-            Console.WriteLine(a2);
+            // var a1 = new { A = 1, B = 2 };
+            // var a2 = a1 with { B = 122 };
+            // Console.WriteLine(a2);
  
-            string z = null, zz = null;
-            string x = z ??= "Hi, I am null";
-            WriteLine(x);
+            // string z = null, zz = null;
+            // string x = z ??= "Hi, I am null";
+            // WriteLine(x);
 
-            WriteLine(zz ?? "asdasd");
+            // WriteLine(zz ?? "asdasd");
 
-            // using a reserved word as an identifier
-            int @int = 123;
-            WriteLine(@int);
+            // // using a reserved word as an identifier
+            // int @int = 123;
+            // WriteLine(@int);
 
-            var p1 = new Panda("Pan 1");
-            var p2 = new Panda("Pan 2");
+            // var p1 = new Panda("Pan 1");
+            // var p2 = new Panda("Pan 2");
 
-            Console.WriteLine(Panda.Population);
+            // Console.WriteLine(Panda.Population);
 
-            int xx = 3;
-            LocalMethod();
+            // int xx = 3;
+            // LocalMethod();
 
-            void LocalMethod() { Console.WriteLine(xx); }   // We can access x
+            // void LocalMethod() { Console.WriteLine(xx); }   // We can access x
 
-            Half h = (Half) 10;
-            WriteLine(h);
+            // Half h = (Half) 10;
+            // WriteLine(h);
 
-            // assign expressions
-            int i;
-            var k = 5 * (i = 2);
-            WriteLine(k);
-            WriteLine(i);
+            // // assign expressions
+            // int i;
+            // var k = 5 * (i = 2);
+            // WriteLine(k);
+            // WriteLine(i);
 
-            switch (k)
-            {
-                //case int zzz when k > 8:
-                case int _ when k > 8:
-                    WriteLine("k is higher than 8");
-                    break;
-                default:
-                    break;
-            }
+            // switch (k)
+            // {
+            //     //case int zzz when k > 8:
+            //     case int _ when k > 8:
+            //         WriteLine("k is higher than 8");
+            //         break;
+            //     default:
+            //         break;
+            // }
 
-            var ret = k switch
-            {
-                10 => "ten",
-                _ => throw new NotImplementedException()
-            };
+            // var ret = k switch
+            // {
+            //     10 => "ten",
+            //     _ => throw new NotImplementedException()
+            // };
 
-            WriteLine(ret);
+            // WriteLine(ret);
 
             #endregion
         }
