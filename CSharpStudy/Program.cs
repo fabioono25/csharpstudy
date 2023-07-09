@@ -14,6 +14,8 @@ namespace CSharpStudy
       #region C# 1.0
       // ClassesAndObjectsTest.ExecuteExample();
       // InheritanceTest.ExecuteExample();
+      // DelegateExample.ExecuteExample();
+      EventExample.ExecuteExample();
 
       //value types, reference types, boxing vs unboxing
       // ValueTypesExample.ExecuteExample();

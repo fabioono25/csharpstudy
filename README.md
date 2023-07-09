@@ -38,6 +38,13 @@ Version 1.0:
     - Generation 2: Contains long-lived objects that have survived multiple garbage collection cycles.
   - It is important to stress that GC doesn't handled the cleanup of some resources, like DB connections or network sockes. This is why we have IDisposable interface and using statements.
 - Exceptions
+- Delegates: are used to define a type that represents a reference to a method or a group of methods. They provide a way to encapsulate and pass methods as parameters or store them in variables, enabling callbacks and dynamic invocation of methods. Advantages:
+  - decoupling of components.
+  - flexibility and extensibility
+  - functional programming
+  - async programming
+  - customizations
+- Events: build upon delegates and are used to provide a standardized way of implementing the publisher-subscriber pattern. They allow objects to notify other objects when certain actions or states occur, facilitating event-driven programming.
 - Value Types
 - Reference Types
 - Boxing and Unboxing
