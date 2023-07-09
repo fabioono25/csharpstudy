@@ -1,0 +1,667 @@
+[33mcommit 83162b107f71568c93848a9bc61ee2cccd8230ba[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Fabio Ono Tavoloni <Fabio.Onotavoloni.ext@hoffmann-group.com>
+Date:   Sun Jul 9 10:08:35 2023 +0200
+
+    adding support to .NET 6
+
+[33mcommit d7c255f1077888dd5a1c308823071ddb78ab1a6b[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Tue Jul 26 20:23:43 2022 +0200
+
+    tests
+
+[33mcommit 324676642ef1fdd9bc009206c9fb09661b274097[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Mon Jul 25 19:30:33 2022 +0200
+
+    asdasd
+
+[33mcommit 009c230bbdf0bd930f70ad8200e52cfcfdd07f49[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Mon Jul 25 19:20:37 2022 +0200
+
+    test
+
+[33mcommit 26a796d4d8a5af05f4041470c68f5c32b144ee0b[m
+Author: fabioono25 <fabioono25@Ivnas-MacBook-Air.local>
+Date:   Mon Jul 25 19:15:32 2022 +0200
+
+    just a test
+
+[33mcommit 484dff929bb236d73931207d418621e3db8a463e[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Fri Apr 29 12:39:11 2022 +0200
+
+    cleaning code
+
+[33mcommit 72b2a4839514ae8214664f1f28d78b161b7d18ef[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Apr 9 18:46:14 2022 +0200
+
+    Lambda improvements + NullCheck
+
+[33mcommit ce737edfe74e29a9ebb97e92ae1744a29066ac03[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Apr 9 18:20:14 2022 +0200
+
+    record struct
+
+[33mcommit 9419e81f7a59fec766c74aa21f63256e527936de[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Apr 9 18:18:07 2022 +0200
+
+    constantInterporlation + externded properties + filescoped
+
+[33mcommit 5a2ce8e16cf9c3dd2cc173d4401de033747b4b15[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Apr 9 17:51:32 2022 +0200
+
+    global using directives
+
+[33mcommit 671032be4f6a76f2026e0ab50ed6f9d9640d8414[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Apr 9 17:43:37 2022 +0200
+
+    global usings
+
+[33mcommit c13ddf3ca8d7c463b28bf6af2c6ed764157003bb[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Apr 9 17:29:43 2022 +0200
+
+    update to .NET 6
+
+[33mcommit 171205e6f92e588d08ea89cc855c067746b7d98d[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Wed Jun 23 22:01:38 2021 +0100
+
+    adding features
+
+[33mcommit 5b9d454fd517556c38a565f84c249231b0093d78[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Mon Jun 14 19:07:52 2021 +0100
+
+    examples
+
+[33mcommit 9d7dc3a3a4f45a80706264d2cc4c16f5bd81d410[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat May 8 17:37:43 2021 +0100
+
+    features for C# 9.0
+
+[33mcommit 06eac612fb9ef666e192c3499c60b65657224d71[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Mon Mar 22 17:42:52 2021 +0000
+
+    Half and nint
+
+[33mcommit d15469602dd9265dd9845209834e5a48b6ab02ff[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Thu Mar 4 18:52:25 2021 +0000
+
+    add support to .NET 5
+
+[33mcommit 2f1499927e459e23ffbd8ba7bcaa05b4d2072c0e[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Mon Dec 28 11:57:03 2020 +0000
+
+    C# 8.0 examples
+
+[33mcommit acce1d22cba4620efc638c1f67bc0c9a2b068856[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Nov 14 21:23:40 2020 +0000
+
+    update code to 7.1-2-3
+
+[33mcommit 86a0b282bc07e54878ee7ea4deb75aecc2101f0c[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Nov 14 19:59:15 2020 +0000
+
+    version 7.1 examples
+
+[33mcommit c7935457ab01ff895070820a720d9649f4179d73[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Wed Jun 24 10:39:55 2020 +0100
+
+    tuples
+
+[33mcommit 8701eb678b8e2f86b272dd82ef88f212ca6eef39[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Wed Jun 24 10:20:49 2020 +0100
+
+    ref returns
+
+[33mcommit 92999047d7255228f3788c264bac12da6db7bc0c[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 23 12:06:35 2020 +0100
+
+    pattern matching
+
+[33mcommit 55df8f317bf4c9a9cf09fd6b64f36061a3d2643a[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 23 12:06:23 2020 +0100
+
+    out variables
+
+[33mcommit 041d4cba742e9c5477c4a9a4213763e2bc1ddc5d[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 23 12:06:15 2020 +0100
+
+    expression bodied + out variables
+
+[33mcommit 7a6425b8c13eb08d1a6a1badd34dc3f651f64046[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 23 11:16:33 2020 +0100
+
+    digit and binary separators
+
+[33mcommit 33f97d5f25b692239326723c708b9d40d6ab60c0[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 23 10:59:47 2020 +0100
+
+    CSharp 6
+
+[33mcommit fda50761649205455d74d2669c7a5b483363f1b7[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 9 09:49:16 2020 +0100
+
+    remove unused test
+
+[33mcommit ca352774ae5b24bb841b34c05596eda7c1cd8484[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 9 09:47:29 2020 +0100
+
+    index initializer
+
+[33mcommit 18a8c290e6dd8996b108b660fb84cb352350d7f7[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 9 09:32:15 2020 +0100
+
+    await in finally
+
+[33mcommit 008357d469a86cc08429eb6a010ab421b80cca47[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 9 09:31:33 2020 +0100
+
+    await in catch and finally blocks
+
+[33mcommit 769874d5e30f529380e9e28cc2d01098fade9ff0[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 9 09:25:02 2020 +0100
+
+    nameof
+
+[33mcommit c42082cae49106b4fe1156716df56a3025feff24[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 9 09:20:50 2020 +0100
+
+    exception filters
+
+[33mcommit b7c6281ad197ae0407a5dc91580d6364317afebe[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 9 09:05:41 2020 +0100
+
+    string interpolation
+
+[33mcommit e52098c6b0ad59012c18cbfd70ce2e7cd7b07e4e[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 2 14:43:39 2020 +0100
+
+    expression bodied
+
+[33mcommit f186ad18cc8c7859887670df715595c13b38ae8c[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 2 14:26:30 2020 +0100
+
+    Null Conditional Operator
+
+[33mcommit 34dae585835a2cc76c29615e8f7749ed79da43ee[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 2 13:55:17 2020 +0100
+
+    static methods
+
+[33mcommit 3290a79a55679c7c8e6c87e4278f767d027893d6[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue Jun 2 13:38:02 2020 +0100
+
+    auto-property initializer
+
+[33mcommit 49856d7d3bce4e972b1c84d6e301d58194719793[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Mon Jun 1 08:47:29 2020 +0100
+
+    Bootstrap C# 6
+
+[33mcommit e0308267ea5c81963075c34c4830a43fd754ba99[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Mon May 25 10:23:31 2020 +0100
+
+    Update README.md
+
+[33mcommit b2512ad147aaeedce338b1e591508a4466ab4d4d[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Mon May 25 10:22:15 2020 +0100
+
+    Update README.md
+
+[33mcommit e7f7e3b78631d9f712cf500c9caa91d1c39e6c1c[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Mon May 25 10:21:52 2020 +0100
+
+    Update README.md
+
+[33mcommit 9c69e130c6bc227258d6b08f2163c3559384a506[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Mon May 25 10:20:54 2020 +0100
+
+    Update README.md
+
+[33mcommit 0668212fe14a30f3fba30d2ce23198754cca60b5[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun May 24 11:43:01 2020 +0100
+
+    C# 5.0
+
+[33mcommit 7122386a2a88ce0398ba050c19ddbeef95862ece[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue May 12 22:00:44 2020 +0100
+
+    Update README.md
+
+[33mcommit c3aa0a51ed4d57a860ac068d87063136f3ece9b7[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Tue May 12 21:55:53 2020 +0100
+
+    Update README.md
+
+[33mcommit 896fa0e4e8f071b8eddf3cfb277ce8dc2f92d356[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat May 9 23:47:49 2020 +0100
+
+    c sharp 4
+
+[33mcommit 86644705f5f5ef97c548665bfd3d0bb7ab05e1dc[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat May 9 11:58:25 2020 +0100
+
+    CSharp 4 bootstrap
+
+[33mcommit 340d430960113a6246043021ca37b4722df7429a[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Apr 18 16:05:02 2020 +0100
+
+    partial methods
+
+[33mcommit e2e2f5fd8e9c2b915f9012a7ee1666c36b168716[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Apr 18 15:38:50 2020 +0100
+
+    implicit typed var + partial methods
+
+[33mcommit 2b9b84eb1983bc78b5c750354bd2ca73170915f3[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Apr 18 15:19:54 2020 +0100
+
+    expression trees +
+    extension methods
+
+[33mcommit e405406fc6a8a7c638b984c1291bdaf86a3e1232[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Apr 18 11:52:43 2020 +0100
+
+    lambda
+
+[33mcommit ff1d10739ba16ff91ba822766168cbcc935a4d8b[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Apr 18 11:31:05 2020 +0100
+
+    anonymous + query expressions
+
+[33mcommit 982bb93c83c8f2fddec7a393e8605cdb623acf31[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Apr 18 11:00:08 2020 +0100
+
+    bootstrap csharp3 + auto-implemented properties
+
+[33mcommit 5b89b6062357ae472fd6455a1d2162dda4a53e39[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 23:06:31 2020 +0100
+
+    class modified to compile
+
+[33mcommit 0f08b8a14f66944d458ebea5896a6fb56ae6a745[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 23:05:14 2020 +0100
+
+    inference for delegates, getters  and setters + static classes
+
+[33mcommit 6550bd731e6499cc749b967ebb04b5cf24281798[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 22:32:23 2020 +0100
+
+    covariance  and contravariance
+
+[33mcommit ebd25a061a2cc47b1da42b316c1f297147cadb98[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 21:56:28 2020 +0100
+
+    iterators
+
+[33mcommit ec9eaa03a05fe866207337caec18ed6847370664[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 21:27:13 2020 +0100
+
+    nullable types
+
+[33mcommit 4ceea6d372bab49836c034819877caa9a6c5806b[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 21:22:58 2020 +0100
+
+    partial types + anonymous methods
+
+[33mcommit f7f75f1577ede1226081a0afde72b1d0a9dc5731[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 20:36:48 2020 +0100
+
+    generics test
+
+[33mcommit c9d6832de60a370854f935f7d9f35ffd2938a9ed[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sun Apr 12 19:28:19 2020 +0100
+
+    Bootstrap of New Examples C# 2.0
+
+[33mcommit 25404baef103a9c44d12853ce270d3f310550e04[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Fri Apr 3 22:32:39 2020 +0100
+
+    version 1.2 article
+
+[33mcommit ffb0a31c2c77703112cee172a45da2e7fc8920a3[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Wed Apr 1 11:22:31 2020 +0100
+
+    change launch.json to use version 3.1
+
+[33mcommit 5b5e5607139f74b3e219d839a48f2a66e6207828[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Wed Apr 1 11:03:26 2020 +0100
+
+    C# 1.2
+
+[33mcommit 6a095f9ee0e114b5ff365e3ea9479866fa2a49c0[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 29 17:54:56 2020 +0100
+
+    update projects
+
+[33mcommit e25430daf1809046f765225d57ce59a46794b539[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 29 17:31:36 2020 +0100
+
+    organize tests
+
+[33mcommit fd7f4e64a4271b60a6b89db187b9b98310adfb68[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 29 17:30:16 2020 +0100
+
+    update file
+
+[33mcommit 694985e9b648c8c095b890bbe05717527d063d13[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 29 17:24:03 2020 +0100
+
+    Organization of code
+
+[33mcommit 471b3278a525b49903ae1269fdfee24143103c3b[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 29 16:45:19 2020 +0100
+
+    C# 1.0
+
+[33mcommit 0dd961e834c4abecaf32053de10f96c5e8c6d280[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 15 11:45:07 2020 +0000
+
+    comment code
+
+[33mcommit 1f73978ea98befb4a98306be81d629d0199cba4d[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 15 11:24:00 2020 +0000
+
+    events and delegates
+
+[33mcommit 33c1f3efc681d2db97aed68d92eb668b198ddebe[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 15 10:07:43 2020 +0000
+
+    delegates
+
+[33mcommit 84d5f52eb68fe2985de6c474c78a41caa4927288[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sun Mar 15 09:41:10 2020 +0000
+
+    generics
+
+[33mcommit 7a42131b5f288d8aa8091cf727bb608810a883f5[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Mar 14 23:12:36 2020 +0000
+
+    notes
+
+[33mcommit 23bae690f44673c50303823b85f1799af2701432[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Mar 14 17:04:24 2020 +0000
+
+    polymorphism
+
+[33mcommit 2c048874c1e1cf2323ab1935f0fe4b8b609d4e66[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Mar 14 16:12:58 2020 +0000
+
+    basic examples
+
+[33mcommit 6eec6f4ccaaf0db80c6cdf95e8fffb1270b9fe8f[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Sat Mar 14 10:57:48 2020 +0000
+
+    clenup code
+
+[33mcommit 43df65e733bf65278dd7caac22a67af9cc1bfa0f[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Wed Feb 12 16:55:29 2020 +0000
+
+    Managing objects
+
+[33mcommit f230b40a88d4d0be4ab282b6da9c64564defe7eb[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Wed Feb 12 09:51:42 2020 +0000
+
+    Naming and Handling Methods, Fields and Properties
+
+[33mcommit c0eacdc9500f7ed08467760bd15ce771bd0af0bc[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Tue Feb 11 14:37:47 2020 +0000
+
+    naming and handling classes
+
+[33mcommit 3507b06d60dcf66bd14275582618dac03a98e70b[m
+Author: fabioono25 <fabioono25@gmail.com>
+Date:   Tue Feb 11 13:06:03 2020 +0000
+
+    update .NET Core Framework to 3.1
+
+[33mcommit 61701e9caf7056dd176096e3cab6a0b2f255e9da[m
+Author: fabio.tavoloni <fabio.tavoloni@LNLT-PC0YUUXY>
+Date:   Sun Oct 6 19:10:04 2019 +0100
+
+    Value Types and Reference Types
+
+[33mcommit 1f48b125f56d0e29cb0bb48f01f002a1072dec39[m
+Author: fabio.tavoloni <fabio.tavoloni@LNLT-PC0YUUXY>
+Date:   Wed Mar 6 09:01:03 2019 +0000
+
+    Refactoring methods
+
+[33mcommit b5eb91686e30726c8cf44defccb778a86fd2d5ae[m
+Author: ono <fabioono25@gmail.com>
+Date:   Sat Aug 25 16:53:36 2018 -0300
+
+    C# 1.0 features
+
+[33mcommit 2f9e411b0fd2c4400572157a5085168f89962cc8[m
+Author: ono <fabioono25@gmail.com>
+Date:   Sat Aug 25 09:34:02 2018 -0300
+
+    correcting errors
+
+[33mcommit c381e1276d99fdfe4baf99746d996c35da441c2e[m
+Merge: 98bfc9c 976a6c8
+Author: ono <fabioono25@gmail.com>
+Date:   Sat Aug 25 09:14:34 2018 -0300
+
+    alteracoes
+
+[33mcommit 98bfc9caf3fa8777430e9c16c22eed047c5ad5c9[m
+Author: ono <fabioono25@gmail.com>
+Date:   Sat Aug 25 09:11:17 2018 -0300
+
+    other things
+
+[33mcommit 976a6c89c322c05a9ef45c7b15828eacd6d675bc[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Fri Aug 10 09:07:30 2018 -0300
+
+    Parallel vs ForEach
+
+[33mcommit 504aea3094ed0d5955a2eb89872e251353c124dd[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Wed Aug 1 13:47:12 2018 -0300
+
+    property
+
+[33mcommit ad20876a92417176e3e3a09af04b34dea12b21db[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Tue Jul 31 15:23:12 2018 -0300
+
+    Events
+
+[33mcommit 40a4ae6a7d505225431d4dccbbe078a722dfef45[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Tue Jul 31 15:03:10 2018 -0300
+
+    Events
+
+[33mcommit cf6bae0e9c018014f13575c49e12f53c2a2f9d8b[m
+Author: ono <fabioono25@gmail.com>
+Date:   Mon Jul 30 13:31:00 2018 -0300
+
+    interfaces
+
+[33mcommit 90f43420a27ea71be2aa44a35baf1db5bca96711[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Wed Jul 18 12:53:12 2018 -0300
+
+    Structs
+
+[33mcommit 3a8b0582efcc02a8f6eaa169865267ce2b4dad66[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Wed Jul 18 09:49:00 2018 -0300
+
+    C# 1.0 - Classes
+
+[33mcommit 747314f6312f12e232441922be2ee08bc9287236[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Wed Jul 11 11:13:35 2018 -0300
+
+    ExpressionBodies, Pattern Matching and ValueTasks
+
+[33mcommit 5649c6d5f46c9ca7705865216c68933ad5934f4e[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Tue Jul 10 08:21:21 2018 -0300
+
+    Pattern Matching
+
+[33mcommit 8ad47acdbdd2961edc0cbfad08d08466a0cf024b[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Fri Jul 6 11:46:27 2018 -0300
+
+    output variables
+
+[33mcommit f9aee025f19ebd9453387360cbfc03fb340a219f[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Thu Jul 5 14:38:47 2018 -0300
+
+    Local Functions and Digit Separator
+
+[33mcommit 869d8a5da8306cdff399ed088bad1011989ad258[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Thu Jul 5 14:07:40 2018 -0300
+
+    binary search
+
+[33mcommit 95b5f40df8afed3c7e2feacc600025fd967861b5[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Thu Jul 5 13:22:48 2018 -0300
+
+    LinearSearch
+
+[33mcommit b827513905f9c70fedb63e0e846dcdd830697f18[m
+Author: ono <fabioono25@gmail.com>
+Date:   Sun Jul 1 08:17:44 2018 -0300
+
+    Ref Returns and Pattern Matching
+
+[33mcommit 16cf5187a0fe3c86c5ad9df65012c58c1e8538a2[m
+Author: Fabio Tavoloni <fabio.t0844.beyond@xpi.com.br>
+Date:   Fri Jun 29 09:35:30 2018 -0300
+
+    trabalhando com tuplas
+
+[33mcommit b1b4735a244e4227ee2acf2cff357c7ef355fe06[m
+Author: ono <fabioono25@gmail.com>
+Date:   Wed May 23 17:23:28 2018 -0300
+
+    Advances C#
+
+[33mcommit 9a08011f8326d63bce6a3603f68ec76103e743f1[m
+Author: ono <fabioono25@gmail.com>
+Date:   Thu May 17 15:09:48 2018 -0300
+
+    Anotacoes Intermediario
+
+[33mcommit d4e2869ba328c01f2bac3b6296f4cb01a228d43d[m
+Author: ono <fabioono25@gmail.com>
+Date:   Tue May 15 12:52:14 2018 -0300
+
+    testes
+
+[33mcommit ea49a7a661bf3126ed741396e811337ee2731697[m
+Author: ono <fabioono25@gmail.com>
+Date:   Tue May 15 12:51:58 2018 -0300
+
+    atualizacao
+
+[33mcommit a807e7e33fd503e38a419a31b64137c45ba162b1[m
+Author: ono <fabioono25@gmail.com>
+Date:   Sun Apr 15 02:42:46 2018 -0300
+
+    Sections 6, 7, 8, 9
+
+[33mcommit 57d0f77ff4954f632e9daf02e95785e0b8b34bdc[m
+Author: ono <fabioono25@gmail.com>
+Date:   Sun Apr 15 00:23:13 2018 -0300
+
+    Sections 3, 4 and 5
+
+[33mcommit fb015a8f26f6a04467c6a5fd26554ea8e454b057[m
+Author: ono <fabioono25@gmail.com>
+Date:   Sat Apr 14 17:02:54 2018 -0300
+
+    hellow world
+
+[33mcommit 6d6c42564ad81bfc42c37c07166e79a6c6df8c1d[m
+Author: Fabio Ono Tavoloni <fabioono25@gmail.com>
+Date:   Sat Apr 14 16:59:45 2018 -0300
+
+    Initial commit
