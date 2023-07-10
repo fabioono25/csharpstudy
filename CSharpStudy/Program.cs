@@ -15,40 +15,27 @@ namespace CSharpStudy
       #region C# 1.0
       // ClassesAndObjectsTest.ExecuteExample();
       // InheritanceTest.ExecuteExample();
+      // EncapsulationTest.ExecuteExample();
+      // PolymorphismTest.ExecuteExample();
+      // GarbageCollectionTest.ExecuteExample();
+      // ExceptionHandlingTest.ExecuteExample();
       // DelegateExample.ExecuteExample();
       // EventExample.ExecuteExample();
-ForEachIDisposable.ExecuteExample();
-      //value types, reference types, boxing vs unboxing
+      // ArraysTest.ExecuteExample();
+      // IterationStatementsTest.ExecuteExample();
+      // ConditionalsTest.ExecuteExample();
+      // StructTest.ExecuteExample();
+      // EnumTest.ExecuteExample();
       // ValueTypesExample.ExecuteExample();
       // ReferenceTypesExample.ExecuteExample();
       // BoxingUnboxing.ExecuteExample();
-
-      //classes
-      //TestPerson.ExecuteExample();
-
-      //interfaces
-      //InterfaceExample.ExecuteExample();
-
-      //events
-      //EventExample.ExecuteExample();
-      //EventExample2.ExecuteExample();
-
-      //delegates
-      //DelegateExample.ExecuteExample();
-
-      //atributes
-      //AttributeExample.ExecuteExample();
+      // AttributeExample.ExecuteExample();
+      // InterfaceExample.ExecuteExample();
+      // ForEachIDisposable.ExecuteExample();
+      // ReflectionTest.ExecuteExample();
+      
       #endregion
 
-      #region C# 1.2
-      //ForEachIDisposable.ExecuteExample();
-      //ReflectionTest.ExecuteExample();
-      //UnsafeTest.ExecuteExample();
-      //CheckUncheck.ExecuteExample();
-      //ConstructorsDestructors.ExecuteExample();
-      //UsingTest.ExecuteExample();
-
-      #endregion
 
       #region C# 2.0
       //GenericsTest.ExecuteExample();

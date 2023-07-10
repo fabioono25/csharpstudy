@@ -11,7 +11,7 @@ namespace CSharpStudy.CSharp1
         }
     }
 
-    public class StructSample
+    public class StructTest
     {
         public static void ExecuteExample()
         {
