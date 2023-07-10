@@ -55,9 +55,9 @@ Version 1.0:
 - Boxing and Unboxing
 - Attributes
 - Interfaces
+- ForEach Support for IDisposable
 
 Version 1.2
-- ForEach Support for IDisposable
 - Property Declarations
 - Changing Attributes
 - Reflection

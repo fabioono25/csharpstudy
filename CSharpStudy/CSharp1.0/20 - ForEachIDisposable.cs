@@ -1,6 +1,10 @@
 using System.Collections;
 
-namespace CSharpStudy.CSharp1_2
+  /**
+  * One important one was that as of v1.2 foreach calls Dispose on the iterator at the end in a finally block, if the iterator implements IDisposable.
+    * https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-12
+  **/
+namespace CSharpStudy.CSharp1
 {
 
     public class ForEachIDisposable

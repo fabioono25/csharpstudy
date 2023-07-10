@@ -3,6 +3,7 @@
 using System.Net;
 using System.Threading.Tasks;
 using CSharpStudy.CSharp1;
+using CSharpStudy.CSharp1_2;
 
 namespace CSharpStudy
 {
@@ -15,8 +16,8 @@ namespace CSharpStudy
       // ClassesAndObjectsTest.ExecuteExample();
       // InheritanceTest.ExecuteExample();
       // DelegateExample.ExecuteExample();
-      EventExample.ExecuteExample();
-
+      // EventExample.ExecuteExample();
+ForEachIDisposable.ExecuteExample();
       //value types, reference types, boxing vs unboxing
       // ValueTypesExample.ExecuteExample();
       // ReferenceTypesExample.ExecuteExample();

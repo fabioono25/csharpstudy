@@ -2,3 +2,6 @@ rectangular array:
 int[,] rectangularArray = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 
 class inside class
+
+https://www.developer.com/microsoft/c-sharp/implementing-nested-functions-in-c/
+
