@@ -1,6 +1,11 @@
+/**
+  * Constructors and destructors are special methods in C# that are used for initializing and cleaning up objects, respectively.
+    * https://www.tutorialsteacher.com/csharp/csharp-constructor
+  **/
+
 namespace CSharpStudy.CSharp1_2
 {
-    public class ConstructorsDestructors
+    public class ConstructorsDestructorsTest
     {
         public static void ExecuteExample()
         {
@@ -24,7 +29,7 @@ namespace CSharpStudy.CSharp1_2
             Console.WriteLine("This is de the constructor with the message: " + message);
         }
 
-        // Destructor
+        // Destructor (cannot be called explicitly)
         ~ClassExample()
         {
             Console.WriteLine("Destructor called");
