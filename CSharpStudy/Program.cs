@@ -12,34 +12,6 @@ namespace CSharpStudy
     //static async Task Main() - C# 7.1
     static async Task Main()
     {
-      #region C# 1.0
-      // ClassesAndObjectsTest.ExecuteExample();
-      // InheritanceTest.ExecuteExample();
-      // EncapsulationTest.ExecuteExample();
-      // PolymorphismTest.ExecuteExample();
-      // GarbageCollectionTest.ExecuteExample();
-      // ExceptionHandlingTest.ExecuteExample();
-      // DelegateExample.ExecuteExample();
-      // EventExample.ExecuteExample();
-      // ArraysTest.ExecuteExample();
-      // IterationStatementsTest.ExecuteExample();
-      // ConditionalsTest.ExecuteExample();
-      // StructTest.ExecuteExample();
-      // EnumTest.ExecuteExample();
-      // ValueTypesExample.ExecuteExample();
-      // ReferenceTypesExample.ExecuteExample();
-      // BoxingUnboxing.ExecuteExample();
-      // AttributeExample.ExecuteExample();
-      // InterfaceExample.ExecuteExample();
-      // ForEachIDisposable.ExecuteExample();
-      // ReflectionTest.ExecuteExample();
-      // UnsafeTest.ExecuteExample();
-      // CheckUncheckTest.ExecuteExample();
-      // ConstructorsDestructorsTest.ExecuteExample();
-      // UsingTest.ExecuteExample();
-      #endregion
-
-
       #region C# 2.0
       //GenericsTest.ExecuteExample();
       //PartialTypes.ExecuteExample();
