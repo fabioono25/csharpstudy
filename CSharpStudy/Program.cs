@@ -3,7 +3,6 @@
 using System.Net;
 using System.Threading.Tasks;
 using CSharpStudy.CSharp1;
-using CSharpStudy.CSharp1_2;
 
 namespace CSharpStudy
 {
@@ -12,14 +11,6 @@ namespace CSharpStudy
     //static async Task Main() - C# 7.1
     static async Task Main()
     {
-      #region C# 2.0
-      //GenericsTest.ExecuteExample();
-      //PartialTypes.ExecuteExample();
-      //AnonymousMethods.ExecuteExample();
-      //NullableValueTypes.ExecuteExample();
-      //Iterators.ExecuteExample();
-      //CovarianceContravariance.ExecuteExample();
-      #endregion
 
       #region C# 3.0
       // AutoImplementedPropertiesTest.ExecuteExample();
