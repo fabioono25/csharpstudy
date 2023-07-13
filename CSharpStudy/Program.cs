@@ -1,8 +1,6 @@
-﻿using CSharpStudy.CSharp10;
-// using CSharpStudy.CSharpNutshell;
+﻿// using CSharpStudy.CSharpNutshell;
 using System.Net;
 using System.Threading.Tasks;
-using CSharpStudy.CSharp1;
 
 namespace CSharpStudy
 {
@@ -11,17 +9,6 @@ namespace CSharpStudy
     //static async Task Main() - C# 7.1
     static async Task Main()
     {
-
-      #region C# 3.0
-      // AutoImplementedPropertiesTest.ExecuteExample();
-      // AnonymousTypesTests.ExecuteExample();
-      // QueryExpressionsTests.ExecuteExample();
-      // LambdaExpressionsTest.ExecuteExample();
-      // ExpressionTreesTest.ExecuteExample();
-      //ExtensionMethodsTest.ExecuteExample();
-      //CSharpStudy.Test.Test.Execute();
-      #endregion
-
       #region C# 4.0
       //DynamicTest.ExecuteExample();
       //CovariantContravariantGenericTypesTest.ExecuteExample();
