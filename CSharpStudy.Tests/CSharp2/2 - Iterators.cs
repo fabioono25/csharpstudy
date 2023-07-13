@@ -47,6 +47,32 @@ namespace CSharpStudy.Tests.CSharp2
       var result2 = WithoutUsingBreak(); //0 - 10
     }
 
+    [Fact]
+    public void ExecuteExampleWithoutIterator()
+    {
+      int[] numbers = { 1, 2, 3, 4, 5 };
+      CustomCollection<int> collection = new CustomCollection<int>(numbers);
+
+      foreach (int number in collection)
+      {
+        Console.WriteLine(number);
+      }
+    }
+
+    [Fact]
+    public void ExecuteExampleWithIterator()
+    {
+      int[] numbers = { 1, 2, 3, 4, 5 };
+      CustomCollectionWithIterator<int> collection = new CustomCollectionWithIterator<int>(numbers);
+
+      foreach (int number in collection)
+      {
+        Console.WriteLine(number);
+      }
+    }
+
+
+
     public static IEnumerable<int> GenerateSequence(int n)
     {
       int a = 0;
@@ -112,6 +138,83 @@ namespace CSharpStudy.Tests.CSharp2
       }
       yield return 10; //this code will be executed
     }
+  }
+
+  // in the old way, it is necessary to implement a separate IEnumerable<T> and IEnumerator<T> classes
+  internal class CustomCollection<T> : IEnumerable<T>
+  {
+    private T[] items;
+
+    public CustomCollection(T[] items)
+    {
+      this.items = items;
+    }
+
+    public IEnumerator<T> GetEnumerator()
+    {
+      return new CustomCollectionEnumerator<T>(items);
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+      return GetEnumerator();
+    }
+  }
+
+  internal class CustomCollectionEnumerator<T> : IEnumerator<T>
+  {
+    private T[] items;
+    private int currentIndex;
+
+    public CustomCollectionEnumerator(T[] items)
+    {
+      this.items = items;
+      currentIndex = -1;
+    }
+
+    public T Current => items[currentIndex];
+
+    object IEnumerator.Current => Current;
+
+    public bool MoveNext()
+    {
+      currentIndex++;
+      return currentIndex < items.Length;
+    }
+
+    public void Reset()
+    {
+      currentIndex = -1;
+    }
+
+    public void Dispose()
+    {
+      // Dispose resources if necessary
+    }
+  }
+
+  // using iterators, the logic is simplified and the compiler generates the IEnumerator<T> class
+  internal class CustomCollectionWithIterator<T> //: IEnumerable<T>
+  {
+    private T[] items;
+
+    public CustomCollectionWithIterator(T[] items)
+    {
+      this.items = items;
+    }
+
+    public IEnumerator<T> GetEnumerator()
+    {
+      foreach (T item in items)
+      {
+        yield return item;
+      }
+    }
+
+    // IEnumerator IEnumerable.GetEnumerator()
+    // {
+    //   return GetEnumerator();
+    // }
   }
 
 }
