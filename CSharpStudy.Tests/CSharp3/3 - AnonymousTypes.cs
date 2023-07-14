@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp3
   /**
   * 
   **/
-  public class Test
+  public class AnonymousTypesTest
   {
     [Fact]
     public void Example()
