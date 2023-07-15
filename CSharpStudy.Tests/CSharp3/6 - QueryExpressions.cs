@@ -49,6 +49,7 @@ namespace CSharpStudy.Tests.CSharp3
           from number in numbers
           where number < 4
           select new { Type = "Number", Value = number };
+    
     }
   }
 }
