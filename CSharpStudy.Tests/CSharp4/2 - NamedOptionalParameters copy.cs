@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp4
   /**
   * 
   **/
-  public class Test3
+  public class NamedOptionalParametersTest
   {
     [Fact]
     public void Example()
