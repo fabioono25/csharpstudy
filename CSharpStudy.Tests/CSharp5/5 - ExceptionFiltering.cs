@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp5
   /**
   * 
   **/
-  public class Test
+  public class ExceptionFilteringTest
   {
     [Fact]
     public void Example()

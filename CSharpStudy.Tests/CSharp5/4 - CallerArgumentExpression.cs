@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp5
   /**
   * 
   **/
-  public class Test2
+  public class CallerArgumentExpressionTest
   {
     [Fact]
     public void Example()

@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp5
   /**
   * 
   **/
-  public class Test3
+  public class TaskBasedAsyncPatternTest
   {
     [Fact]
     public void Example()
