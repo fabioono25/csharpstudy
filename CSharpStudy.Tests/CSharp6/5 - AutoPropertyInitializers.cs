@@ -9,11 +9,12 @@ namespace CSharpStudy.Tests.CSharp6
     [Fact]
     public void Example()
     {
-      var customer = new Customer();
+      var customer = new Customer("abc");
 
-      Console.WriteLine($"{customer.Name} {customer.LastName} - {customer.Age}.");
+      Console.WriteLine($"{customer.Name} {customer.LastName} - {customer.Age} - {customer.Test}.");
 
       customer.Name = "David";
+
 
       // customer.LastName = "Beckham"; //error: readonly property
       // customer.Age = 48;             //error: readonly property 
@@ -21,10 +22,16 @@ namespace CSharpStudy.Tests.CSharp6
 
     internal class Customer
     {
+      public Customer(string test)
+      {
+        this.Test = test;
+      }
+
       //initializing property with values
       public string Name { get; set; } = "John";
-      public string LastName { get; } = "Nash";
+      public string LastName { get; } = "Nash"; // readonly property
       public int Age { get; } = 55;
+      public string Test { get; set; }
     }
   }
 }
