@@ -11,7 +11,6 @@ namespace CSharpStudy.Tests.CSharp2
     public void StaticClassesExample()
     {
       double resultF = TemperatureConverter.CelsiusToFahrenheit("123.12");
-
     }
 
     [Fact]
@@ -37,6 +36,11 @@ namespace CSharpStudy.Tests.CSharp2
       public void Log(string message)
       {
         Console.WriteLine("Logging: " + message);
+      }
+
+      public static void Test()
+      {
+          Console.WriteLine("test");
       }
     }
 

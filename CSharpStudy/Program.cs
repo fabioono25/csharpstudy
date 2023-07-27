@@ -13,6 +13,9 @@ namespace CSharpStudy
       //IndexesRanges.ExecuteExample();
       //var x = new DirectoryInfo(@"C:\temp\directory");
 
+      object x = 1;
+      object y = x;
+      y = 2;
 
       #endregion
 

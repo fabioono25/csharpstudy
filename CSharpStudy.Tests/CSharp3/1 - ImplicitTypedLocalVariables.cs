@@ -12,13 +12,15 @@ namespace CSharpStudy.Tests.CSharp3
     {
       var number = 10; //implicit typed
       int number2 = 10;//explicit typed
+
       Console.WriteLine(number.GetType().Name);
       Console.WriteLine(number2.GetType().Name);
 
       var name = "John";
       Console.WriteLine(name.GetType().Name);
-
+      
       var x = new ClassTest(); //x is an instance of ClassTest
+      
       Console.WriteLine(x.GetType().Name);
     }
 

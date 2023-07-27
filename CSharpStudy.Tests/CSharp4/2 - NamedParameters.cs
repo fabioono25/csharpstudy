@@ -14,22 +14,22 @@ namespace CSharpStudy.Tests.CSharp4
       Method1("param1", "param2", 3);
 
       // It's possible to use the named parameters
-      Method1(parameter1: "param1", parameter2: "param2", parameter3: 3);
+      Method1(parameter1: "param1", parameter2: "param2", age: 3);
 
       // Even inverting the order
-      Method1(parameter3: 3, parameter2: "param2", parameter1: "parameter1");
+      Method1(age: 3, parameter2: "param2", parameter1: "parameter1");
 
       // some parameters can have the inverted order, but the unnamed parameters must be before the named parameters
-      Method1("param1", parameter3: 3, parameter2: "param2");
+      Method1("param1", age: 3, parameter2: "param2");
 
       // They are strongly typed, returning exeption at compile-time
-      // Method1(parameter3: "asdasdasd", parameter2: 222, parameter1: "parameter1");
+      // Method1(age: "asdasdasd", parameter2: 222, parameter1: "parameter1");
 
       // Even in different order, you should provide all parameters
-      // Method1(parameter3: 3, parameter2: "param2");
+      // Method1(age: 3, parameter2: "param2");
     }
 
-    public static void Method1(string parameter1, string parameter2, int parameter3)
+    public static void Method1(string parameter1, string parameter2, int age)
     {
     }
   }

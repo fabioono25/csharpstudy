@@ -10,6 +10,7 @@ namespace CSharpStudy.Tests.CSharp2
   public class DelegateInferenceTest
   {
     delegate string StrMod(string str);
+
     private static string removeSpaces(string name) { return "test"; }
     private static string removeNewLines(string name) { return "test2"; }
 

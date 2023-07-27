@@ -23,7 +23,7 @@ namespace CSharpStudy.Tests.CSharp2
       //The Stack accepts instances different classes, all derived from object
       //However, if you try casting in a different you, you will have an exception at runtime 
       s.Push(new ClassTest());
-      AnotherClassTest c2 = (AnotherClassTest)s.Pop(); //InvalidCastException
+      //AnotherClassTest c2 = (AnotherClassTest)s.Pop(); //InvalidCastException
 
       //using generics, you ensure the type you are adding (no cast needed)
       Stack<ClassTest> s2 = new Stack<ClassTest>();

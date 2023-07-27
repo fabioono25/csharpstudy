@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp6
   /**
   * 
   **/
-  public class Test2
+  public class Test9
   {
     [Fact]
     public void Example()

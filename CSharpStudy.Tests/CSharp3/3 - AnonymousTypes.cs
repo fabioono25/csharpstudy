@@ -24,7 +24,7 @@ namespace CSharpStudy.Tests.CSharp3
       //the objects inside of an array must have the same properties and property-types
       var prodArray = new[] {
                                 new { Id = 1, Name = "Pen" },
-                                new { Id = 2, Name = "Pencil" }
+                                new { Id = 2, Name = "Pencil" },
                             };
 
       foreach (var item in prodArray)

@@ -12,7 +12,10 @@ namespace CSharpStudy.Tests.CSharp3
     [Fact]
     public void ExampleStringExtension()
     {
-      var str = "JOHN NASH";
+      string str = "JOHN NASH";
+
+      var x = str.Trim2();
+
       if (!str.IsEmpty())
       {
         Console.WriteLine(str.ToTitleCase());
@@ -36,6 +39,11 @@ namespace CSharpStudy.Tests.CSharp3
     public static bool IsEmpty(this string str)
     {
       return string.IsNullOrEmpty(str);
+    }
+
+    public static string Trim2(this string str)
+    {
+        return "execute um outro tipo de trim";
     }
 
     public static string ToTitleCase(this string str)

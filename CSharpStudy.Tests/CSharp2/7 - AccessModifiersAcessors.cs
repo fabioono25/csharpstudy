@@ -1,22 +1,23 @@
 namespace CSharpStudy.Tests.CSharp2
 {
-  /**
-  * access modifiers can be applied separately to the get and set accessor of a property. 
-  It allows fine-grained control of the accessibility of the property itself and its accessors.
-  * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
-  **/
-  public class AccessModifiersAcessorsTest
+    /**
+    * access modifiers can be applied separately to the get and set accessor of a property. 
+    It allows fine-grained control of the accessibility of the property itself and its accessors.
+    * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
+    * https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
+     **/
+    public class AccessModifiersAcessorsTest
   {
     [Fact]
     public void ExecuteExample()
     {
-      MyClass instance = new MyClass();
-      // instance.Name = "John"; // Compilation error: Setter is not accessible
-      // instance.Age = 20; // Compilation error: Setter is not accessible
-      Console.WriteLine(instance.Name); // Output: The value of Name property
+      Person instance = new Person();
+        instance.Name = "John"; // Compilation error: Setter is not accessible
+        instance.Age = 20; // Compilation error: Setter is not accessible
+    Console.WriteLine(instance.Name); // Output: The value of Name property
     }
 
-    protected class MyClass
+    protected class Person
     {
       private string _name;
       private int _age;
@@ -24,13 +25,13 @@ namespace CSharpStudy.Tests.CSharp2
       public string Name
       {
         get { return _name; }
-        private set { _name = value; }
+         set { _name = value; }
       }
 
       public int Age
       {
         get { return _age; }
-        protected set { _age = value; }
+        internal set { _age = value; }
       }
     }
   }

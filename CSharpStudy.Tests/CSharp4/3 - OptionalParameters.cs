@@ -10,7 +10,7 @@ namespace CSharpStudy.Tests.CSharp4
     [Fact]
     public void Example()
     {
-      // Only parameter 1 is called. However, parameter2 and parameter3 have the default values
+      // Only parameter 1 is called. However, parameter2 and age have the default values
       Method1("param1");
 
       // Now we have a different set of values

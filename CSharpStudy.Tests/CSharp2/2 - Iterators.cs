@@ -23,6 +23,25 @@ namespace CSharpStudy.Tests.CSharp2
     }
 
     [Fact]
+    public void ExecuteExample3()
+    {
+        foreach (int i in ProduceEvenNumbers(9))
+        {
+            Console.Write(i);
+            Console.Write(" ");
+        }
+        // Output: 0 2 4 6 8
+
+        IEnumerable<int> ProduceEvenNumbers(int upto)
+        {
+            for (int i = 0; i <= upto; i += 2)
+            {
+                yield return i;
+            }
+        }
+        }
+
+    [Fact]
     public void ExecuteExample2()
     {
       DaysOfTheWeek days = new DaysOfTheWeek();

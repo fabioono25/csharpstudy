@@ -9,7 +9,7 @@ namespace CSharpStudy.Tests.CSharp2
   {
     [Fact]
     public void ExecuteExample()
-    {
+    { 
       int? nullableInt = null;
 
       if (nullableInt.HasValue)
