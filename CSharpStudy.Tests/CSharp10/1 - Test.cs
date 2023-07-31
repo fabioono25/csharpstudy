@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.CSharp10
 {
-  /**
-  * 
-  **/
-  public class Test
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class Test
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

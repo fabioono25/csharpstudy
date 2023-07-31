@@ -7,79 +7,79 @@ using System.Collections;
 namespace CSharpStudy.Tests.CSharp1
 {
 
-  public class ForEachIDisposable
-  {
-    [Fact]
-    public void ExecuteExample()
+    public class ForEachIDisposable
     {
-      var customizedCollection = new MyCustomizedCollection();
+        [Fact]
+        public void ExecuteExample()
+        {
+            var customizedCollection = new MyCustomizedCollection();
 
-      foreach (var item in customizedCollection)
-      {
-        Console.WriteLine(item.ToString());
-      }
-    }
-  }
-
-  class MyCustomizedCollection
-  {
-    ArrayList items = new ArrayList();
-
-    public MyCustomizedCollection()
-    {
-      items.Add("First item");
-      items.Add("Second item");
-      items.Add("Third item");
-      items.Add("Fourth item");
+            foreach (var item in customizedCollection)
+            {
+                Console.WriteLine(item.ToString());
+            }
+        }
     }
 
-    public int GetCount()
+    class MyCustomizedCollection
     {
-      return items.Count;
+        ArrayList items = new ArrayList();
+
+        public MyCustomizedCollection()
+        {
+            items.Add("First item");
+            items.Add("Second item");
+            items.Add("Third item");
+            items.Add("Fourth item");
+        }
+
+        public int GetCount()
+        {
+            return items.Count;
+        }
+
+        public string GetItem(int index)
+        {
+            return items[index].ToString();
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return new CustomizedEnumerator(this);
+        }
     }
 
-    public string GetItem(int index)
+    class CustomizedEnumerator : IEnumerator, IDisposable
     {
-      return items[index].ToString();
-    }
+        private MyCustomizedCollection _collection;
+        private int _index = -1;
 
-    public IEnumerator GetEnumerator()
-    {
-      return new CustomizedEnumerator(this);
-    }
-  }
+        public CustomizedEnumerator(MyCustomizedCollection collection)
+        {
+            _collection = collection;
+        }
 
-  class CustomizedEnumerator : IEnumerator, IDisposable
-  {
-    private MyCustomizedCollection _collection;
-    private int _index = -1;
+        public void Dispose()
+        {
+            Console.WriteLine($"Disposed was called by {nameof(CustomizedEnumerator)}.");
+        }
 
-    public CustomizedEnumerator(MyCustomizedCollection collection)
-    {
-      _collection = collection;
-    }
+        public object Current
+        {
+            get
+            {
+                return _collection.GetItem(_index);
+            }
+        }
 
-    public void Dispose()
-    {
-      Console.WriteLine($"Disposed was called by {nameof(CustomizedEnumerator)}.");
-    }
+        public bool MoveNext()
+        {
+            return ++_index < _collection.GetCount();
+        }
 
-    public object Current
-    {
-      get
-      {
-        return _collection.GetItem(_index);
-      }
+        public void Reset()
+        {
+            _index = -1;
+        }
     }
-
-    public bool MoveNext()
-    {
-      return ++_index < _collection.GetCount();
-    }
-
-    public void Reset()
-    {
-      _index = -1;
-    }
-  }
 }

@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class ImmutableStackTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class ImmutableStackTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

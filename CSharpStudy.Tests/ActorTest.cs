@@ -1,7 +1,3 @@
-using CSharpStudy.BestPractices;
-using System;
-using Xunit;
-
 namespace CSharpStudy.Tests
 {
     public class ActorTest

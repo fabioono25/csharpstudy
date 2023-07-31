@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class LinkedListDictionaryTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class LinkedListDictionaryTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

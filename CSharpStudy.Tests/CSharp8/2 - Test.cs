@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.CSharp8
 {
-  /**
-  * 
-  **/
-  public class Test2
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class Test2
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

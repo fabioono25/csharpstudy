@@ -1,5 +1,4 @@
 using CSharpStudy.Common;
-using Xunit;
 
 namespace CSharpStudy.Tests
 {

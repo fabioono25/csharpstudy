@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class BlockingCollectionTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class BlockingCollectionTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

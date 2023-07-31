@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class AVLTreeTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class AVLTreeTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

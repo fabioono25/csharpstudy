@@ -5,32 +5,32 @@
 
 namespace CSharpStudy.Tests.CSharp1
 {
-  public class UsingTest
-  {
-    [Fact]
-    public void ExecuteExample()
+    public class UsingTest
     {
-      //without using
-      {
-        StreamReader testReader = new StreamReader(@"/home/ono/Documents/study/csharpstudy/CSharpStudy/CSharp1/test.txt");
-
-        try
+        [Fact]
+        public void ExecuteExample()
         {
-          Console.Write(testReader.ReadToEnd());
-        }
-        finally
-        {
-          if (testReader != null)
-            testReader.Dispose();
-        }
-      }
+            //without using
+            {
+                StreamReader testReader = new StreamReader(@"/home/ono/Documents/study/csharpstudy/CSharpStudy/CSharp1/test.txt");
 
-      //with using
-      using (var testReader = new StreamReader(@"/home/ono/Documents/study/csharpstudy/CSharpStudy/CSharp1.2/test.txt"))
-      {
-        Console.Write(testReader.ReadToEnd());
-      }
-      // Resource will be automatically disposed at the end of the using block
+                try
+                {
+                    Console.Write(testReader.ReadToEnd());
+                }
+                finally
+                {
+                    if (testReader != null)
+                        testReader.Dispose();
+                }
+            }
+
+            //with using
+            using (var testReader = new StreamReader(@"/home/ono/Documents/study/csharpstudy/CSharpStudy/CSharp1.2/test.txt"))
+            {
+                Console.Write(testReader.ReadToEnd());
+            }
+            // Resource will be automatically disposed at the end of the using block
+        }
     }
-  }
 }

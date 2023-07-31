@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class ConcurrentQueueTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class ConcurrentQueueTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

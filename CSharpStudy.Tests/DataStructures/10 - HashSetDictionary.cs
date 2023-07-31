@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class HashSetDictionaryTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class HashSetDictionaryTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

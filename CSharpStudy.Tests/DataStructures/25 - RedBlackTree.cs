@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class RedBlackTreeTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class RedBlackTreeTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }

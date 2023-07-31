@@ -1,14 +1,14 @@
 namespace CSharpStudy.Tests.DataStructures
 {
-  /**
-  * 
-  **/
-  public class BitArrayTest
-  {
-    [Fact]
-    public void Example()
+    /**
+    * 
+    **/
+    public class BitArrayTest
     {
-      //TODO
+        [Fact]
+        public void Example()
+        {
+            //TODO
+        }
     }
-  }
 }
