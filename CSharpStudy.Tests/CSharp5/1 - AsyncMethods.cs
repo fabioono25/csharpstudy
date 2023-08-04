@@ -15,7 +15,7 @@ namespace CSharpStudy.Tests.CSharp5
         public async Task Example()
         {
             var client = new HttpClient();
-            var data = await client.GetStringAsync("https://example.com/data");
+            var data = await client.GetStringAsync("https://jsonplaceholder.typicode.com/todos");
             Console.WriteLine(data);
         }
 
@@ -23,10 +23,10 @@ namespace CSharpStudy.Tests.CSharp5
         public async Task Example2()
         {
             HttpClient client = new HttpClient();
-            Uri address = new Uri("https://api.github.com/repos/fabioono25/");
+            Uri address = new Uri("https://api.github.com/repos/fabioono25/csharpstudy/");
             client.BaseAddress = address;
 
-            HttpResponseMessage response = await client.GetAsync("csharpstudy");
+            HttpResponseMessage response = await client.GetAsync(address.AbsoluteUri);
 
             if (response.IsSuccessStatusCode)
             {

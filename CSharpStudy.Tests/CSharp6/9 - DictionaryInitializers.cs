@@ -17,11 +17,11 @@ namespace CSharpStudy.Tests.CSharp6
 
             // after C# 6.0
             var products2 = new Dictionary<int, Product>()
-      {
-        { 1, new Product { Name = "Product 1" }},
-        { 2, new Product { Name = "Product 2" }},
-        { 3, new Product { Name = "Product 3" }}
-      };
+            {
+                { 1, new Product { Name = "Product 1" }},
+                { 2, new Product { Name = "Product 2" }},
+                { 3, new Product { Name = "Product 3" }}
+            };
 
             // another way with C# 6.0
             var products3 = new Dictionary<int, Product>()

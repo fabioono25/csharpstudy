@@ -16,9 +16,9 @@ namespace CSharpStudy.Tests.CSharp5
             Console.WriteLine(result);
         }
 
-        protected async Task<int> PerformAsyncOperation()
+        protected static async Task<int> PerformAsyncOperation()
         {
-            await Task.Delay(1000);
+            await Task.Delay(4000);
             return 42;
         }
     }

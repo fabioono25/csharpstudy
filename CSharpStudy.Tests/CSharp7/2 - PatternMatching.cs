@@ -31,7 +31,7 @@ namespace CSharpStudy.Tests.CSharp7
         public void Example2()
         {
             //is pattern
-            var input = 12;
+            object input = 12;
 
             if (input is int count)
                 Console.WriteLine(count);

@@ -13,7 +13,6 @@ namespace CSharpStudy.Tests.CSharp6
         public void Example()
         {
             var result = Pow(5, 2);
-
             Write($"Five squared is {result}.");
         }
     }

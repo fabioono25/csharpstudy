@@ -9,7 +9,7 @@ namespace CSharpStudy.Tests.CSharp6
     public class AwaitCatchFinally
     {
         [Fact]
-        public async void Example()
+        public async Task Example()
         {
             Test test = null;
 

@@ -1,8 +1,13 @@
-namespace CSharpStudy.CSharp7123
+namespace CSharpStudy.Tests.CSharp8
 {
-    public static class IndicesRanges
+    /**
+    * Introduces the Index and Range types to simplify working with ranges of elements in arrays and collections.
+    * https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges
+    **/
+    public class IndexRangeTypes
     {
-        public static void ExecuteExample()
+        [Fact]
+        public void Example()
         {
             var numbers = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 

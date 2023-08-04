@@ -18,7 +18,7 @@ namespace CSharpStudy.Tests.CSharp7
             Console.WriteLine("[{0}]", string.Join(", ", items));
 
             ref int itemInLocation2 = ref FindItemInArray(3, items);
-            itemInLocation2 = 18;
+            itemInLocation2 = 19;
 
             //the array is now: [1, 2, 18, 4, 5, 6, 7, 8, 9, 0]
             Console.WriteLine("[{0}]", string.Join(", ", items));
