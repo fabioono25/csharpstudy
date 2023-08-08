@@ -42,9 +42,39 @@ namespace CSharpStudy.Tests.CSharp9
         {
             var obj = new object();
 
-            if (obj is not null) {
+            if (obj is not null)
+            {
                 // do something with obj
             }
+        }
+
+        [Fact]
+        public static void Example4()
+        {
+            var value = new object();
+
+            if (value is 0 or 1)
+            {
+                // do something
+            }
+
+            if (value is > 10)
+            {
+                // do something
+            }
+        }
+
+        [Fact]
+        public static void Example5()
+        {
+            int? nullableValue = 42;
+            string result = nullableValue switch
+            {
+                null => "Value is null",
+                > 0 => "Value is positive",
+                < 0 => "Value is negative",
+                _ => "Value is zero"
+            };
         }
 
         public static bool IsLetter(this char c) => c is >= 'a' and <= 'z' or >= 'A' and <= 'Z';
