@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp12
     /**
     * 
     **/
-    public class Test2
+    public class AliasAnyType
     {
         [Fact]
         public void Example()

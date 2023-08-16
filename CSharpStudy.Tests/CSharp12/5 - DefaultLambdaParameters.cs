@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp12
     /**
     * 
     **/
-    public class Test3
+    public class DefaultLambdaParameters
     {
         [Fact]
         public void Example()

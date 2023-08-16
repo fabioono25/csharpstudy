@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp12
     /**
     * 
     **/
-    public class Test2
+    public class InlineArrays
     {
         [Fact]
         public void Example()

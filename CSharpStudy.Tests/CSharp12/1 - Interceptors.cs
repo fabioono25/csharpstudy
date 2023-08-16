@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp12
     /**
     * 
     **/
-    public class Test3
+    public class Interceptors
     {
         [Fact]
         public void Example()
