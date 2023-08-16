@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp11
     /**
     * 
     **/
-    public class Test3
+    public class NewlinesStringInterpolation
     {
         [Fact]
         public void Example()

@@ -3,7 +3,7 @@ namespace CSharpStudy.Tests.CSharp11
     /**
     * 
     **/
-    public class Test
+    public class ListPatterns
     {
         [Fact]
         public void Example()
