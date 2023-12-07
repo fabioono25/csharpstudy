@@ -1,13 +1,15 @@
-What is the C# History?
-=====================
+# What is the C# History?
+
 The C# History is a compound of examples that can show how the language was growing during the years. It'll start with the basic concepts of an Oriented-Programming Language, until newer and better features.
 
 ## How to use the material
+
 For each version of the language we have a folder containing the examples. It'll have examples and comments so be free to copy and use as reference.
 
 You can see the series containing articles about the main features throught the history of this language in the blog [My Life in Dev].(https://www.mylifeindev.com/)
 
 ## If you like it! :star:
+
 If you liked the examples, give a star!
 
 ## About C#
@@ -15,6 +17,7 @@ If you liked the examples, give a star!
 C# is an object-oriented language that was born in 2002, with the strategy of Microsoft to provide a more robust and strongly typed language. To achieve this, the idea was following some design goals defined by ECMA.
 
 Design goals from ECMA for C#:
+
 - intended to be simple, modern, general purpose, OOP;
 - strongly type checking, array bound checking, check unitialized variables;
 - automatic garbage collection;
@@ -25,14 +28,14 @@ Design goals from ECMA for C#:
 
 During these more than 15 years, the language is gaining new improvements. Here are the versions:
 
-
 Version 1.0:
+
 - Classes and Objects
 - Inheritance
 - Encapsulation
 - Polymorphism
-- Memory Management: 
-  - Manage execution: automatic memory management and the concept of garbage collection. Value objects are allocated on the stack, while reference ones are part of the heap. GC traverses the object graph (Marking Phase) and then scans the entire heap for unmarked objects (Sweeping Phase). The objects are divided in different generations, based on their lifetime: 
+- Memory Management:
+  - Manage execution: automatic memory management and the concept of garbage collection. Value objects are allocated on the stack, while reference ones are part of the heap. GC traverses the object graph (Marking Phase) and then scans the entire heap for unmarked objects (Sweeping Phase). The objects are divided in different generations, based on their lifetime:
     - Generation 0: Contains short-lived objects that are typically created and collected quickly.
     - Generation 1: Contains objects that have survived one garbage collection cycle.
     - Generation 2: Contains long-lived objects that have survived multiple garbage collection cycles.
@@ -76,8 +79,8 @@ Version 1.0:
     - It's generally recommended to implement the IDisposable interface and use the Dispose() method to release resources explicitly instead of relying solely on destructors.
 - Using keyword
 
-
 Version 2.0
+
 - Generics
 - Partial Types
 - Anonymous Methods
@@ -89,6 +92,7 @@ Version 2.0
 - Static Classes
 
 Version 3.0
+
 - Auto-Implemented Properties
 - Anonymous Types
 - Query Expressions
@@ -100,23 +104,29 @@ Version 3.0
 - Objects Colections Initializers
 
 Version 4.0
+
 - Named Arguments
 - Optional Parameters
 - Dynamics
 - Covariance and Contravariance for Generic Types
 
 Version 5.0
+
 - CallerInfoAttributes
 - Asynchronous Methods
 
 Version 6.0
-- 
+
+-
 
 Version 7.0
-- 
+
+-
 
 Version 8.0
-- 
+
+-
 
 Version 9.0
-- 
+
+-
