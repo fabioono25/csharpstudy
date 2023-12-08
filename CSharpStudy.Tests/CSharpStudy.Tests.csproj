@@ -26,8 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mentoring\1-Fundamentals\" />
-    <Folder Include="Mentoring\2-MSDN\" />
     <Folder Include="Mentoring\3-Advanced\" />
   </ItemGroup>
 
