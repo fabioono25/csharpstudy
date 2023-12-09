@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Timers;
 using Xunit.Abstractions;
 
 namespace CSharpStudy.Tests.Mentoring._1_Fundamentals

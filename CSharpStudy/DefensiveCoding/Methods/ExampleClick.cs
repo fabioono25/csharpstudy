@@ -15,13 +15,7 @@
             //populate the customer instance
 
             var order = new Order();
-            //populate order
-
-            var emailReceipt = true;
             var payment = new Payment();
-            //populate payment info
-
-            var allowSplitOrders = true;
 
             var orderController = new OrderController();
 

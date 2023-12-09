@@ -20,6 +20,4 @@ namespace HelloWorld
 */
 
 // AFTER C# 9
-using System;
-
 Console.WriteLine("Hello World!");
