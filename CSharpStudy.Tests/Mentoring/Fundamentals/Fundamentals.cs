@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Text;
 using System.Threading.Tasks;
 using Xunit.Abstractions;
 
@@ -194,6 +195,70 @@ namespace CSharpStudy.Tests.Mentoring.Fundamentals
             var formatPercent = $"{0.123:P}";  // 12.30 %
             var formatHexadecimal = $"{255:X}";  // FF
             var formatPhone = $"{1234567890:(###) ###-####}";  // (123) 456-7890
+
+            // working with new buckets, when working with strings, it is heavy. Solution: StringBuilder
+            var x = new StringBuilder();
+            x.Append("Hello");
+            x.Append(" ");
+            x.Append("World");
+        }
+
+        [Fact]
+        public void WorkingWithDatesAndTimes()
+        {
+            var now = DateTime.Now;         // local time
+            var today = DateTime.Today;     // local time
+            var utcNow = DateTime.UtcNow;   // UTC time
+
+            // difference between UTC and local time: UTC is the time at the prime meridian (Greenwich, England)
+            // UTC is 0 hours offset from Greenwich Mean Time (GMT)
+            // UTC is the standard time used by most computers and networks
+
+            var shortDate = now.ToShortDateString();
+            var shortTime = now.ToShortTimeString();
+            var longDate = now.ToLongDateString();
+            var longTime = now.ToLongTimeString();
+
+            var tomorrow = now.AddDays(1);
+            var yesterday = now.AddDays(-1);
+
+            var dayOfWeek = now.DayOfWeek;
+
+            var day = now.Day;
+            var month = now.Month;
+            var year = now.Year;
+
+            var hour = now.Hour;
+            var minute = now.Minute;
+            var second = now.Second;
+            var millisecond = now.Millisecond;
+
+            var date = new DateTime(2018, 1, 1);
+            var date2 = new DateTime(2018, 1, 1, 9, 30, 0);
+
+            var date3 = DateTime.Parse("1/1/2018");
+            var date4 = DateTime.Parse("1/1/2018 9:30:00 AM");
+
+            var date5 = DateTime.ParseExact("1/1/2018", "M/d/yyyy", null);
+            var date6 = DateTime.ParseExact("1/1/2018 9:30:00 AM", "M/d/yyyy h:mm:ss tt", null);
+
+            var date7 = DateTime.ParseExact("2018-01-01T09:30:00", "yyyy-MM-ddTHH:mm:ss", null);
+
+            var date8 = DateTime.ParseExact("2018-01-01T09:30:00Z", "yyyy-MM-ddTHH:mm:ssK", null);
+
+            var date9 = DateTime.ParseExact("2018-01-01T09:30:00-03:00", "yyyy-MM-ddTHH:mm:ssK", null);
+
+            var date10 = DateTime.ParseExact("2018-01-01T09:30:00-03:00", "yyyy-MM-ddTHH:mm:sszzz", null);
+
+            var date12 = DateTime.ParseExact("2018-01-01T09:30:00-03:00", "yyyy-MM-ddTHH:mm:sszzz", System.Globalization.CultureInfo.InvariantCulture);
+
+            var date13 = DateTime.ParseExact("2018-01-01T09:30:00-03:00", "yyyy-MM-ddTHH:mm:sszzz",
+                System.Globalization.CultureInfo.InvariantCulture);
+
+            var myBirthDay = DateTime.Parse("06/06/1981 19:34");
+            var myAge = DateTime.Now.Subtract(myBirthDay);
+            var days = myAge.Days;
+            var years = days / 365;
         }
 
         [Fact]
