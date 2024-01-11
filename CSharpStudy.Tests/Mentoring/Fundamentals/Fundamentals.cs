@@ -37,29 +37,6 @@ namespace CSharpStudy.Tests.Mentoring.Fundamentals
         }
 
         [Fact]
-        public void Collections()
-        {
-            // ArrayLists 
-            var car1 = new Car();
-            car1.Make = "Make Test";
-            car1.Model = "Model Test";
-
-            var book1 = new Book();
-            book1.Title = "Book Test";
-            book1.Author = "Author Test";
-
-            // ArrayLists: dynamically sized
-            var arr1 = new ArrayList();
-            arr1.Add(car1);
-            arr1.Add(book1);
-            arr1.Add(book1);
-
-            output.WriteLine("Test Array: ", arr1.ToString());
-
-            Assert.Equal(3, arr1.Count);
-        }
-
-        [Fact]
         public void WorkingWithArrays()
         {
             // Arrays: fixed size
@@ -262,8 +239,48 @@ namespace CSharpStudy.Tests.Mentoring.Fundamentals
         }
 
         [Fact]
+        public void Collections()
+        {
+            // ArrayLists 
+            var car1 = new Car();
+            car1.Make = "Make Test";
+            car1.Model = "Model Test";
+
+            var book1 = new Book();
+            book1.Title = "Book Test";
+            book1.Author = "Author Test";
+
+            // ArrayLists: dynamically sized
+            var arr1 = new ArrayList();
+            arr1.Add(car1);
+            arr1.Add(book1);
+            arr1.Add(book1);
+
+            output.WriteLine("Test Array: ", arr1.ToString());
+
+            Assert.Equal(3, arr1.Count);
+
+            var car = new Dictionary<string, string>();
+            car.Add("Make", "Make Test");
+            car.Add("Model", "Model Test");
+
+
+            // Lists: dynamically sized
+            var carList = new List<Car>();
+            carList.Add(car1);
+            
+            // what are the advantages of using List<T> over ArrayList?
+            // 1. Type safety
+            // 2. Performance
+            // 3. Ease of enumeration
+
+            
+        }
+
+        [Fact]
         public void WorkingWithLINQ()
         {
+            // LINQ: Language Integrated Query
             var carModels = new string[] { "Civic", "Accord", "Camry", "Corolla", "Mustang", "F-150", "Cruze", "Malibu", "Altima", "Sentra" };
             var carMakes = new string[] { "Toyota", "Honda", "Ford", "Chevrolet", "Nissan" };
 
@@ -303,7 +320,7 @@ namespace CSharpStudy.Tests.Mentoring.Fundamentals
                 output.WriteLine("Elapsed: {0:HH:mm:ss.fff}", e.SignalTime);
 
                 // Set the task completion source to indicate that the asynchronous work is done
-                tcs.SetResult(true);
+                //tcs.SetResult(true);
             };
 
             myTimer.Start();
