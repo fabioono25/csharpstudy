@@ -25,8 +25,4 @@
     <ProjectReference Include="..\CSharpStudy\CSharpStudy.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Mentoring\3-Advanced\" />
-  </ItemGroup>
-
 </Project>

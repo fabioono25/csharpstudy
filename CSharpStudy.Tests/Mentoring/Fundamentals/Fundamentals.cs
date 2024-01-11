@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Xunit.Abstractions;
 
-namespace CSharpStudy.Tests.Mentoring._1_Fundamentals
+namespace CSharpStudy.Tests.Mentoring.Fundamentals
 {
     public class Fundamentals
     {
@@ -11,6 +11,28 @@ namespace CSharpStudy.Tests.Mentoring._1_Fundamentals
         public Fundamentals(ITestOutputHelper output)
         {
             this.output = output;
+        }
+
+        [Fact]
+        public void DataTypes()
+        {
+            // Value types
+            int i = 0;
+            double d = 0.0;
+            decimal dec = 0.0m;
+            bool b = false;
+            char c = 'c';
+
+            // Reference types
+            string s = "string";
+            object o = new object();
+
+            // boxing
+            int i2 = 1;
+            object o2 = i2;
+
+            // unboxing
+            int i3 = (int)o2;
         }
 
         [Fact]
