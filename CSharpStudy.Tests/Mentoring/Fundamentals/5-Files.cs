@@ -16,10 +16,10 @@ public class FilesTests
   public void CreateWriteFileTest()
   {
     var path = Path.Combine(Directory.GetCurrentDirectory(), "test.txt");
-    File.WriteAllText(path, "Hello World!");
+    File.WriteAllText(path, "Hello World!!");
 
     var text = File.ReadAllText(path);
-    Assert.Equal("Hello World!", text);
+    Assert.Equal("Hello World!!", text);
 
     File.Delete(path);
   }
