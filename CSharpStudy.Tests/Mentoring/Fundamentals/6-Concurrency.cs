@@ -57,19 +57,4 @@ public class ConcurrencyTests
         " primes between " + (i * 1000000) + " and " + ((i + 1) * 1000000 - 1));
     Console.WriteLine("Done!");
   }
-
-  [Fact]
-  public async void ParallelForEachAsync()
-  {
-    // Create a list of web addresses.
-    var uris = new[] { "https://www.google.com", "https://www.microsoft.com", "https://www.apple.com" };
-    await Parallel.ForEachAsync(uris,
-    new ParallelOptions { MaxDegreeOfParallelism = 10 },
-    async (uri, cancelToken) =>
-    {
-      var download = await new HttpClient().GetByteArrayAsync(uri);
-      Console.WriteLine($"Downloaded {download.Length} bytes");
-    });
-  }
-
 }
