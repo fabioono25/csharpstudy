@@ -2,6 +2,24 @@ using System.Security.Cryptography;
 
 public class Hashing
 {
+    [Fact]
+    public void Test()
+    {
+        List<object> names = new List<object>();
+        names.Add("Bob");
+
+        foreach (var item in names)
+        {
+            // item = "asas";
+        }
+        
+
+        var singleName = names.SingleOrDefault(n => n == "Bobd");
+
+        Console.WriteLine(singleName);
+    }
+
+
   [Fact]
   public void HashingTest()
   {
