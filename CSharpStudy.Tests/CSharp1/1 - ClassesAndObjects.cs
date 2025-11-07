@@ -1,6 +1,5 @@
 namespace CSharpStudy.Tests.CSharp1
 {
-
     /**
     * a class works as a blueprint for creating objects
     * and object is the instance of a class
