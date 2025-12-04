@@ -1,42 +1,39 @@
 namespace CSharpStudy.Tests.CSharp1
 {
-    /**
-    * a class works as a blueprint for creating objects
-    * and object is the instance of a class
-    * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes
-    **/
-    class Person
+    public interface IShape
     {
-        public string Name { get; set; } // property
-        public int Age { get; set; }
+        double Area { get; }
+    }
 
-        //constructor that takes no arguments
-        public Person()
+    public struct Point
+    {
+        public int X, Y;
+        public Point(int x, int y) { X = x; Y = y; }
+    }
+
+    public class Circle : IShape
+    {
+        public Point Center { get; set; }
+        public double Radius { get; set; }
+
+        public Circle(Point center, double radius)
         {
-            Name = "Unknown";
+            Center = center;
+            Radius = radius;
         }
 
-        //constructor that takes one argument
-        public Person(string name)
-        {
-            Name = name;
-        }
-
-        public void SayHello()
-        { // method
-            Console.WriteLine("Hello, my name is " + Name + " and I'm " + Age + " years old.");
-        }
+        public double Area => Math.PI * Radius * Radius;
     }
 
     public class ClassesAndObjectsTest
     {
         [Fact]
-        public void ExecuteExample()
+        public void ClassAndStructBehavior()
         {
-            Person p1 = new Person(); // object: instance of a class
-            p1.Name = "John";
-            p1.Age = 42;
-            p1.SayHello();
+            var center = new Point(0, 0);
+            var circle = new Circle(center, 5);
+
+            Assert.Equal(78.53981633974483, circle.Area);
         }
     }
 }

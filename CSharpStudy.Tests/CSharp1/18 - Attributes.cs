@@ -1,39 +1,43 @@
+using System.Reflection;
+
 namespace CSharpStudy.Tests.CSharp1
 {
-    /// <summary>
-    /// Attributes can be placed on most any declaration, though a specific attribute might restrict the types of declarations on which it is valid.
-    /// https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/
-    /// </summary>
-    /// <param name="str"></param>
-    /// <returns></returns>
+    [Serializable]
+    public class User
+    {
+        [Obsolete("Use FullName instead")]
+        public string Name { get; set; }
 
-    [Serializable]                  //attribute that indicates that the class can be serialized
-    [Custom("Just a test name")]    //using a custom attribute    
+        [Custom("Metadata value")]
+        public void Save() { }
+    }
+
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class)]
+    public class CustomAttribute : Attribute
+    {
+        public string Info { get; }
+        public CustomAttribute(string info) => Info = info;
+    }
+
     public class AttributeExample
     {
         [Fact]
-        public void ExecuteExample()
+        public void Attribute_CanBeRetrievedViaReflection()
         {
-            Console.WriteLine("C# 1.0 - Atribute Example");
-            CustomAttribute attrib = new CustomAttribute("name");
-            OldMethod();
+            var method = typeof(User).GetMethod("Save");
+            var attr = method.GetCustomAttribute<CustomAttribute>();
+
+            Assert.Equal("Metadata value", attr.Info);
         }
 
-        [Obsolete("This method is deprecated. Use NewMethod instead.")]
-        public static void OldMethod()
+        [Fact]
+        public void ObsoleteAttribute_IsPresent()
         {
-            // Method implementation...
-        }
-    }
+            var prop = typeof(User).GetProperty("Name");
+            var attr = prop.GetCustomAttribute<ObsoleteAttribute>();
 
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
-    public class CustomAttribute : Attribute //define a custom atribute
-    {
-        private string name;
-
-        public CustomAttribute(string name)
-        {
-            this.name = name;
+            Assert.NotNull(attr);
+            Assert.Equal("Use FullName instead", attr.Message);
         }
     }
 }

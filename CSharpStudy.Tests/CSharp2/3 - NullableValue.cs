@@ -1,53 +1,38 @@
 namespace CSharpStudy.Tests.CSharp2
 {
-    /**
-    * Nullable Value Types allow you to assign null to value type variables (int, bool, double, etc.).
-    It provides better handling of database queries where a field value is not assigned.
-    * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/
-    **/
     public class NullableValueTest
     {
         [Fact]
-        public void ExecuteExample()
+        public void NullCoalescing_ReturnsDefault_WhenNull()
         {
-            int? nullableInt = null;
+            int? nullable = null;
+            int result = nullable ?? -1;
 
-            if (nullableInt.HasValue)
-            {
-                int value = nullableInt.Value;
-                Console.WriteLine("Value: " + value);
-            }
-            else
-            {
-                Console.WriteLine("Nullable value is null");
-            }
+            Assert.Equal(-1, result);
         }
 
         [Fact]
-        public void ExecuteExample2()
+        public void NullCoalescing_ReturnsValue_WhenNotNull()
         {
-            int? nullableInt = null;
+            int? nullable = 42;
+            int result = nullable ?? -1;
 
-            // null coalescing operator
-            int value = nullableInt ?? 0;
-            Console.WriteLine("Value: " + value);
+            Assert.Equal(42, result);
         }
 
         [Fact]
-        public void ExecuteExample3()
+        public void HasValue_ReturnsFalse_WhenNull()
         {
-            int? c = 28;
-            int d = c ?? -1;
-            Console.WriteLine($"d is {d}");  // output: d is 28
+            int? nullable = null;
+            Assert.False(nullable.HasValue);
+        }
 
-            int? e = null;
-            int f = e ?? -1;
-            Console.WriteLine($"f is {f}");  // output: f is -1
-
-            // int? g;
-            // int h = g ?? -1; //Use of unassigned local variable 'g' - compile-time error
-            // Console.WriteLine($"h is {h}");  // output: f is -1            
+        [Fact]
+        public void HasValue_ReturnsTrue_WhenSet()
+        {
+            int? nullable = 10;
+            Assert.True(nullable.HasValue);
+            Assert.Equal(10, nullable.Value);
         }
     }
-
 }

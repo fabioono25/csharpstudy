@@ -1,50 +1,34 @@
 namespace CSharpStudy.Tests.CSharp1
 {
-
-    /**
-    * Exception handling is a mechanism to handle errors and exceptions in a program.
-    * https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/exceptions/
-    **/
-
     public class ExceptionHandlingTest
     {
         [Fact]
-        public void ExecuteExample()
+        public void Divide_ByZero_ThrowsException()
+        {
+            Assert.Throws<DivideByZeroException>(() => Divide(10, 0));
+        }
+
+        [Fact]
+        public void Divide_ValidInput_ReturnsResult()
+        {
+            int result = Divide(10, 2);
+            Assert.Equal(5, result);
+        }
+
+        public int Divide(int x, int y)
         {
             try
             {
-                // Code that might throw an exception
-                int result = Divide(10, 0);
-                Console.WriteLine("Result: " + result);
+                return x / y;
             }
             catch (DivideByZeroException ex)
             {
-                Console.WriteLine("Error: Cannot divide by zero.", ex.Message);
-            }
-            catch (CustomException ex)
-            {
-                Console.WriteLine("Error: Custom exception.", ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("An error occurred: " + ex.Message);
+                Console.WriteLine($"Error: {ex.Message}");
+                throw; // Re-throw to let caller handle it too
             }
             finally
             {
-                // Optional: Code that always executes, regardless of whether an exception occurred or not
-                Console.WriteLine("End of exception handling.");
-            }
-        }
-
-        public static int Divide(int x, int y)
-        {
-            return x / y;
-        }
-
-        public class CustomException : Exception
-        {
-            public CustomException(string message) : base(message)
-            {
+                Console.WriteLine("Operation attempted.");
             }
         }
     }

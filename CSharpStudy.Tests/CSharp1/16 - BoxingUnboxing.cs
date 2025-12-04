@@ -10,20 +10,29 @@ namespace CSharpStudy.Tests.CSharp1
         /// https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing
         /// </summary>
         [Fact]
-        public void ExecuteExample()
+        public void Boxing_CreatesCopy()
         {
-            Console.WriteLine("C# 1.0 - Boxing and Unboxing Examples");
+            int original = 42;
+            object boxed = original; // Box
 
+            original = 99; // Change stack value
+
+            int unboxed = (int)boxed; // Unbox
+
+            Assert.Equal(42, unboxed); // Boxed copy remained 42
+        }
+
+        [Fact]
+        public void Unboxing_WrongType_ThrowsException()
+        {
             int i = 123;
-            object o = i; //boxing
-            int x = (int)o; //unboxing
+            object o = i; // boxing
 
-            int valueTest = 10;
-            ArrayList arrayTest = new ArrayList();
-            arrayTest.Add(valueTest); //boxing
-            int outArray = (int)arrayTest[0]; //unboxing
-
-            Console.ReadKey();
+            // Unboxing to incompatible type throws InvalidCastException
+            Assert.Throws<InvalidCastException>(() =>
+            {
+                double d = (double)o;
+            });
         }
     }
 }
